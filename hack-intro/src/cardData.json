@@ -1,0 +1,51 @@
+[
+    {
+      "id": 1,
+      "title": "Διάλεξη #0 Καλημέρα Κόσμε!",
+      "paper": "https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf",
+      "slides": "https://hackintro.github.io/resources/00-introduction.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=9d16a22a",
+      "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=40e5dd15"
+    },
+    {
+      "id": 2,
+      "title": "Placeholder Card",
+      "paper": "link-to-paper",
+      "slides": "link-to-slides",
+      "part1": "link-to-part1",
+      "part2": "link-to-part2"
+    },
+    {
+        "id": 3,
+        "title": "Placeholder Card",
+        "paper": "link-to-paper",
+        "slides": "link-to-slides",
+        "part1": "link-to-part1",
+        "part2": "link-to-part2"
+    },
+    {
+        "id": 4,
+        "title": "Placeholder Card",
+        "paper": "link-to-paper",
+        "slides": "link-to-slides",
+        "part1": "link-to-part1",
+        "part2": "link-to-part2"
+    },
+    {
+        "id": 5,
+        "title": "Placeholder Card",
+        "paper": "link-to-paper",
+        "slides": "link-to-slides",
+        "part1": "link-to-part1",
+        "part2": "link-to-part2"
+    },
+    {
+        "id": 6,
+        "title": "Placeholder Card",
+        "paper": "link-to-paper",
+        "slides": "link-to-slides",
+        "part1": "link-to-part1",
+        "part2": "link-to-part2"
+    }
+  ]
+  
