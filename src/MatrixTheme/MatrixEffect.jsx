@@ -16,8 +16,8 @@ const MatrixEffect = () => {
 
     const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}.';
     const charsArray = characters.split('');
-    const fontSize = 16;
-    const columns = canvas.width / fontSize;
+    const fontSize = window.innerWidth < 768 ? 10 : 16; 
+    const columns = canvas.width / fontSize; 
     const drops = Array(columns).fill(1);
 
     const draw = () => {
