@@ -1,6 +1,7 @@
 .titles{
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: column; 
   background-color: transparent;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
