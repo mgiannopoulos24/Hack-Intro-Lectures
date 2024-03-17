@@ -6,13 +6,12 @@
   background-color: transparent;
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #b5e853;
-}
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.8); /* Horizontal offset, vertical offset, blur radius, and color */}
 
 .titles h1 {
     display: block; 
     font-size: 2em;
     margin-bottom: 0;
-    
   }
   
   .titles h3 {

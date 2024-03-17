@@ -11,3 +11,11 @@
     border-radius: 10px;
     transition: 0.3s;
 }
+
+.custom-card:hover
+{
+    transition: 0.1s;
+    transform: scale(1.05); /* Increase scale on hover */
+    box-shadow: 4px 4px 8px #0b5b00,
+    -4px -4px 8px #0b5b00; /* Adjust shadow on hover */
+}
