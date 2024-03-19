@@ -7,18 +7,27 @@ const MatrixEffect = () => {
     const canvas = canvasRef.current;
     const context = canvas.getContext('2d');
 
-    const resizeCanvas = () => {
-        canvas.width = window.innerWidth;
-        canvas.height = window.innerHeight;
-      };
+    let animationFrameId;
 
+    const resizeCanvas = () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    };
+
+    // Throttle resize events
+    const throttleResize = () => {
+      clearTimeout(window.resizeId);
+      window.resizeId = setTimeout(resizeCanvas, 50);
+    };
+
+    window.addEventListener('resize', throttleResize);
     resizeCanvas();
 
     const characters = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ123456789@#$%^&*()*&^%+-/~{[|`]}.';
     const charsArray = characters.split('');
-    const fontSize = window.innerWidth < 768 ? 10 : 16; 
-    const columns = canvas.width / fontSize; 
-    const drops = Array(columns).fill(1);
+    const fontSize = window.innerWidth < 768 ? 10 : 16;
+    const columns = canvas.width / fontSize;
+    const drops = Array(Math.floor(columns)).fill(1);
 
     const draw = () => {
       context.fillStyle = 'rgba(0, 0, 0, 0.05)';
@@ -36,15 +45,17 @@ const MatrixEffect = () => {
         }
         drops[i]++;
       }
+
+      animationFrameId = requestAnimationFrame(draw);
     };
 
-    const interval = setInterval(draw, 33);
+    draw();
 
     return () => {
-        clearInterval(interval);
-        window.removeEventListener('resize', resizeCanvas);
-      };
-    }, []);
+      cancelAnimationFrame(animationFrameId);
+      window.removeEventListener('resize', throttleResize);
+    };
+  }, []);
 
   return <canvas ref={canvasRef} />;
 };
