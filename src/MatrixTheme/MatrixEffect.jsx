@@ -8,6 +8,8 @@ const MatrixEffect = () => {
     const context = canvas.getContext('2d');
 
     let animationFrameId;
+    const frameRate = 3; // Lower this value to slow down the animation
+    let frameCounter = 0;
 
     const resizeCanvas = () => {
       canvas.width = window.innerWidth;
@@ -30,6 +32,12 @@ const MatrixEffect = () => {
     const drops = Array(Math.floor(columns)).fill(1);
 
     const draw = () => {
+      if (++frameCounter < frameRate) {
+        animationFrameId = requestAnimationFrame(draw);
+        return;
+      }
+      frameCounter = 0;
+
       context.fillStyle = 'rgba(0, 0, 0, 0.05)';
       context.fillRect(0, 0, canvas.width, canvas.height);
 
