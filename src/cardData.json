@@ -9,19 +9,19 @@
     },
     {
       "id": 2,
-      "title": "Placeholder Card",
-      "paper": "link-to-paper",
-      "slides": "link-to-slides",
-      "part1": "link-to-part1",
-      "part2": "link-to-part2"
+      "title": "Διάλεξη #1 Docker Basics",
+      "paper": "https://docker-curriculum.com/",
+      "slides": "https://hackintro.github.io/resources/01-docker-basics.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=66098d2e",
+      "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=5eeb0405"
     },
     {
         "id": 3,
-        "title": "Placeholder Card",
-        "paper": "link-to-paper",
-        "slides": "link-to-slides",
-        "part1": "link-to-part1",
-        "part2": "link-to-part2"
+        "title": "Διάλεξη #2 x86 Basics and Buffer Overflows ",
+        "paper": "http://phrack.org/issues/49/14.html#article",
+        "slides": "https://hackintro.github.io/resources/02-x86-buffer-overflows.pdf",
+        "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=cae50b13",
+        "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=8e71ac68"
     },
     {
         "id": 4,
