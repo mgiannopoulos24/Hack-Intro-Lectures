@@ -3,6 +3,7 @@ import './MainPage.css';
 
 import CustomCard from '../CustomCard/CustomCard';
 import cardData from '../cardData.json';
+import GameButton from '../GameButton/GameButton';
 
 const MainPage = () => {
   return (
@@ -26,6 +27,7 @@ const MainPage = () => {
             />
           ))}
         </div>
+        <GameButton />
       </div>
     </>
   );
