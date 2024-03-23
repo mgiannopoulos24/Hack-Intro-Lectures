@@ -1,0 +1,13 @@
+.WGButton {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+    z-index: 3;
+}
+
+.WGButton:hover {
+    cursor: pointer;
+    background-color: #9cb82c;
+}
