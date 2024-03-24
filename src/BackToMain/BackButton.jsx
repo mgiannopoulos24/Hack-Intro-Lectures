@@ -10,7 +10,7 @@ const BackButton = () => {
       <Button
         variant="contained"
         color="primary"
-        sx={{ textTransform: 'none',backgroundColor: '#b5e853', color: 'black'}}
+        sx={{ textTransform: 'none',backgroundColor: '#b5e853', color: 'black',fontWeight:'bold'}}
         className="back-button"
       >
       <ArrowBackIosIcon sx={{color:'black',fontSize:'small'}}/>
