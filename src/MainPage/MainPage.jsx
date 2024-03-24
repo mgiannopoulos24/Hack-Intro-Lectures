@@ -8,7 +8,6 @@ import GameButton from '../GameButton/GameButton';
 const MainPage = () => {
   return (
     <>
-      
       <div className="main-content">
         <header className='titles'>
           <h1>Hack Intro Lectures</h1>
