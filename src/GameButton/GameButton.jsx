@@ -2,9 +2,11 @@ import React from 'react';
 import Button from '@mui/material/Button';
 import SportsEsportsIcon from '@mui/icons-material/SportsEsports';
 import './GameButton.css';
+import { Link } from 'react-router-dom';
 
 const RoundIconButton = () => {
   return (
+    <Link to="/Wargames" style={{ textDecoration: 'none' }}>
     <Button
       variant="contained"
       color="primary"
@@ -20,6 +22,7 @@ const RoundIconButton = () => {
     >
       <SportsEsportsIcon sx={{color:'black'}}/>
     </Button>
+    </Link>
   );
 };
 
