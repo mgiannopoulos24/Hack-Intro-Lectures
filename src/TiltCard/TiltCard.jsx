@@ -5,7 +5,7 @@ import "./TiltCard.css";
 const defaultOptions = {
   reverse: false,
   max: 15, // Decreased max value for less tilt
-  perspective: 1500 // Adjusted perspective value
+  
 };
 
 const TiltCard = ({ image, title, description }) => {

@@ -4,11 +4,12 @@
     height: 25rem;
     background-color: black;
     backdrop-filter: blur(8px);
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+    
     border-radius: 0.75rem;
     border: 2px solid #b5e853; /* Added border property */
     overflow: hidden;
-    transform: scale(0.7);
+    transform: scale(0.9);
+    gap: 3rem;
   }
   
   .tilt-img-container {
