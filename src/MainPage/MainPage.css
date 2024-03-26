@@ -32,6 +32,7 @@
     margin: 20px;
     justify-content: center;
     flex-wrap: wrap;  
+    gap: 30px;
   }
   
   .main-content {
