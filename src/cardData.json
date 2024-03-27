@@ -25,11 +25,11 @@
     },
     {
         "id": 4,
-        "title": "Placeholder Card",
-        "paper": "link-to-paper",
-        "slides": "link-to-slides",
-        "part1": "link-to-part1",
-        "part2": "link-to-part2"
+        "title": "Διάλεξη #3 Control Flow Hijack Attacks",
+        "paper": "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html",
+        "slides": "https://hackintro.github.io/resources/03-control-flow-hijacks.pdf",
+        "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=8082302d",
+        "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=cd252596"
     },
     {
         "id": 5,
