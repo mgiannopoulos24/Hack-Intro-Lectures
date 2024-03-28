@@ -33,11 +33,11 @@
     },
     {
         "id": 5,
-        "title": "Placeholder Card",
-        "paper": "link-to-paper",
-        "slides": "link-to-slides",
-        "part1": "link-to-part1",
-        "part2": "link-to-part2"
+        "title": "Διάλεξη #4 Format String Attacks",
+        "paper": "https://cs155.stanford.edu/papers/formatstring-1.2.pdf",
+        "slides": "https://hackintro.github.io/resources/04-format-string-attacks.pdf",
+        "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=2ac04396",
+        "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=fb28a41f"
     },
     {
         "id": 6,
