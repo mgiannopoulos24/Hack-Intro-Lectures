@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "title": "Διάλεξη #4 Format String Attacks",
+        "title": "Διάλεξη #4, #5, #6 Format String Attacks",
         "paper": "https://cs155.stanford.edu/papers/formatstring-1.2.pdf",
         "slides": "https://hackintro.github.io/resources/04-format-string-attacks.pdf",
         "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=2ac04396",
