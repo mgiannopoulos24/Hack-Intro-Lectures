@@ -33,7 +33,7 @@
     },
     {
         "id": 5,
-        "title": "Διάλεξη #4, #5, #6 Format String Attacks",
+        "title": "Διάλεξη #4 Format String Attacks",
         "paper": "https://cs155.stanford.edu/papers/formatstring-1.2.pdf",
         "slides": "https://hackintro.github.io/resources/04-format-string-attacks.pdf",
         "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=2ac04396",
@@ -41,11 +41,19 @@
     },
     {
         "id": 6,
-        "title": "Placeholder Card",
-        "paper": "link-to-paper",
-        "slides": "link-to-slides",
-        "part1": "link-to-part1",
-        "part2": "link-to-part2"
-    }
+        "title": "Διάλεξη #5 CVEs and Review",
+        "paper": "https://en.wikipedia.org/wiki/Common_Vulnerabilities_and_Exposures",
+        "slides": "https://hackintro.github.io/resources/05-cves-and-review.pdf",
+        "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=b473d52",
+        "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=b1d23416"
+    },
+    {
+      "id": 7,
+      "title": "Διάλεξη #6 Mitigations and Defenses",
+      "paper": "",
+      "slides": "",
+      "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=799abef1",
+      "part2": ""
+    } 
   ]
   
