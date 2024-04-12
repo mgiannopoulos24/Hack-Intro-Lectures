@@ -54,6 +54,23 @@
       "slides": "https://hackintro.github.io/resources/06-mitigations.pdf",
       "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=799abef1",
       "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=598b1bbc"
+    },
+    {
+      "id": 8,
+      "title": "Διάλεξη #7 Bypassing Defenses & ROP",
+      "paper": "https://hovav.net/ucsd/dist/geometry.pdf",
+      "slides": "https://hackintro.github.io/resources/07-08-return-oriented-programming.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=c1faf81b",
+      "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=fc97057a"
+    },
+    {
+      "id": 9,
+      "title": "Διάλεξη #8 Bypassing Defenses & ROP",
+      "paper": "https://hovav.net/ucsd/dist/geometry.pdf",
+      "slides": "https://hackintro.github.io/resources/07-08-return-oriented-programming.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=1da3bc2e",
+      "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=a2986fdb"
     } 
+
   ]
   
