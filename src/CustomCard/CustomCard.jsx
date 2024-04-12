@@ -23,7 +23,7 @@ const buttonStyles = {
 const CustomCard = ({ title, paper, slides, part1, part2 }) => {
     return (
         <Card className="custom-card" sx={{ maxWidth: 345, borderRadius: '5px',borderColor:"gray" }}>
-            <Box sx={{ backgroundColor: '#b5e853', color: 'black', padding: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', height:'60px'}}>
+            <Box sx={{ backgroundColor: '#b5e853', color: 'black', padding: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', height:'80px'}}>
                 <Typography variant="h5" component="div" sx={{ fontFamily: 'Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace' }}>
                     {title}
                 </Typography>
