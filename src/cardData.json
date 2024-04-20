@@ -70,6 +70,22 @@
       "slides": "https://hackintro.github.io/resources/07-08-return-oriented-programming.pdf",
       "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=1da3bc2e",
       "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=a2986fdb"
+    },
+    {
+      "id": 10,
+      "title": "Διάλεξη #9 Security Fundamentals",
+      "paper": "https://www.cl.cam.ac.uk/teaching/1011/R01/75-protection.pdf",
+      "slides": "https://hackintro.github.io/resources/09-security-fundamentals.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=40e7bfdf",
+      "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=250e13be"
+    },
+    {
+      "id": 11,
+      "title": "Διάλεξη #10 Access Control",
+      "paper": "https://people.eecs.berkeley.edu/~daw/papers/setuid-usenix02.pdf",
+      "slides": "https://hackintro.github.io/resources/10-access-control.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/videolecture/show?rid=755409ab",
+      "part2": "https://delos.uoa.gr/opendelos/videolecture/show?rid=1bda3c6a"
     } 
 
   ]
