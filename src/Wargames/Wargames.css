@@ -23,8 +23,7 @@
     .wg-titles hr {
       border: 1px dashed #b5e853; 
       width: 80%; 
-      margin-bottom: 2%;
-      
+      margin-bottom: 1%;
     }
     
     .wg-cards {
@@ -36,7 +35,22 @@
     
     .wg-content {
       position: relative;
-      z-index: 2; /* Ensure the content is above the Matrix effect */
+      z-index: 2; 
     }
     
-  
+  #wg-tab{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: transparent;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", monospace;
+    color: #b5e853;
+  }
+
+  .kahoot-quiz {
+    display: flex;
+    margin: 20px;
+    justify-content: center;
+    flex-wrap: wrap;  
+  }
