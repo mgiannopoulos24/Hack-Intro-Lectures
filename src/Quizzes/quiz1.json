@@ -1,0 +1,50 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "answers": ["Paris", "London", "Berlin", "Rome"],
+        "correctAnswer": "Paris",
+        "photoURL": "https://example.com/paris.jpg"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
+        "correctAnswer": "Mars",
+        "photoURL": "https://example.com/mars.jpg"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
+        "correctAnswer": "Mars",
+        "photoURL": "https://example.com/mars.jpg"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
+        "correctAnswer": "Mars",
+        "photoURL": "https://example.com/mars.jpg"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
+        "correctAnswer": "Mars",
+        "photoURL": "https://example.com/mars.jpg"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
+        "correctAnswer": "Mars",
+        "photoURL": "https://example.com/mars.jpg"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
+        "correctAnswer": "Mars",
+        "photoURL": "https://example.com/mars.jpg"
+    },
+    {
+        "question": "Which planet is known as the Red Planet?",
+        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
+        "correctAnswer": "Mars",
+        "photoURL": "https://example.com/mars.jpg"
+    }
+]
