@@ -59,7 +59,7 @@ const QuizDialog1 = ({ open, onClose }) => {
     return (
         <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: 550, height: 400 } }}>
             <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                Kahoot Quiz #1
+                Stack Basics
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
             </DialogTitle>
             {showResult ? (
