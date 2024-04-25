@@ -1,0 +1,68 @@
+[
+    {
+        "question": "We always include the adversary's strategy in our adversary definition",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photoURL": ""
+    },
+    {
+        "question": "Λόγω ενός πρόσφατου data-breach όλοι οι αριθμοί κοινωνικής ασφάλισης των χρηστών μας έγιναν leak. Αυτό είναι πρόβλημα:",
+        "answers": ["Confidentiality", "Integrity","Availability","Authenticity"],
+        "correctAnswer": "Confidentiality",
+        "photoURL": ""
+    },
+    {
+        "question": "Το σύστημα μου έχει ASLR αλλά φροντίζω να κάνω compile με DEP + PIE + -fno-stack-protector. Αυτό είναι παράδειγμα:",
+        "answers": ["Least privilege", "No security through obscurity","Defense in depth","Separation of Duty"],
+        "correctAnswer": "Defense in depth",
+        "photoURL": ""
+    },
+    {
+        "question": "Ποιο από τα παρακάτω ΔΕΝ αποτελεί μέρος του Trusted Computing Base (TCB) του Mars Rover;",
+        "answers": ["Το Hardware του Mars Rover", "Το Real Time Operating System (RTOS) του","Το λογισμικό επικοινωνίας που τρέχει στον επίγειο σταθμό","Το λογισμικό επικοινωνίας που τρέχει στο Mars Rover"],
+        "correctAnswer": "Το λογισμικό επικοινωνίας που τρέχει στον επίγειο σταθμό",
+        "photoURL": ""
+    },
+    {
+        "question": "Στους μεγάλους οργανισμούς η πλειοψηφία των χρηστών δεν έχουν root access στον υπολογιστή τους. Αυτό είναι παράδειγμα:",
+        "answers": ["Authenticity", "Economy of Mechanism (KISS)","Complete mediation","Least privilege"],
+        "correctAnswer": "Least privilege",
+        "photoURL": ""
+    },
+    {
+        "question": "Έκανα ένα stack buffer overflow και άλλαξα το return address μιας συνάρτησης. Αυτό είναι πρόβλημα:",
+        "answers": ["Confidentiality", "Integrity","Authenticity","Των άλλων, εμένα παίζει το exploit :)"],
+        "correctAnswer": "Integrity",
+        "photoURL": ""
+    },
+    {
+        "question": "Οι IT προμήθειες ενός οργανισμού σχεδιάζονται και εγκρίνονται αποκλειστικά από τον VP of IT. Αυτό είναι:",
+        "answers": ["Καλό γιατί έχει Complete Mediation για το τι αγοράζεται", "Κακό γιατί δεν υπάρχει Separation of Duty","Καλό γιατί αυτό είναι ένα Fail-safe Default","Κακό γιατί δεν ακολουθεί το Least Privilege"],
+        "correctAnswer": "Κακό γιατί δεν υπάρχει Separation of Duty",
+        "photoURL": ""
+    },
+    {
+        "question": "Το να \"κρύβουμε\" το κλειδί κάτω από το χαλάκι είναι",
+        "answers": ["Λάθος - Security through obscurity", "Σωστό - Least privilege","Λάθος - Separation of Duty","Λάθος - εμείς το κρύβουμε στο γλαστράκι"],
+        "correctAnswer": "Λάθος - Security through obscurity",
+        "photoURL": ""
+    },
+    {
+        "question": "Τρέχω ένα format string vulnerability σε σύστημα με ASLR για να βρω την διεύθυνση του shellcode μου. Είναι πρόβλημα:",
+        "answers": ["Confidentiality", "Integrity","Availability","Authenticity"],
+        "correctAnswer": "Confidentiality",
+        "photoURL": ""
+    },
+    {
+        "question": "Ένα σύστημα βιομετρικής αναγνώρισης προσώπου πρέπει να λύνει το πρόβλημα του",
+        "answers": ["Confidentiality", "Authenticity","Integrity","Availability"],
+        "correctAnswer": "Authenticity",
+        "photoURL": ""
+    },
+    {
+        "question": "Ένας γραφολόγος ελέγχει την υπογραφή μας σε ένα συμβόλαιο για να εγγυηθεί το",
+        "answers": ["Confidentiality", "Integrity","Authenticity","Availability"],
+        "correctAnswers": ["Integrity", "Authenticity"],
+        "photoURL": ""
+    }
+]

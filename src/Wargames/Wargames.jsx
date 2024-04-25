@@ -14,12 +14,14 @@ import QuizIcon from '@mui/icons-material/Quiz';
 import QuizCard from "../Kahoot/QuizCard";
 import QuizDialog1 from "../Quizzes/QuizDialog1";
 import QuizDialog2 from "../Quizzes/QuizDialog2";
-//import quizzes from "../quizzes.json";
+import QuizDialog3 from "../Quizzes/QuizDialog3";
+
 
 const Wargames = () => {
     const [value, setValue] = useState(0);
     const [openDialog1, setOpenDialog1] = useState(false);
     const [openDialog2, setOpenDialog2] = useState(false);
+    const [openDialog3, setOpenDialog3] = useState(false);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -58,8 +60,10 @@ const Wargames = () => {
                 <div className="kahoot-quiz">
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #1"} description={"Stack Basics"} onClick={() => setOpenDialog1(true)}/>
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #2"} description={"Security Fundamentals"} onClick={() => setOpenDialog2(true)}/>
+                    <QuizCard image={kahoot_img} title={"Kahoot Quiz #3"} description={"Random"} onClick={() => setOpenDialog3(true)}/>
                     <QuizDialog1 open={openDialog1} onClose={() => setOpenDialog1(false)} />
                     <QuizDialog2 open={openDialog2} onClose={() => setOpenDialog2(false)} />
+                    <QuizDialog3 open={openDialog3} onClose={() => setOpenDialog3(false)} />
                 </div>
             )}
 

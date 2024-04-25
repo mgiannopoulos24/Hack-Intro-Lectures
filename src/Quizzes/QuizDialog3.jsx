@@ -6,10 +6,10 @@ import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
 import CloseIcon from '@mui/icons-material/Close';
-import questions from './quiz2.json';
+import questions from './quiz3.json';
 import './QuizDialog.css';
 
-const QuizDialog2 = ({ open, onClose }) => {
+const QuizDialog3 = ({ open, onClose }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [showResult, setShowResult] = useState(false);
@@ -76,7 +76,7 @@ const QuizDialog2 = ({ open, onClose }) => {
     return (
         <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: 550, height: 400 } }}>
             <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',fontWeight:'bold', fontSize:'20px' }}>
-                Security Fundamentals
+                Random
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
             </DialogTitle>
             {showResult ? (
@@ -122,4 +122,4 @@ const QuizDialog2 = ({ open, onClose }) => {
     );
 };
 
-export default QuizDialog2;
+export default QuizDialog3;

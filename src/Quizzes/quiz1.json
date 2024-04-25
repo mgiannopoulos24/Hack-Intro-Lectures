@@ -26,7 +26,7 @@
         "question": "Μόλις τρέξαμε αυτές τις εντολές στην αρχή της συνάρτησης, ο Stack Pointer (SP) μειώθηκε κατά:",
         "answers": ["42", "66", "70", "Trick question - αυξήθηκε!"],
         "correctAnswer": "70",
-        "photoURL": "https://prnt.sc/xVUCrkc7O9jL"
+        "photoURL": "../assets/sts.png"
     },
     {
         "question": "Η συνάρτησή μας τελείωσε - πόσο αυξήθηκε ο SP κατά τον ακόλουθο επίλογο (32-bit);",
