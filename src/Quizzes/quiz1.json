@@ -1,14 +1,14 @@
 [
     {
-        "question": "What is the capital of France?",
-        "answers": ["Paris", "London", "Berlin", "Rome"],
-        "correctAnswer": "Paris",
-        "photoURL": "https://example.com/paris.jpg"
+        "question": "Στο βιβλίο του Douglas Adams - Hitchhiker's Guide to the Galaxy η απάντηση στα πάντα είναι 42 επειδή",
+        "answers": ["Του άρεσε το 42", "Είναι ο ASCII κωδικός του 'Β'", "Είναι ο ASCII κωδικός του '*'", "Παρακαλώ;"],
+        "correctAnswer": "Είναι ο ASCII κωδικός του '*'",
+        "photoURL": "../assets/cat2.jpg"
     },
     {
-        "question": "Which planet is known as the Red Planet?",
-        "answers": ["Mars", "Venus", "Earth", "Jupiter"],
-        "correctAnswer": "Mars",
+        "question": "Πόσους χαρακτήρες θα τυπώσει το printf(\"%5$42c\") ;",
+        "answers": ["5", "42", "43"],
+        "correctAnswer": "42",
         "photoURL": "https://example.com/mars.jpg"
     },
     {
