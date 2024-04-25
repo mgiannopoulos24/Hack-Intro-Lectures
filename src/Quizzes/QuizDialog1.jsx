@@ -7,6 +7,7 @@ import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
 import CloseIcon from '@mui/icons-material/Close';
 import questions from './quiz1.json';
+import './QuizDialog.css';
 
 const QuizDialog1 = ({ open, onClose }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -16,8 +17,8 @@ const QuizDialog1 = ({ open, onClose }) => {
     const [correctAnswerIndex, setCorrectAnswerIndex] = useState(null);
 
     useEffect(() => {
-        setSelectedAnswer(null); // Reset selected answer when moving to the next question
-        setCorrectAnswerIndex(null); // Reset correct answer index
+        setSelectedAnswer(null); 
+        setCorrectAnswerIndex(null); 
     }, [currentQuestionIndex]);
 
     const handleAnswerClick = (answer, index) => {
@@ -48,27 +49,43 @@ const QuizDialog1 = ({ open, onClose }) => {
         const totalQuestions = questions.length;
         const message = `You scored ${correctAnswers} out of ${totalQuestions}`;
         if (correctAnswers >= 0 && correctAnswers <= 3) {
-            return `${message}\nOh :( Better luck next time`;
+            return (
+                <>
+                    <p id='upper'>{message}</p>
+                    <p id='lower'>Oh :( Better luck next time</p>
+                </>
+            );
         } else if (correctAnswers >= 4 && correctAnswers <= 7) {
-            return `${message}\nA for effort! :)`;
+            return (
+                <>
+                    <p id='upper'>{message}</p>
+                    <p id='lower'>A for effort! :)</p>
+                </>
+            );
         } else if (correctAnswers >= 8 && correctAnswers <= 11) {
-            return `${message}\nCongratulations !!`;
+            return (
+                <>
+                    <p id='upper'>{message}</p>
+                    <p id='lower'>Congratulations !!</p>
+                </>
+            );
         }
     };
+    
 
     return (
         <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: 550, height: 400 } }}>
-            <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',fontWeight:'bold', fontSize:'20px' }}>
                 Stack Basics
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
             </DialogTitle>
             {showResult ? (
                 <>
-                    <DialogContent>
+                    <DialogContent id="content">
                         <p>{getMessage()}</p>
                     </DialogContent>
                     <DialogActions>
-                        <Button onClick={handleDialogClose} style={{ width: '90%' }}>Close</Button>
+                        <Button variant="contained" onClick={handleDialogClose} sx={{fontWeight:"bold",textTransform:"none"}}>Πίσω</Button>
                     </DialogActions>
                 </>
             ) : (
@@ -76,8 +93,8 @@ const QuizDialog1 = ({ open, onClose }) => {
                     <LinearProgress variant="determinate" value={(currentQuestionIndex + 1) / questions.length * 100} />
                     <DialogContent>
                         <div>
-                            <img src={questions[currentQuestionIndex].photoURL} alt={`Question ${currentQuestionIndex + 1}`} />
-                            <p>{questions[currentQuestionIndex].question}</p>
+                            {questions[currentQuestionIndex].photoURL && <img id="eikona" src={questions[currentQuestionIndex].photoURL} alt={`Question ${currentQuestionIndex + 1}`} />}
+                            <p id="qtext">{questions[currentQuestionIndex].question}</p>
                             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 {questions[currentQuestionIndex].answers.map((answer, index) => (
                                     <Button
