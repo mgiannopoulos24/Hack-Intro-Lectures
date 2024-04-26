@@ -20,7 +20,7 @@
     font-family: 'Google Sans', sans-serif;
 }
 
-#eikona{
-    width: 30%;
-    transform: translate(120%, 0%);
+.question-img{
+    display: flex;
+    justify-content: center;
 }

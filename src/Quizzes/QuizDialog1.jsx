@@ -8,6 +8,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import CloseIcon from '@mui/icons-material/Close';
 import questions from './quiz1.json';
 import './QuizDialog.css';
+import images from "./images";
 
 const QuizDialog1 = ({ open, onClose }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -93,7 +94,9 @@ const QuizDialog1 = ({ open, onClose }) => {
                     <LinearProgress variant="determinate" value={(currentQuestionIndex + 1) / questions.length * 100} />
                     <DialogContent>
                         <div>
-                            {questions[currentQuestionIndex].photoURL && <img id="eikona" src={questions[currentQuestionIndex].photoURL} alt={`Question ${currentQuestionIndex + 1}`} />}
+                            <div className="question-img">
+                                <img src={images[questions[currentQuestionIndex].photoURL]} alt={`Question ${currentQuestionIndex + 1}`} />
+                            </div>
                             <p id="qtext">{questions[currentQuestionIndex].question}</p>
                             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 {questions[currentQuestionIndex].answers.map((answer, index) => (
