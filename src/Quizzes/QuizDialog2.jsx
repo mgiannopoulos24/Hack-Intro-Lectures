@@ -8,6 +8,7 @@ import LinearProgress from '@mui/material/LinearProgress';
 import CloseIcon from '@mui/icons-material/Close';
 import questions from './quiz2.json';
 import './QuizDialog.css';
+import images from "./images";
 
 const QuizDialog2 = ({ open, onClose }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -52,21 +53,21 @@ const QuizDialog2 = ({ open, onClose }) => {
             return (
                 <>
                     <p id='upper'>{message}</p>
-                    <p id='lower'>Oh :( Better luck next time</p>
+                    <p id='lower'>Oh 🙁 Better luck next time</p>
                 </>
             );
         } else if (correctAnswers >= 4 && correctAnswers <= 7) {
             return (
                 <>
                     <p id='upper'>{message}</p>
-                    <p id='lower'>A for effort! :)</p>
+                    <p id='lower'>A for effort! 🙂</p>
                 </>
             );
         } else if (correctAnswers >= 8 && correctAnswers <= 11) {
             return (
                 <>
                     <p id='upper'>{message}</p>
-                    <p id='lower'>Congratulations !!</p>
+                    <p id='lower'>Congratulations!!🎉</p>
                 </>
             );
         }
@@ -93,7 +94,9 @@ const QuizDialog2 = ({ open, onClose }) => {
                     <LinearProgress variant="determinate" value={(currentQuestionIndex + 1) / questions.length * 100} />
                     <DialogContent>
                         <div>
-                            {questions[currentQuestionIndex].photoURL && <img id="eikona" src={questions[currentQuestionIndex].photoURL} alt={`Question ${currentQuestionIndex + 1}`} />}
+                            <div className="question-img">
+                                <img src={images[questions[currentQuestionIndex].photoURL]} alt={`Question ${currentQuestionIndex + 1}`} />
+                            </div>
                             <p id="qtext">{questions[currentQuestionIndex].question}</p>
                             <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
                                 {questions[currentQuestionIndex].answers.map((answer, index) => (

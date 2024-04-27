@@ -53,21 +53,21 @@ const QuizDialog1 = ({ open, onClose }) => {
             return (
                 <>
                     <p id='upper'>{message}</p>
-                    <p id='lower'>Oh :( Better luck next time</p>
+                    <p id='lower'>Oh 🙁 Better luck next time</p>
                 </>
             );
         } else if (correctAnswers >= 4 && correctAnswers <= 7) {
             return (
                 <>
                     <p id='upper'>{message}</p>
-                    <p id='lower'>A for effort! :)</p>
+                    <p id='lower'>A for effort! 🙂</p>
                 </>
             );
         } else if (correctAnswers >= 8 && correctAnswers <= 11) {
             return (
                 <>
                     <p id='upper'>{message}</p>
-                    <p id='lower'>Congratulations !!</p>
+                    <p id='lower'>Congratulations!!🎉</p>
                 </>
             );
         }
