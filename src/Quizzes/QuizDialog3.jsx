@@ -75,7 +75,7 @@ const QuizDialog3 = ({ open, onClose }) => {
     
 
     return (
-        <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: 550, height: 400 } }}>
+        <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: "80%", height: "60%" }}}>
             <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',fontWeight:'bold', fontSize:'20px' }}>
                 Random
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
