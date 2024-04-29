@@ -19,6 +19,17 @@ import q2q8 from "./quiz-images/keyhide.jpg";
 import q2q9 from "./quiz-images/qmark.png";
 import q2q10 from "./quiz-images/facerec.jpg";
 import q2q11 from "./quiz-images/sign.jpg";
+import q3q1 from "./quiz-images/fan.jpg";
+import q3q2 from "./quiz-images/yes.jpg";
+import q3q3 from "./quiz-images/yesno.jpg";
+import q3q4 from "./quiz-images/okhand.jpg";
+import q3q5 from "./quiz-images/yesno.jpg";
+import q3q6 from "./quiz-images/lampsontable.png";
+import q3q7 from "./quiz-images/stronghacker.jpg";
+import q3q8 from "./quiz-images/yes2.jpg";
+import q3q9 from "./quiz-images/dice.jpg";
+import q3q10 from "./quiz-images/calc.jpg";
+import q3q11 from "./quiz-images/dict.jpg";
 
 const images = {
     "q1q1": q1q1,
@@ -41,7 +52,18 @@ const images = {
     "q2q8": q2q8,
     "q2q9": q2q9,
     "q2q10": q2q10,
-    "q2q11": q2q11
+    "q2q11": q2q11,
+    "q3q1": q3q1,
+    "q3q2": q3q2,
+    "q3q3": q3q3,
+    "q3q4": q3q4,
+    "q3q5": q3q5,
+    "q3q6": q3q6,
+    "q3q7": q3q7,
+    "q3q8": q3q8,
+    "q3q9": q3q9,
+    "q3q10": q3q10,
+    "q3q11": q3q11
 };
 
 export default images;
