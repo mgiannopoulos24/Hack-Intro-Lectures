@@ -102,6 +102,22 @@
       "slides": "https://hackintro.github.io/resources/12-randomness.pdf",
       "part1": "https://delos.uoa.gr/opendelos/player?rid=c88400e8",
       "part2": "https://delos.uoa.gr/opendelos/player?rid=2e571cfa"
+    },
+    {
+      "id": 14,
+      "title": "Διάλεξη #13 Pseudorandom Functions",
+      "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+      "slides": "https://hackintro.github.io/resources/13-pseudorandom-functions.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/player?rid=b2fbe1f5",
+      "part2": "https://delos.uoa.gr/opendelos/player?rid=5280b8ed"
+    },
+    {
+      "id": 15,
+      "title": "Διάλεξη #14 Encryption Modes",
+      "paper": "https://cacr.uwaterloo.ca/hac/about/chap7.pdf",
+      "slides": "https://hackintro.github.io/resources/14-encryption-modes.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/player?rid=9cf05d36",
+      "part2": "https://delos.uoa.gr/opendelos/player?rid=4cb8b13c"
     } 
   ]
   
