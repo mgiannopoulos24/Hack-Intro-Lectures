@@ -6,29 +6,35 @@ import DialogActions from '@mui/material/DialogActions';
 import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
 import CloseIcon from '@mui/icons-material/Close';
-import questions from './quiz2.json';
+import questions from './quiz4.json';
 import './QuizDialog.css';
 import images from "./images";
 
-const QuizDialog2 = ({ open, onClose }) => {
+const QuizDialog4 = ({ open, onClose }) => {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [showResult, setShowResult] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [correctAnswerIndex, setCorrectAnswerIndex] = useState(null);
+    const [correctAnswerIndexes, setCorrectAnswerIndexes] = useState([]);
 
     useEffect(() => {
         setSelectedAnswer(null); 
-        setCorrectAnswerIndex(null); 
+        setCorrectAnswerIndexes([]); 
     }, [currentQuestionIndex]);
 
     const handleAnswerClick = (answer, index) => {
-        const isCorrect = questions[currentQuestionIndex].correctAnswer === answer;
+        const correctAnswersArray = Array.isArray(questions[currentQuestionIndex].correctAnswer)
+            ? questions[currentQuestionIndex].correctAnswer
+            : [questions[currentQuestionIndex].correctAnswer];
+        const isCorrect = correctAnswersArray.includes(answer);
         setSelectedAnswer({ answer, isCorrect });
         if (isCorrect) {
             setCorrectAnswers(prevCount => prevCount + 1);
         } else {
-            setCorrectAnswerIndex(questions[currentQuestionIndex].answers.indexOf(questions[currentQuestionIndex].correctAnswer));
+            const correctIndexes = correctAnswersArray.map(correctAnswer => 
+                questions[currentQuestionIndex].answers.indexOf(correctAnswer)
+            );
+            setCorrectAnswerIndexes(correctIndexes);
         }
         if (currentQuestionIndex < questions.length - 1) {
             setTimeout(() => {
@@ -72,12 +78,11 @@ const QuizDialog2 = ({ open, onClose }) => {
             );
         }
     };
-    
 
     return (
         <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: "80%", height: "60%" }}}>
-            <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',fontWeight:'bold', fontSize:'20px' }}>
-                Security Fundamentals
+            <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontWeight: 'bold', fontSize: '20px' }}>
+                Crypto 1
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
             </DialogTitle>
             {showResult ? (
@@ -86,7 +91,7 @@ const QuizDialog2 = ({ open, onClose }) => {
                         <p>{getMessage()}</p>
                     </DialogContent>
                     <DialogActions>
-                        <Button variant="contained" onClick={handleDialogClose} sx={{fontWeight:"bold",textTransform:"none"}}>Πίσω</Button>
+                        <Button variant="contained" onClick={handleDialogClose} sx={{ fontWeight: "bold", textTransform: "none" }}>Πίσω</Button>
                     </DialogActions>
                 </>
             ) : (
@@ -110,7 +115,7 @@ const QuizDialog2 = ({ open, onClose }) => {
                                             marginBottom: '8px',
                                             backgroundColor: selectedAnswer && selectedAnswer.answer === answer ?
                                                 (selectedAnswer.isCorrect ? 'green' : 'red') :
-                                                (correctAnswerIndex === index ? 'green' : '')
+                                                (correctAnswerIndexes.includes(index) ? 'green' : '')
                                         }}
                                     >
                                         {answer}
@@ -125,4 +130,4 @@ const QuizDialog2 = ({ open, onClose }) => {
     );
 };
 
-export default QuizDialog2;
+export default QuizDialog4;

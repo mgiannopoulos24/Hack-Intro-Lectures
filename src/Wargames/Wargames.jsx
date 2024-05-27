@@ -15,13 +15,16 @@ import QuizCard from "../Kahoot/QuizCard";
 import QuizDialog1 from "../Quizzes/QuizDialog1";
 import QuizDialog2 from "../Quizzes/QuizDialog2";
 import QuizDialog3 from "../Quizzes/QuizDialog3";
-
+import QuizDialog4 from "../Quizzes/QuizDialog4";
+// import QuizDialog5 from "../Quizzes/QuizDialog5";
 
 const Wargames = () => {
     const [value, setValue] = useState(0);
     const [openDialog1, setOpenDialog1] = useState(false);
     const [openDialog2, setOpenDialog2] = useState(false);
     const [openDialog3, setOpenDialog3] = useState(false);
+    const [openDialog4, setOpenDialog4] = useState(false);
+    //const [openDialog5, setOpenDialog5] = useState(false);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -61,9 +64,13 @@ const Wargames = () => {
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #1"} description={"Stack Basics"} onClick={() => setOpenDialog1(true)}/>
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #2"} description={"Security Fundamentals"} onClick={() => setOpenDialog2(true)}/>
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #3"} description={"Random"} onClick={() => setOpenDialog3(true)}/>
+                    <QuizCard image={kahoot_img} title={"Kahoot Quiz #4"} description={"Crypto 1"} onClick={() => setOpenDialog4(true)}/>
+                    {/* <QuizCard image={kahoot_img} title={"Kahoot Quiz #5"} description={"Integrity"} onClick={() => setOpenDialog5(true)}/> */}
                     <QuizDialog1 open={openDialog1} onClose={() => setOpenDialog1(false)} />
                     <QuizDialog2 open={openDialog2} onClose={() => setOpenDialog2(false)} />
                     <QuizDialog3 open={openDialog3} onClose={() => setOpenDialog3(false)} />
+                    <QuizDialog4 open={openDialog4} onClose={() => setOpenDialog4(false)} />
+                    {/* <QuizDialog5 open={openDialog5} onClose={() => setOpenDialog5(false)} /> */}
                 </div>
             )}
 

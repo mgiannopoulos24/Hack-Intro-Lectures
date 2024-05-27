@@ -1,0 +1,69 @@
+[
+    {
+        "question": "Έχω την δυνατότητα να επιλέξω encryption mode, διαλέγω:",
+        "answers": ["AES","CBC","ECB","CTR"],
+        "correctAnswer": "CTR",
+        "photoURL": "q4q1"
+    },
+    {
+        "question": "Rolling your own crypto is generally a good idea",
+        "answers": ["True","False"],
+        "correctAnswer": "False",
+        "photoURL": "q4q2"
+    },
+    {
+        "question": "To ensure semantic security, encryption of messages must be (more than one correct)",
+        "answers": ["Stateless","Deterministic","Stateful","Randomized"],
+        "correctAnswer": ["Stateful","Randomized"],
+        "photoURL": "q4q3"
+    },
+    {
+        "question": "Έχει σημασία σε ποια τιμή θα αρχικοποιήσει το IV;",
+        "answers": ["True","False"],
+        "correctAnswer": "True",
+        "photoURL": "q4q4"
+    },
+    {
+        "question": "Αν η F: X x K -> Y είναι secure PRF και k random, τότε το F(k, 0n) , είναι indistinguishable from a random string",
+        "answers": ["True","False"],
+        "correctAnswer": "True",
+        "photoURL": "q4q5"
+    },
+    {
+        "question": "Το AES block cipher είναι αποδεδειγμένα ασφαλές",
+        "answers": ["True","False"],
+        "correctAnswer": "False",
+        "photoURL": "q4q6"
+    },
+    {
+        "question": "Επιθυμώ να στείλω δεδομένα αποδοτικά και με ασφάλεια, επιλέγω:",
+        "answers": ["Encrypt then compress","Compress then compress again","Encrypt then encrypt again","Compress then encrypt"],
+        "correctAnswer": "Compress then encrypt",
+        "photoURL": "q4q7"
+    },
+    {
+        "question": "Εάν μια PRF είναι ασφαλής τότε το CBC είναι αποδεδειγμένα ασφαλές.",
+        "answers": ["True","False"],
+        "correctAnswer": "True",
+        "photoURL": "q4q8"
+    },
+    {
+        "question": "Πόσες συναρτήσεις υπάρχουν από το X -> Y;",
+        "answers": ["|X|*|Y|","|X|^2","|X|!","|Y|^|X|"],
+        "correctAnswer": "|Y|^|X|",
+        "photoURL": "q4q9"
+    },
+    {
+        "question": "Ποιο από τα παρακάτω είναι Encryption Mode?",
+        "answers": ["DES","AES","ECC","ABC","CTR","GCC"],
+        "correctAnswer": "CTR",
+        "photoURL": "q4q10"
+    },
+    {
+        "question": "Έχουμε κβαντικούς υπολογιστές και χρησιμοποιούμε AES 128, πόσα bits ασφάλειας έχουμε;",
+        "answers": ["0","1","128","64","2^128"],
+        "correctAnswer": "64",
+        "photoURL": "q4q11"
+    }
+    
+]

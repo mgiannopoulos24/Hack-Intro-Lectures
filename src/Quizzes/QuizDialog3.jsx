@@ -33,7 +33,7 @@ const QuizDialog3 = ({ open, onClose }) => {
         if (currentQuestionIndex < questions.length - 1) {
             setTimeout(() => {
                 setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-            }, 1000);
+            }, 2000);
         } else {
             setShowResult(true);
         }
