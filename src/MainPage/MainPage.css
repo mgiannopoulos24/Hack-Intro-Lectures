@@ -40,3 +40,20 @@
     z-index: 2; /* Ensure the content is above the Matrix effect */
   }
   
+@media only screen and (max-width: 600px) {
+  .titles h1 {
+    font-size: 1.5em;
+  }
+  
+  .titles h3 {
+    font-size: 1em;
+  }
+  
+  .titles hr {
+    width: 100%;
+  }
+  
+  .cards {
+    gap: 10px;
+  }
+}
