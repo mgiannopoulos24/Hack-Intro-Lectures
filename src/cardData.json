@@ -118,6 +118,14 @@
       "slides": "https://hackintro.github.io/resources/14-encryption-modes.pdf",
       "part1": "https://delos.uoa.gr/opendelos/player?rid=9cf05d36",
       "part2": "https://delos.uoa.gr/opendelos/player?rid=4cb8b13c"
+    },
+    {
+      "id": 16,
+      "title": "Διάλεξη #15 Integrity",
+      "paper": "https://web.cs.ucdavis.edu/~rogaway/papers/relates.pdf",
+      "slides": "https://hackintro.github.io/resources/15-integrity.pdf",
+      "part1": "",
+      "part2": ""
     } 
   ]
   
