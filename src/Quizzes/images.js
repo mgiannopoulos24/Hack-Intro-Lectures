@@ -41,6 +41,23 @@ import q4q8 from "./quiz-images/questionmark.jpg";
 import q4q9 from "./quiz-images/calc2.jpg";
 import q4q10 from "./quiz-images/mental.jpg";
 import q4q11 from "./quiz-images/quantum.jpg";
+import q5q1 from "./quiz-images/securecomms.jpg";
+import q5q2 from "./quiz-images/collision.jpg";
+import q5q3 from "./quiz-images/HashCollision.png";
+import q5q4 from "./quiz-images/cbc-mac-pad.jpg";
+import q5q5 from "./quiz-images/cbc-pad2.jpg";
+import q5q6 from "./quiz-images/truefalse.jpg";
+import q5q7 from "./quiz-images/qmark.png";
+import q5q8 from "./quiz-images/yesno.jpg";
+import q5q9 from "./quiz-images/hash.jpg";
+import q5q10 from "./quiz-images/yes2.jpg";
+import q6q1 from "./quiz-images/textbook.jpg";
+import q6q2 from "./quiz-images/collision.jpg";
+import q6q3 from "./quiz-images/manthinks.jpg";
+import q6q4 from "./quiz-images/yes3.jpg";
+import q6q5 from "./quiz-images/calc2.jpg";
+import q6q6 from "./quiz-images/salt.jpg";
+import q6q7 from "./quiz-images/sym-asym.jpg";
 
 const images = {
     "q1q1": q1q1,
@@ -85,7 +102,26 @@ const images = {
     "q4q8": q4q8,
     "q4q9": q4q9,
     "q4q10": q4q10,
-    "q4q11": q4q11
+    "q4q11": q4q11,
+    "q5q1": q5q1,
+    "q5q2": q5q2,
+    "q5q3": q5q3,
+    "q5q4": q5q4,
+    "q5q5": q5q5,
+    "q5q6": q5q6,
+    "q5q7": q5q7,
+    "q5q8": q5q8,
+    "q5q9": q5q9,
+    "q5q10": q5q10,
+    "q6q1": q6q1,    
+    "q6q2": q6q2,
+    "q6q3": q6q3,
+    "q6q4": q6q4,
+    "q6q5": q6q5,
+    "q6q6": q6q6,
+    "q6q7": q6q7,
+
+
 
 };
 
