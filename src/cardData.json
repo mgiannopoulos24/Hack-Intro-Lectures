@@ -129,17 +129,17 @@
     },
     {
       "id": 17,
-      "title": "Διάλεξη #16",
-      "paper": "",
-      "slides": "",
+      "title": "Διάλεξη #16 Hash Functions",
+      "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+      "slides": "https://hackintro.github.io/resources/16-hash-functions.pdf",
       "part1": "https://delos.uoa.gr/opendelos/player?rid=156ea734",
       "part2": "https://delos.uoa.gr/opendelos/player?rid=e5b7bc04"
     },
     {
       "id": 18,
-      "title": "Διάλεξη #17",
-      "paper": "",
-      "slides": "",
+      "title": "Διάλεξη #17 Authenticated Encryption and Asymmetric Cryptography",
+      "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+      "slides": "https://hackintro.github.io/resources/17-authenc-and-asymmetric-crypto.pdf",
       "part1": "https://delos.uoa.gr/opendelos/player?rid=ce0bb1e2",
       "part2": "https://delos.uoa.gr/opendelos/player?rid=b3e7574e"
     } 
