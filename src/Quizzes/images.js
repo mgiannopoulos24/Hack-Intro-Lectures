@@ -58,70 +58,27 @@ import q6q4 from "./quiz-images/yes3.jpg";
 import q6q5 from "./quiz-images/calc2.jpg";
 import q6q6 from "./quiz-images/salt.jpg";
 import q6q7 from "./quiz-images/sym-asym.jpg";
+import q7q1 from "./quiz-images/mailcheck.jpg";
+import q7q2 from "./quiz-images/daredevil.jpg";
+import q7q3 from "./quiz-images/cookies.jpg";
+import q7q4 from "./quiz-images/xss.jpg";
+import q7q5 from "./quiz-images/xss2.jpg";
+import q7q6 from "./quiz-images/signin.jpg";
+import q7q7 from "./quiz-images/morpheus.jpg";
+import q7q8 from "./quiz-images/surf.jpg";
+import q7q9 from "./quiz-images/april.jpg";
+import q7q10 from "./quiz-images/shock.jpg";
+import q7q11 from "./quiz-images/sqli.jpg";
+
 
 const images = {
-    "q1q1": q1q1,
-    "q1q2": q1q2,
-    "q1q3": q1q3,
-    "q1q4": q1q4,
-    "q1q5": q1q5,
-    "q1q6": q1q6,
-    "q1q7": q1q7,
-    "q1q8": q1q8,
-    "q1q9": q1q9,
-    "q1q10": q1q10,
-    "q2q1": q2q1,
-    "q2q2": q2q2,
-    "q2q3": q2q3,
-    "q2q4": q2q4,
-    "q2q5": q2q5,
-    "q2q6": q2q6,
-    "q2q7": q2q7,
-    "q2q8": q2q8,
-    "q2q9": q2q9,
-    "q2q10": q2q10,
-    "q2q11": q2q11,
-    "q3q1": q3q1,
-    "q3q2": q3q2,
-    "q3q3": q3q3,
-    "q3q4": q3q4,
-    "q3q5": q3q5,
-    "q3q6": q3q6,
-    "q3q7": q3q7,
-    "q3q8": q3q8,
-    "q3q9": q3q9,
-    "q3q10": q3q10,
-    "q3q11": q3q11,
-    "q4q1": q4q1,
-    "q4q2": q4q2,
-    "q4q3": q4q3,
-    "q4q4": q4q4,
-    "q4q5": q4q5,
-    "q4q6": q4q6,
-    "q4q7": q4q7,
-    "q4q8": q4q8,
-    "q4q9": q4q9,
-    "q4q10": q4q10,
-    "q4q11": q4q11,
-    "q5q1": q5q1,
-    "q5q2": q5q2,
-    "q5q3": q5q3,
-    "q5q4": q5q4,
-    "q5q5": q5q5,
-    "q5q6": q5q6,
-    "q5q7": q5q7,
-    "q5q8": q5q8,
-    "q5q9": q5q9,
-    "q5q10": q5q10,
-    "q6q1": q6q1,    
-    "q6q2": q6q2,
-    "q6q3": q6q3,
-    "q6q4": q6q4,
-    "q6q5": q6q5,
-    "q6q6": q6q6,
-    "q6q7": q6q7,
-
-
+    "q1q1": q1q1, "q1q2": q1q2, "q1q3": q1q3, "q1q4": q1q4, "q1q5": q1q5, "q1q6": q1q6, "q1q7": q1q7, "q1q8": q1q8, "q1q9": q1q9, "q1q10": q1q10,
+    "q2q1": q2q1, "q2q2": q2q2, "q2q3": q2q3, "q2q4": q2q4, "q2q5": q2q5, "q2q6": q2q6, "q2q7": q2q7, "q2q8": q2q8, "q2q9": q2q9, "q2q10": q2q10, "q2q11": q2q11,
+    "q3q1": q3q1, "q3q2": q3q2, "q3q3": q3q3, "q3q4": q3q4, "q3q5": q3q5, "q3q6": q3q6, "q3q7": q3q7, "q3q8": q3q8, "q3q9": q3q9, "q3q10": q3q10, "q3q11": q3q11,
+    "q4q1": q4q1, "q4q2": q4q2, "q4q3": q4q3, "q4q4": q4q4, "q4q5": q4q5, "q4q6": q4q6, "q4q7": q4q7, "q4q8": q4q8, "q4q9": q4q9, "q4q10": q4q10, "q4q11": q4q11,
+    "q5q1": q5q1, "q5q2": q5q2, "q5q3": q5q3, "q5q4": q5q4, "q5q5": q5q5, "q5q6": q5q6, "q5q7": q5q7, "q5q8": q5q8, "q5q9": q5q9, "q5q10": q5q10,
+    "q6q1": q6q1, "q6q2": q6q2, "q6q3": q6q3, "q6q4": q6q4, "q6q5": q6q5, "q6q6": q6q6, "q6q7": q6q7,
+    "q7q1": q7q1, "q7q2": q7q2, "q7q3": q7q3, "q7q4": q7q4, "q7q5": q7q5, "q7q6": q7q6, "q7q7": q7q7, "q7q8": q7q8, "q7q9": q7q9, "q7q10": q7q10, "q7q11": q7q11,
 
 };
 
