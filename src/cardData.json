@@ -142,6 +142,22 @@
       "slides": "https://hackintro.github.io/resources/17-authenc-and-asymmetric-crypto.pdf",
       "part1": "https://delos.uoa.gr/opendelos/player?rid=ce0bb1e2",
       "part2": "https://delos.uoa.gr/opendelos/player?rid=b3e7574e"
-    } 
+    },
+    {
+      "id": 19,
+      "title": "Διάλεξη #18 Web Security I",
+      "paper": "https://pragmaticwebsecurity.com/files/cheatsheets/reactxss.pdf",
+      "slides": "https://hackintro.github.io/resources/18-19-web-security.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/player?rid=7d2d9218",
+      "part2": "https://delos.uoa.gr/opendelos/player?rid=d36dd62c"
+    },
+    {
+      "id": 20,
+      "title": "Διάλεξη #19 Web Security II",
+      "paper": "https://pragmaticwebsecurity.com/files/cheatsheets/reactxss.pdf",
+      "slides": "https://hackintro.github.io/resources/18-19-web-security.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/player?rid=b81b2762",
+      "part2": "https://delos.uoa.gr/opendelos/player?rid=f6bd443f"
+    }
   ]
   
