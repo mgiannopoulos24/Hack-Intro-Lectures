@@ -18,6 +18,7 @@ import QuizDialog3 from "../Quizzes/QuizDialog3";
 import QuizDialog4 from "../Quizzes/QuizDialog4";
 import QuizDialog5 from "../Quizzes/QuizDialog5";
 import QuizDialog6 from "../Quizzes/QuizDialog6";
+import QuizDialog7 from "../Quizzes/QuizDialog7";
 
 const Wargames = () => {
     const [value, setValue] = useState(0);
@@ -27,6 +28,7 @@ const Wargames = () => {
     const [openDialog4, setOpenDialog4] = useState(false);
     const [openDialog5, setOpenDialog5] = useState(false);
     const [openDialog6, setOpenDialog6] = useState(false);
+    const [openDialog7, setOpenDialog7] = useState(false);
 
     const handleChange = (event, newValue) => {
         setValue(newValue);
@@ -69,12 +71,14 @@ const Wargames = () => {
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #4"} description={"Crypto 1"} onClick={() => setOpenDialog4(true)}/>
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #5"} description={"Integrity"} onClick={() => setOpenDialog5(true)}/>
                     <QuizCard image={kahoot_img} title={"Kahoot Quiz #6"} description={"Hashes and more"} onClick={() => setOpenDialog6(true)}/>
+                    <QuizCard image={kahoot_img} title={"Kahoot Quiz #7"} description={"Web Security"} onClick={() => setOpenDialog7(true)}/>    
                     <QuizDialog1 open={openDialog1} onClose={() => setOpenDialog1(false)} />
                     <QuizDialog2 open={openDialog2} onClose={() => setOpenDialog2(false)} />
                     <QuizDialog3 open={openDialog3} onClose={() => setOpenDialog3(false)} />
                     <QuizDialog4 open={openDialog4} onClose={() => setOpenDialog4(false)} />
                     <QuizDialog5 open={openDialog5} onClose={() => setOpenDialog5(false)} />
                     <QuizDialog6 open={openDialog6} onClose={() => setOpenDialog6(false)} />
+                    <QuizDialog7 open={openDialog7} onClose={() => setOpenDialog7(false)} />
                 </div>
             )}
 
