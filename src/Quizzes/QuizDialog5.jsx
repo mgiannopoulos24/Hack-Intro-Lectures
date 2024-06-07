@@ -15,27 +15,35 @@ const QuizDialog5 = ({ open, onClose }) => {
     const [correctAnswers, setCorrectAnswers] = useState(0);
     const [showResult, setShowResult] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
-    const [correctAnswerIndex, setCorrectAnswerIndex] = useState(null);
+    const [correctAnswerIndexes, setCorrectAnswerIndexes] = useState([]);
 
     useEffect(() => {
         setSelectedAnswer(null); 
-        setCorrectAnswerIndex(null); 
+        setCorrectAnswerIndexes([]); 
     }, [currentQuestionIndex]);
 
     const handleAnswerClick = (answer, index) => {
-        const isCorrect = questions[currentQuestionIndex].correctAnswer === answer;
+        const correctAnswersArray = Array.isArray(questions[currentQuestionIndex].correctAnswer)
+            ? questions[currentQuestionIndex].correctAnswer
+            : [questions[currentQuestionIndex].correctAnswer];
+        const isCorrect = correctAnswersArray.includes(answer);
         setSelectedAnswer({ answer, isCorrect });
         if (isCorrect) {
             setCorrectAnswers(prevCount => prevCount + 1);
         } else {
-            setCorrectAnswerIndex(questions[currentQuestionIndex].answers.indexOf(questions[currentQuestionIndex].correctAnswer));
+            const correctIndexes = correctAnswersArray.map(correctAnswer => 
+                questions[currentQuestionIndex].answers.indexOf(correctAnswer)
+            );
+            setCorrectAnswerIndexes(correctIndexes);
         }
         if (currentQuestionIndex < questions.length - 1) {
             setTimeout(() => {
                 setCurrentQuestionIndex(prevIndex => prevIndex + 1);
             }, 2000);
         } else {
-            setShowResult(true);
+            setTimeout(() => {
+                setShowResult(true);
+            }, 2000);
         }
     };
 
@@ -72,11 +80,10 @@ const QuizDialog5 = ({ open, onClose }) => {
             );
         }
     };
-    
 
     return (
         <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: "80%", height: "60%" }}}>
-            <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center',fontWeight:'bold', fontSize:'20px' }}>
+            <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontWeight: 'bold', fontSize: '20px' }}>
                 Integrity
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
             </DialogTitle>
@@ -86,7 +93,7 @@ const QuizDialog5 = ({ open, onClose }) => {
                         <p>{getMessage()}</p>
                     </DialogContent>
                     <DialogActions>
-                        <Button variant="contained" onClick={handleDialogClose} sx={{fontWeight:"bold",textTransform:"none"}}>Πίσω</Button>
+                        <Button variant="contained" onClick={handleDialogClose} sx={{ fontWeight: "bold", textTransform: "none" }}>Πίσω</Button>
                     </DialogActions>
                 </>
             ) : (
@@ -110,7 +117,7 @@ const QuizDialog5 = ({ open, onClose }) => {
                                             marginBottom: '8px',
                                             backgroundColor: selectedAnswer && selectedAnswer.answer === answer ?
                                                 (selectedAnswer.isCorrect ? 'green' : 'red') :
-                                                (correctAnswerIndex === index ? 'green' : '')
+                                                (correctAnswerIndexes.includes(index) ? 'green' : '')
                                         }}
                                     >
                                         {answer}

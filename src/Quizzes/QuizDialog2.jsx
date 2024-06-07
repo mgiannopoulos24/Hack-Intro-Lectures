@@ -41,7 +41,9 @@ const QuizDialog2 = ({ open, onClose }) => {
                 setCurrentQuestionIndex(prevIndex => prevIndex + 1);
             }, 2000);
         } else {
-            setShowResult(true);
+            setTimeout(() => {
+                setShowResult(true);
+            }, 2000);
         }
     };
 
