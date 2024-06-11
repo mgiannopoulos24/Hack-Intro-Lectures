@@ -82,7 +82,7 @@ const QuizDialog6 = ({ open, onClose }) => {
     };
 
     return (
-        <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: "80%", height: "60%" }}}>
+        <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: "80%", height: "80%" }}}>
             <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontWeight: 'bold', fontSize: '20px' }}>
                 Hashes and more
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
