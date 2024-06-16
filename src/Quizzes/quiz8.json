@@ -1,0 +1,166 @@
+[
+
+    {
+        "question": "What is the first D in DDoS?",
+        "answers": ["Typo, it's just DoS = Denial of Service", "Dedicated", "Decorative", "Distributed"],   
+        "correctAnswer": "Distributed",
+        "photoURL": "q8q1"
+    }, 
+    {
+        "question": "In order for an encryption mode to be safe it needs to be (more than 1 correct):",
+        "answers": ["Based on a secure PRF", "Randomized", "Stateful", "AES"],   
+        "correctAnswer": ["Based on a secure PRF", "Randomized", "Stateful"],
+        "photoURL": "q8q2"
+    }, 
+    {
+        "question": "Got a new IDS with a 95% accuracy. We get attack packets once in a million requests. Got an alert, odds it's real are:",
+        "answers": ["100%", "95%", "88%", "0.00000019%"],   
+        "correctAnswer": "0.00000019%",
+        "photoURL": "q8q3"
+    }, 
+    {
+        "question": "PM asked me to implement a webhook mechanism for our webapp. Which attack should I be worried about?",
+        "answers": ["XSS", "SQL Injection", "SSRF", "All of the above"],   
+        "correctAnswer": "All of the above",
+        "photoURL": "q8q4"
+    }, 
+    {
+        "question": "Περνάω το δρόμο και το φανάρι είναι πράσινο. Με την άκρη του ματιού μου ελέγχω αν έρχεται κάποιος. Παράδειγμα",
+        "answers": ["Least privilege", "Defense in depth", "Separation of Duty", "KISS"],   
+        "correctAnswer": "Defense in depth",
+        "photoURL": "q8q5"
+    }, 
+    {
+        "question": "I'm inspecting network traffic through WireShark. Do I have to worry about attacks against my computer?",
+        "answers": ["Yes, but not because of WireShark", "No, network traffic is sent to other hosts and not your computer", "Yes, WireShark may get exploited while parsing a packet", "No, because this is not active traffic, but merely a pcap file captured"],   
+        "correctAnswer": "Yes, WireShark may get exploited while parsing a packet",
+        "photoURL": "q8q6"
+    }, 
+    {
+        "question": "Which of the following is NOT an OSI layer?",
+        "answers": ["Session", "Presentation", "Core", "Network","Data Link", "Physical"],   
+        "correctAnswer": "Core",
+        "photoURL": "q8q7"
+    }, 
+    {
+        "question": "The Mirai Botnet (250k hosts) decides to launch a DNS res attack (30 bytes req -> 1500 bytes resp). Amplification is:",
+        "answers": ["12500000", "50", "250000", "1500"],   
+        "correctAnswer": "12500000",
+        "photoURL": "q8q8"
+    }, 
+    {
+        "question": "Ένας IDS αλγόριθμος που στέλνει ειδοποιήσεις *μόνο όταν* είναι πραγματικό το συμβάν λέγεται",
+        "answers": ["Sound", "Complete"],   
+        "correctAnswer": "Sound",
+        "photoURL": "q8q9"
+    }, 
+    {
+        "question": "Botnet maintainers care about the security of their malware",
+        "answers": ["True", "False"],   
+        "correctAnswer": "True",
+        "photoURL": "q8q10"
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }, 
+    {
+        "question": "",
+        "answers": ["", "", "", ""],   
+        "correctAnswer": "",
+        "photoURL": ""
+    }
+
+]
