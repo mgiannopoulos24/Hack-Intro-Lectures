@@ -158,6 +158,22 @@
       "slides": "https://hackintro.github.io/resources/18-19-web-security.pdf",
       "part1": "https://delos.uoa.gr/opendelos/player?rid=b81b2762",
       "part2": "https://delos.uoa.gr/opendelos/player?rid=f6bd443f"
+    },
+    {
+      "id": 21,
+      "title": "Διάλεξη #20 Network Security",
+      "paper": "https://www.cs.columbia.edu/~smb/papers/ipext.pdf",
+      "slides": "https://hackintro.github.io/resources/20-network-security.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/player?rid=db1280da",
+      "part2": "https://delos.uoa.gr/opendelos/player?rid=fc038f27"
+    },
+    {
+      "id": 22,
+      "title": "Διάλεξη #21 Privacy, Policy and More",
+      "paper": "https://dl.acm.org/doi/pdf/10.1145/357830.357849",
+      "slides": "https://hackintro.github.io/resources/21-privacy-policy-and-more.pdf",
+      "part1": "https://delos.uoa.gr/opendelos/player?rid=a2b04b41",
+      "part2": "https://delos.uoa.gr/opendelos/player?rid=d7596d74"
     }
   ]
   
