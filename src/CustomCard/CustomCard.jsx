@@ -4,36 +4,30 @@ import CardContent from '@mui/material/CardContent';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
-import './CustomCard.css';
-
-
-const buttonStyles = {
-    width: '100%', 
-    color: 'black',
-    marginBottom: '8px', 
-    textTransform: 'none', 
-    backgroundColor: '#b5e853', 
-    fontFamily: 'Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace',
-    '&:hover': {
-      backgroundColor: '#9cb82c', // A darker shade of the button color for hover effect
-    },
-  };
-
+import './CustomCard.css'; // Import your CSS file
 
 const CustomCard = ({ title, paper, slides, part1, part2 }) => {
     return (
-        <Card className="custom-card" sx={{ maxWidth: 345, borderRadius: '5px',borderColor:"gray" }}>
-            <Box sx={{ backgroundColor: '#b5e853', color: 'black', padding: '16px', display: 'flex', flexDirection: 'column', alignItems: 'center', height:'80px'}}>
-                <Typography variant="h5" component="div" sx={{ fontFamily: 'Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace' }}>
+        <Card className="custom-card">
+            <Box className="custom-card-header">
+                <Typography variant="h5" component="div" className="custom-card-title">
                     {title}
                 </Typography>
             </Box>
-            <CardContent sx={{ backgroundColor: '#1A1A1A', paddingBottom: '16px!important' }}>
-                <Button variant="contained" href={paper} sx={buttonStyles}>Προτεινόμενο Paper</Button>
-                <Button variant="contained" href={slides} sx={buttonStyles}>Διαφάνειες</Button>
+            <CardContent className="custom-card-content">
+                <Button variant="contained" href={paper} className="custom-button">
+                    Προτεινόμενο Paper
+                </Button>
+                <Button variant="contained" href={slides} className="custom-button">
+                    Διαφάνειες
+                </Button>
                 <Box display="flex" justifyContent="space-between" sx={{ gap: '3px' }}>
-                    <Button variant="contained" href={part1} sx={{ ...buttonStyles, width: '50%' }}>Διάλεξη Μέρος 1</Button>
-                    <Button variant="contained" href={part2} sx={{ ...buttonStyles, width: '50%' }}>Διάλεξη Μέρος 2</Button>
+                    <Button variant="contained" href={part1} className="custom-button custom-half-width-button">
+                        Διάλεξη Μέρος 1
+                    </Button>
+                    <Button variant="contained" href={part2} className="custom-button custom-half-width-button">
+                        Διάλεξη Μέρος 2
+                    </Button>
                 </Box>
             </CardContent>
         </Card>

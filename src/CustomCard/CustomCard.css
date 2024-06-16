@@ -1,13 +1,58 @@
 .custom-card {
-    flex-grow: 1; 
-    margin: 0.5%; 
+    flex-grow: 1;
+    margin: 0.5%;
     padding: 0;
-    text-align: center; 
-    max-width: calc(33.3333% - 10%);
+    text-align: center;
+    width: calc(33.3333% - 10px); /* Adjust width calculation */
+    max-width: 345px; /* Max width for responsiveness */
     background-color: #e0e0e0;
-    border: 2px solid white;
-    box-shadow: 5px 5px 10px #bebebe,
-                -5px -5px 10px #ffffff;
+    border: 2px solid #999; /* Darker border color */
+    box-shadow: 5px 5px 10px #bebebe, -5px -5px 10px #ffffff;
     border-radius: 10px;
     transition: 0.3s;
-}
+  }
+  
+  @media (max-width: 425px) {
+    .custom-card {
+      width: calc(100% - 10px); /* Full width for screens up to 425px */
+      max-width: none; /* Remove max-width restriction */
+    }
+  }
+  
+  .custom-card .custom-card-header {
+    background-color: #b5e853;
+    color: black;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 80px;
+  }
+  
+  .custom-card .custom-card-title {
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  }
+  
+  .custom-card .custom-card-content {
+    background-color: #1a1a1a;
+    padding-bottom: 16px !important;
+  }
+  
+  .custom-card .custom-button {
+    width: 100%;
+    color: black;
+    margin-bottom: 8px;
+    text-transform: none;
+    background-color: #b5e853;
+    font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  }
+  
+  .custom-card .custom-button:hover {
+    background-color: #9cb82c; /* A darker shade of the button color for hover effect */
+  }
+  
+  .custom-card .custom-half-width-button {
+    width: calc(50% - 6px); /* Adjusted width for two buttons with a small gap */
+    margin-right: 6px; /* Gap between the two buttons */
+  }
+  
