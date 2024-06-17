@@ -79,6 +79,23 @@ import q8q7 from "./quiz-images/cake.jpg";
 import q8q8 from "./quiz-images/ddos2.jpg";
 import q8q9 from "./quiz-images/check.jpg";
 import q8q10 from "./quiz-images/virus.jpg";
+import q8q11 from "./quiz-images/spoof.jpg";
+import q8q12 from "./quiz-images/ddos3.jpg";
+import q8q13 from "./quiz-images/firewall.jpg";
+import q8q14 from "./quiz-images/padlock4.jpg";
+import q8q15 from "./quiz-images/padlock5.jpg";
+import q8q16 from "./quiz-images/target.jpg";
+import q8q17 from "./quiz-images/eavesdropper.jpg";
+import q8q18 from "./quiz-images/cookie1.jpg";
+import q8q19 from "./quiz-images/puzzle.jpg";
+import q8q20 from "./quiz-images/france.jpg";
+import q8q21 from "./quiz-images/canary.jpg";
+import q8q22 from "./quiz-images/child.jpg";
+import q8q23 from "./quiz-images/bulb.jpg";
+import q8q24 from "./quiz-images/code.jpg";
+import q8q25 from "./quiz-images/relisience.jpg";
+import q8q26 from "./quiz-images/panik.jpg";
+import q8q27 from "./quiz-images/assembly.png";
 
 
 const images = {
@@ -89,7 +106,9 @@ const images = {
     "q5q1": q5q1, "q5q2": q5q2, "q5q3": q5q3, "q5q4": q5q4, "q5q5": q5q5, "q5q6": q5q6, "q5q7": q5q7, "q5q8": q5q8, "q5q9": q5q9, "q5q10": q5q10,
     "q6q1": q6q1, "q6q2": q6q2, "q6q3": q6q3, "q6q4": q6q4, "q6q5": q6q5, "q6q6": q6q6, "q6q7": q6q7,
     "q7q1": q7q1, "q7q2": q7q2, "q7q3": q7q3, "q7q4": q7q4, "q7q5": q7q5, "q7q6": q7q6, "q7q7": q7q7, "q7q8": q7q8, "q7q9": q7q9, "q7q10": q7q10, "q7q11": q7q11,
-    "q8q1": q8q1, "q8q2": q8q2, "q8q3": q8q3, "q8q4": q8q4, "q8q5": q8q5, "q8q6": q8q6, "q8q7": q8q7, "q8q8": q8q8, "q8q9": q8q9, "q8q10": q8q10
+    "q8q1": q8q1, "q8q2": q8q2, "q8q3": q8q3, "q8q4": q8q4, "q8q5": q8q5, "q8q6": q8q6, "q8q7": q8q7, "q8q8": q8q8, "q8q9": q8q9, "q8q10": q8q10, "q8q11": q8q11, 
+    "q8q12": q8q12, "q8q13": q8q13, "q8q14": q8q14, "q8q15": q8q15, "q8q16": q8q16, "q8q17": q8q17, "q8q18": q8q18, "q8q19": q8q19, "q8q20": q8q20, "q8q21": q8q21,
+    "q8q22": q8q22, "q8q23": q8q23, "q8q24": q8q24, "q8q25": q8q25, "q8q26": q8q26, "q8q27": q8q27
 
 };
 
