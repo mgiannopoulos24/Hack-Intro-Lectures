@@ -62,7 +62,7 @@
     {
         "question": "Ένας γραφολόγος ελέγχει την υπογραφή μας σε ένα συμβόλαιο για να εγγυηθεί το",
         "answers": ["Confidentiality", "Integrity","Authenticity","Availability"],
-        "correctAnswers": ["Integrity", "Authenticity"],
+        "correctAnswer": ["Integrity","Authenticity"],
         "photoURL": "q2q11"
     }
 ]
