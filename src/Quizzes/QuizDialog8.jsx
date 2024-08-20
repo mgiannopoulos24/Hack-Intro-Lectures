@@ -7,6 +7,8 @@ import Button from '@mui/material/Button';
 import LinearProgress from '@mui/material/LinearProgress';
 import CloseIcon from '@mui/icons-material/Close';
 import questions from './quiz8.json';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import './QuizDialog.css';
 import images from "./images";
 
@@ -16,62 +18,95 @@ const QuizDialog8 = ({ open, onClose }) => {
     const [showResult, setShowResult] = useState(false);
     const [selectedAnswer, setSelectedAnswer] = useState(null);
     const [correctAnswerIndexes, setCorrectAnswerIndexes] = useState([]);
+    const [userSelections, setUserSelections] = useState([]);
 
     useEffect(() => {
-        setSelectedAnswer(null); 
-        setCorrectAnswerIndexes([]); 
-    }, [currentQuestionIndex]);
+        if (open) {
+            resetQuiz();
+        }
+    }, [open]);
+
+    const resetQuiz = () => {
+        setCurrentQuestionIndex(0);
+        setCorrectAnswers(0);
+        setShowResult(false);
+        setSelectedAnswer(null);
+        setCorrectAnswerIndexes([]);
+        setUserSelections([]);
+    };
 
     const handleAnswerClick = (answer, index) => {
         const correctAnswersArray = Array.isArray(questions[currentQuestionIndex].correctAnswer)
             ? questions[currentQuestionIndex].correctAnswer
             : [questions[currentQuestionIndex].correctAnswer];
         const isCorrect = correctAnswersArray.includes(answer);
+
+        const correctIndexes = correctAnswersArray.map(correctAnswer =>
+            questions[currentQuestionIndex].answers.indexOf(correctAnswer)
+        );
+
         setSelectedAnswer({ answer, isCorrect });
+        setCorrectAnswerIndexes(correctIndexes);
+
+        // Store the user's selection for the current question
+        setUserSelections(prevSelections => {
+            const newSelections = [...prevSelections];
+            newSelections[currentQuestionIndex] = { answer, isCorrect, correctIndexes };
+            return newSelections;
+        });
+
         if (isCorrect) {
             setCorrectAnswers(prevCount => prevCount + 1);
-        } else {
-            const correctIndexes = correctAnswersArray.map(correctAnswer => 
-                questions[currentQuestionIndex].answers.indexOf(correctAnswer)
-            );
-            setCorrectAnswerIndexes(correctIndexes);
         }
+    };
+
+    const handleNextQuestion = () => {
         if (currentQuestionIndex < questions.length - 1) {
-            setTimeout(() => {
-                setCurrentQuestionIndex(prevIndex => prevIndex + 1);
-            }, 2000);
+            setCurrentQuestionIndex(prevIndex => prevIndex + 1);
+            setSelectedAnswer(null);
+            setCorrectAnswerIndexes([]);
         } else {
-            setTimeout(() => {
-                setShowResult(true);
-            }, 2000);
+            setShowResult(true);
+        }
+    };
+
+    const handlePreviousQuestion = () => {
+        if (currentQuestionIndex > 0) {
+            setCurrentQuestionIndex(prevIndex => prevIndex - 1);
+            const previousSelection = userSelections[currentQuestionIndex - 1];
+            if (previousSelection) {
+                setSelectedAnswer({ answer: previousSelection.answer, isCorrect: previousSelection.isCorrect });
+                setCorrectAnswerIndexes(previousSelection.correctIndexes);
+            } else {
+                setSelectedAnswer(null);
+                setCorrectAnswerIndexes([]);
+            }
         }
     };
 
     const handleDialogClose = () => {
-        setCurrentQuestionIndex(0);
-        setCorrectAnswers(0);
-        setShowResult(false);
+        resetQuiz();
         onClose();
     };
 
     const getMessage = () => {
         const totalQuestions = questions.length;
         const message = `You scored ${correctAnswers} out of ${totalQuestions}`;
-        if (correctAnswers >= 0 && correctAnswers <= 9) {
+        if (correctAnswers >= 0 && correctAnswers <= 3) {
             return (
                 <>
                     <p id='upper'>{message}</p>
                     <p id='lower'>Oh 🙁 Better luck next time</p>
                 </>
             );
-        } else if (correctAnswers >= 10 && correctAnswers <= 20) {
+        } else if (correctAnswers >= 4 && correctAnswers <= 7) {
             return (
                 <>
                     <p id='upper'>{message}</p>
                     <p id='lower'>A for effort! 🙂</p>
                 </>
             );
-        } else if (correctAnswers >= 21 && correctAnswers <= 27) {
+        } else if (correctAnswers >= 8 && correctAnswers <= 11) {
             return (
                 <>
                     <p id='upper'>{message}</p>
@@ -82,9 +117,9 @@ const QuizDialog8 = ({ open, onClose }) => {
     };
 
     return (
-        <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: "80%", height: "80%" }}}>
+        <Dialog open={open} onClose={handleDialogClose} PaperProps={{ style: { width: "80%", height: "80%" } }}>
             <DialogTitle style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', fontWeight: 'bold', fontSize: '20px' }}>
-                Final Countdown
+                IWeb Security
                 <CloseIcon onClick={handleDialogClose} style={{ cursor: 'pointer' }} />
             </DialogTitle>
             {showResult ? (
@@ -111,10 +146,13 @@ const QuizDialog8 = ({ open, onClose }) => {
                                         key={index}
                                         variant="contained"
                                         onClick={() => handleAnswerClick(answer, index)}
+                                        disabled={!!selectedAnswer} // Disable once an answer is selected
                                         style={{
                                             backgroundColor: selectedAnswer && selectedAnswer.answer === answer ?
                                                 (selectedAnswer.isCorrect ? 'green' : 'red') :
-                                                (correctAnswerIndexes.includes(index) ? 'green' : '')
+                                                (correctAnswerIndexes.includes(index) ? 'green' : ''),
+                                                opacity: 1,
+                                                color: 'white'
                                         }}
                                     >
                                         {answer}
@@ -123,6 +161,24 @@ const QuizDialog8 = ({ open, onClose }) => {
                             </div>
                         </div>
                     </DialogContent>
+                    <DialogActions style={{ justifyContent: 'center' }}>
+                        <Button
+                            onClick={handlePreviousQuestion}
+                            disabled={currentQuestionIndex === 0}
+                            variant="contained"
+                            sx={{ marginRight: '8px', textTransform: 'none' }}
+                        >
+                            <ArrowBackIcon/>
+                        </Button>
+                        <Button
+                            onClick={handleNextQuestion}
+                            disabled={!selectedAnswer} // Disable Next until an answer is selected
+                            variant="contained"
+                            sx={{ textTransform: 'none' }}
+                        >
+                            {currentQuestionIndex === questions.length - 1 ? 'Τέλος' : <ArrowForwardIcon />}
+                        </Button>
+                    </DialogActions>
                 </>
             )}
         </Dialog>
