@@ -25,7 +25,7 @@
 
 Έμπνευση ήταν η σελίδα [Quiz App](https://starlit-daffodil-2e4733.netlify.app/). Credits στην [original creator](https://github.com/matinanadali).
 
-### To-Do list
+## To-Do list
 1. TBA
 
 ## Εγκατάσταση 
