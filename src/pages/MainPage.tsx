@@ -30,7 +30,7 @@ const MainPage: React.FC = () => {
       setQuoteError(null);
       try {
         const response = await axios.get<QuoteData>(
-          'http://api.quotable.io/random?tags=future|technology|ethics'
+          'https://api.quotable.io/random?tags=future|technology|ethics'
         );
         setQuote(response.data);
       } catch (error) {
