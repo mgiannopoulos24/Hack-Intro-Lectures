@@ -1,0 +1,55 @@
+.wg-titles {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: transparent;
+  font-family: Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', Terminal, monospace;
+  color: #b5e853;
+}
+
+.wg-titles h1 {
+  display: block;
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+.wg-titles h3 {
+  display: block;
+  font-size: 1.17em;
+}
+
+.wg-titles hr {
+  border: 1px dashed #b5e853;
+  width: 80%;
+  margin-bottom: 1%;
+}
+
+.wg-cards {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.wg-content {
+  position: relative;
+  z-index: 2;
+}
+
+#wg-tab {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: transparent;
+  font-family: Monaco, 'Bitstream Vera Sans Mono', 'Lucida Console', monospace;
+  color: #b5e853;
+}
+
+.kahoot-quiz {
+  display: flex;
+  margin: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}

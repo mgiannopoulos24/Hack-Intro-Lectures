@@ -1,68 +1,78 @@
 [
-    {
-        "question": "Κατά τον Αυγερινό η μέθοδος του ανεμιστήρα κατά την βαθμολόγηση γραπτών είναι",
-        "answers": ["Random", "Pseudorandom", "Μια εξαιρετική τακτική", "Λάθος, προτιμάει την μέθοδο της γάτας"],
-        "correctAnswer": "Pseudorandom",
-        "photoURL": "q3q1"
-    },
-    {
-        "question": "The One Time Pad offers perfect secrecy",
-        "answers": ["True", "False"],
-        "correctAnswer": "True",
-        "photoURL": "q3q2"
-    },
-    {
-        "question": "Αποφάσισα να βελτιώσω την ασφάλεια του SSL προσθέτωντας ένα έξτρα βήμα στο υπάρχον πρωτόκολλο. Καλή ιδέα;",
-        "answers": ["True", "False"],
-        "correctAnswer": "False",
-        "photoURL": "q3q3"
-    },
-    {
-        "question": "Χρησιμοποιώ one time pad και επιτρέπω το κλειδί \"0\" να επιλέγει τυχαία. Αυτό είναι :",
-        "answers": ["Καλό", "Κακό", "Κάκιστο", "Δεν έχει σημασία"],
-        "correctAnswer": "Καλό",
-        "photoURL": "q3q4"
-    },
-    {
-        "question": "Στο Linux έχω Access Control Lists by default;",
-        "answers": ["True", "False"],
-        "correctAnswer": "True",
-        "photoURL": "q3q5"
-    },
-    {
-        "question": "Τα capabilities στον πίνακα του Lampson αναπαρίστανται με",
-        "answers": ["Γραμμές", "Στήλες", "Διαγωνίους", "Trick question, ήταν ο πίνακας του Sampson"],
-        "correctAnswer": "Γραμμές",
-        "photoURL": "q3q6"
-    },
-    {
-        "question": "Who is the strongest adversary in the secrecy game?",
-        "answers": ["Chosen Plaintext Attack (CPA)", "Known Plaintext Attack (KPA)", "Chosen Ciphertext Attack (CCA)", "Ciphertext Only"],
-        "correctAnswer": "Chosen Ciphertext Attack (CCA)",
-        "photoURL": "q3q7"
-    },
-    {
-        "question": "The One Time Pad offers secure communication",
-        "answers": ["True", "False"],
-        "correctAnswer": "False",
-        "photoURL": "q3q8"
-    },
-    {
-        "question": "Έχω ένα plaintext m και ένα ciphertext c και χρήση OTP. Τα κλειδιά έχουν 128 bits πόσα κλειδιά k κάνουν map το m στο c;",
-        "answers": ["0", "1", "2", "2^128"],
-        "correctAnswer": "1",
-        "photoURL": "q3q9"
-    },    
-    {
-        "question": "Πόσες φορές πρέπει να διαλέξω έναν αριθμό με 128 bits προκειμένου να υπάρχει 50% πιθανότητα να τον έχω ξαναδεί;",
-        "answers": ["128","2^128","2^64","42"],
-        "correctAnswer": "2^64",
-        "photoURL": "q3q10"
-    },
-    {
-        "question": "Ο κανόνας που λέει ότι ο αλγόριθμος του κρυπτοσυστήματος πρέπει να είναι \"ανοιχτός\" αποδίδεται στον",
-        "answers": ["Kirchhoff","Captain Kirk","Kerckhoffs","Gandalf"],
-        "correctAnswer": "Kerckhoffs",
-        "photoURL": "q3q11"
-    }
+  {
+    "question": "Κατά τον Αυγερινό η μέθοδος του ανεμιστήρα κατά την βαθμολόγηση γραπτών είναι",
+    "answers": [
+      "Random",
+      "Pseudorandom",
+      "Μια εξαιρετική τακτική",
+      "Λάθος, προτιμάει την μέθοδο της γάτας"
+    ],
+    "correctAnswer": "Pseudorandom",
+    "photoURL": "q3q1"
+  },
+  {
+    "question": "The One Time Pad offers perfect secrecy",
+    "answers": ["True", "False"],
+    "correctAnswer": "True",
+    "photoURL": "q3q2"
+  },
+  {
+    "question": "Αποφάσισα να βελτιώσω την ασφάλεια του SSL προσθέτωντας ένα έξτρα βήμα στο υπάρχον πρωτόκολλο. Καλή ιδέα;",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q3q3"
+  },
+  {
+    "question": "Χρησιμοποιώ one time pad και επιτρέπω το κλειδί \"0\" να επιλέγει τυχαία. Αυτό είναι :",
+    "answers": ["Καλό", "Κακό", "Κάκιστο", "Δεν έχει σημασία"],
+    "correctAnswer": "Καλό",
+    "photoURL": "q3q4"
+  },
+  {
+    "question": "Στο Linux έχω Access Control Lists by default;",
+    "answers": ["True", "False"],
+    "correctAnswer": "True",
+    "photoURL": "q3q5"
+  },
+  {
+    "question": "Τα capabilities στον πίνακα του Lampson αναπαρίστανται με",
+    "answers": ["Γραμμές", "Στήλες", "Διαγωνίους", "Trick question, ήταν ο πίνακας του Sampson"],
+    "correctAnswer": "Γραμμές",
+    "photoURL": "q3q6"
+  },
+  {
+    "question": "Who is the strongest adversary in the secrecy game?",
+    "answers": [
+      "Chosen Plaintext Attack (CPA)",
+      "Known Plaintext Attack (KPA)",
+      "Chosen Ciphertext Attack (CCA)",
+      "Ciphertext Only"
+    ],
+    "correctAnswer": "Chosen Ciphertext Attack (CCA)",
+    "photoURL": "q3q7"
+  },
+  {
+    "question": "The One Time Pad offers secure communication",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q3q8"
+  },
+  {
+    "question": "Έχω ένα plaintext m και ένα ciphertext c και χρήση OTP. Τα κλειδιά έχουν 128 bits πόσα κλειδιά k κάνουν map το m στο c;",
+    "answers": ["0", "1", "2", "2^128"],
+    "correctAnswer": "1",
+    "photoURL": "q3q9"
+  },
+  {
+    "question": "Πόσες φορές πρέπει να διαλέξω έναν αριθμό με 128 bits προκειμένου να υπάρχει 50% πιθανότητα να τον έχω ξαναδεί;",
+    "answers": ["128", "2^128", "2^64", "42"],
+    "correctAnswer": "2^64",
+    "photoURL": "q3q10"
+  },
+  {
+    "question": "Ο κανόνας που λέει ότι ο αλγόριθμος του κρυπτοσυστήματος πρέπει να είναι \"ανοιχτός\" αποδίδεται στον",
+    "answers": ["Kirchhoff", "Captain Kirk", "Kerckhoffs", "Gandalf"],
+    "correctAnswer": "Kerckhoffs",
+    "photoURL": "q3q11"
+  }
 ]

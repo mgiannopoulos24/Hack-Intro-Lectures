@@ -1,62 +1,67 @@
 [
-    {
-        "question": "Στο βιβλίο του Douglas Adams - Hitchhiker's Guide to the Galaxy η απάντηση στα πάντα είναι 42 επειδή",
-        "answers": ["Του άρεσε το 42", "Είναι ο ASCII κωδικός του 'Β'", "Είναι ο ASCII κωδικός του '*'", "Παρακαλώ;"],
-        "correctAnswer": "Είναι ο ASCII κωδικός του '*'",
-        "photoURL": "q1q1"
-    },
-    {
-        "question": "Πόσους χαρακτήρες θα τυπώσει το printf(\"%5$42c\") ;",
-        "answers": ["5", "42", "43"],
-        "correctAnswer": "42",
-        "photoURL": "q1q2"
-    },
-    {
-        "question": "Η στοίβα μεγαλώνει προς",
-        "answers": ["μεγαλύτερες διευθύνσεις (πάνω)", "μικρότερες διευθύνσεις (κάτω)"],
-        "correctAnswer": "μικρότερες διευθύνσεις (κάτω)",
-        "photoURL": "q1q3"
-    },
-    {
-        "question": "Όταν καλούμε μια συνάρτηση foo(arg1, arg2, arg3) σε x86 τα ορίσματα μπαίνουν στην στοίβα με σειρά:",
-        "answers": ["Από δεξιά προς τα αριστερά", "Από αριστερά προς τα δεξιά"],
-        "correctAnswer": "Από δεξιά προς τα αριστερά",
-        "photoURL": "q1q4"
-    },
-    {
-        "question": "Μόλις τρέξαμε αυτές τις εντολές στην αρχή της συνάρτησης, ο Stack Pointer (SP) μειώθηκε κατά:",
-        "answers": ["42", "66", "70", "Trick question - αυξήθηκε!"],
-        "correctAnswer": "70",
-        "photoURL": "q1q5"
-    },
-    {
-        "question": "Η συνάρτησή μας τελείωσε - πόσο αυξήθηκε ο SP κατά τον ακόλουθο επίλογο (32-bit);",
-        "answers": ["1", "2", "8", "12"],
-        "correctAnswer": "8",
-        "photoURL": "q1q6"
-    },
-    {
-        "question": "Τι θα τυπώσει το printf(\"%2$s %2$s\", \"have\", \"a\", \"great\", \"day\");",
-        "answers": ["Θα κρασάρει", "a day", "a a", "have a"],
-        "correctAnswer": "a a",
-        "photoURL": "q1q7"
-    },
-    {
-        "question": "Τι θα τυπώσει το int n1, n2; printf(\"hi%nworld%n\", &n1, &n2); printf(\" %d %d\", n1, n2);",
-        "answers": ["hi world 0 0", "hi world 7 7", "hiworld2 7", "Will not compile"],
-        "correctAnswer": "hiworld2 7",
-        "photoURL": "q1q8"
-    },
-    {
-        "question": "Τι θα τυπώσει η printf(\"%3$x\"); αν η στοίβα έχει ως εξής",
-        "answers": ["41414141", "41", "42424242", "43434343"],
-        "correctAnswer": "43434343",
-        "photoURL": "q1q9"
-    },
-    {
-        "question": "Τι θα τυπώσει η printf(\"%3$c\"); αν η στοίβα έχει ως εξής",
-        "answers": ["41", "42", "43", "C"],
-        "correctAnswer": "C",
-        "photoURL": "q1q10"
-    }
+  {
+    "question": "Στο βιβλίο του Douglas Adams - Hitchhiker's Guide to the Galaxy η απάντηση στα πάντα είναι 42 επειδή",
+    "answers": [
+      "Του άρεσε το 42",
+      "Είναι ο ASCII κωδικός του 'Β'",
+      "Είναι ο ASCII κωδικός του '*'",
+      "Παρακαλώ;"
+    ],
+    "correctAnswer": "Είναι ο ASCII κωδικός του '*'",
+    "photoURL": "q1q1"
+  },
+  {
+    "question": "Πόσους χαρακτήρες θα τυπώσει το printf(\"%5$42c\") ;",
+    "answers": ["5", "42", "43"],
+    "correctAnswer": "42",
+    "photoURL": "q1q2"
+  },
+  {
+    "question": "Η στοίβα μεγαλώνει προς",
+    "answers": ["μεγαλύτερες διευθύνσεις (πάνω)", "μικρότερες διευθύνσεις (κάτω)"],
+    "correctAnswer": "μικρότερες διευθύνσεις (κάτω)",
+    "photoURL": "q1q3"
+  },
+  {
+    "question": "Όταν καλούμε μια συνάρτηση foo(arg1, arg2, arg3) σε x86 τα ορίσματα μπαίνουν στην στοίβα με σειρά:",
+    "answers": ["Από δεξιά προς τα αριστερά", "Από αριστερά προς τα δεξιά"],
+    "correctAnswer": "Από δεξιά προς τα αριστερά",
+    "photoURL": "q1q4"
+  },
+  {
+    "question": "Μόλις τρέξαμε αυτές τις εντολές στην αρχή της συνάρτησης, ο Stack Pointer (SP) μειώθηκε κατά:",
+    "answers": ["42", "66", "70", "Trick question - αυξήθηκε!"],
+    "correctAnswer": "70",
+    "photoURL": "q1q5"
+  },
+  {
+    "question": "Η συνάρτησή μας τελείωσε - πόσο αυξήθηκε ο SP κατά τον ακόλουθο επίλογο (32-bit);",
+    "answers": ["1", "2", "8", "12"],
+    "correctAnswer": "8",
+    "photoURL": "q1q6"
+  },
+  {
+    "question": "Τι θα τυπώσει το printf(\"%2$s %2$s\", \"have\", \"a\", \"great\", \"day\");",
+    "answers": ["Θα κρασάρει", "a day", "a a", "have a"],
+    "correctAnswer": "a a",
+    "photoURL": "q1q7"
+  },
+  {
+    "question": "Τι θα τυπώσει το int n1, n2; printf(\"hi%nworld%n\", &n1, &n2); printf(\" %d %d\", n1, n2);",
+    "answers": ["hi world 0 0", "hi world 7 7", "hiworld2 7", "Will not compile"],
+    "correctAnswer": "hiworld2 7",
+    "photoURL": "q1q8"
+  },
+  {
+    "question": "Τι θα τυπώσει η printf(\"%3$x\"); αν η στοίβα έχει ως εξής",
+    "answers": ["41414141", "41", "42424242", "43434343"],
+    "correctAnswer": "43434343",
+    "photoURL": "q1q9"
+  },
+  {
+    "question": "Τι θα τυπώσει η printf(\"%3$c\"); αν η στοίβα έχει ως εξής",
+    "answers": ["41", "42", "43", "C"],
+    "correctAnswer": "C",
+    "photoURL": "q1q10"
+  }
 ]

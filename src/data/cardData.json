@@ -1,0 +1,93 @@
+[
+  {
+    "id": 1,
+    "title": "Διάλεξη #0 Hello World!",
+    "paper": "https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf",
+    "slides": "https://hackintro.github.io/resources/00-introduction.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 2,
+    "title": "Διάλεξη #1 Security Fundamentals",
+    "paper": [
+      "https://www.cl.cam.ac.uk/teaching/1011/R01/75-protection.pdf",
+      "https://beerkay.github.io/cs529/content/papers/saltzerschroeder.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/01-security-fundamentals.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 3,
+    "title": "Διάλεξη #2 x86 Basics and Buffer Overflows",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 4,
+    "title": "Διάλεξη #3 Control Flow Hijack Attacks",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 5,
+    "title": "Διάλεξη #4 Format String Attacks",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 6,
+    "title": "Διάλεξη #5 Application Security and Review",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 7,
+    "title": "Διάλεξη #6 Mitigations",
+    "paper": "https://lettieri.iet.unipi.it/hacking/canaries.pdf",
+    "slides": "https://hackintro.github.io/resources/07-mitigations.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 8,
+    "title": "Διάλεξη #7 Return-Oriented Programming",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 9,
+    "title": "Διάλεξη #8 Access Control",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 10,
+    "title": "Διάλεξη #9 Control-Flow Integrity",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 11,
+    "title": "Διάλεξη #10 Intro to Cryptography",
+    "paper": "",
+    "slides": "",
+    "part1": "",
+    "part2": ""
+  }
+]

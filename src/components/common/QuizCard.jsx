@@ -1,7 +1,7 @@
-import React from 'react';
-import "./QuizCard.css";
-import { Button } from '@mui/material'; 
+import './QuizCard.css';
 import PlayArrowRoundedIcon from '@mui/icons-material/PlayArrowRounded';
+import { Button } from '@mui/material';
+import React from 'react';
 
 const QuizCard = ({ image, title, description, onClick }) => {
   return (
@@ -11,7 +11,7 @@ const QuizCard = ({ image, title, description, onClick }) => {
       </div>
       <div className="button-container">
         <Button variant="contained" className="quiz-button" onClick={onClick}>
-          <PlayArrowRoundedIcon sx={{ color: "black", fontSize: "30px" }} />
+          <PlayArrowRoundedIcon sx={{ color: 'black', fontSize: '30px' }} />
         </Button>
       </div>
       <div className="quiz-title">

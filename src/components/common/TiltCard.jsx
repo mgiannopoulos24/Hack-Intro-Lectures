@@ -1,11 +1,10 @@
+import './TiltCard.css';
 import React from 'react';
 import { Tilt } from 'react-tilt';
-import "./TiltCard.css";
 
 const defaultOptions = {
   reverse: false,
   max: 15, // Decreased max value for less tilt
-  
 };
 
 const TiltCard = ({ image, title, description }) => {

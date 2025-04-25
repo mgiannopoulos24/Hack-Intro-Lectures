@@ -1,62 +1,72 @@
 [
-    {
-        "question": "Secure communication is possible without integrity",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q5q1"
-    },
-    {
-        "question": "The identity function is collision resistant",
-        "answers": ["True", "False"],   
-        "correctAnswer": "True",
-        "photoURL": "q5q2"
-    },
-    {
-        "question": "Collision resistance implies second pre-image resistance",
-        "answers": ["True", "False"],   
-        "correctAnswer": "True",
-        "photoURL": "q5q3"
-    },
-    {
-        "question": "In CBC-MAC, padding the message with \"4\"s to meet the block length is secure",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q5q4"
-    },
-    {
-        "question": "In CBC-MAC, padding the message with \"1\" followed by \"3\"s until the block length is met is secure.",
-        "answers": ["True", "False"],   
-        "correctAnswer": "True",
-        "photoURL": "q5q5"
-    },
-    {
-        "question": "In CBC-MAC, we always need to add a padding block at the end",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q5q6"
-    },
-    {
-        "question": "What does MAC stand for in the context of Cryptography?",
-        "answers": ["Shorthand for McDonald's", "Mandatory Access Control","Media Access Control","Message Authentication Code"],   
-        "correctAnswer": "Message Authentication Code",
-        "photoURL": "q5q7"
-    },
-    {
-        "question": "To rawCBC είναι επαρκές για να φτιάξουμε secure MACs",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q5q8"
-    },
-    {
-        "question": "Τα hash functions μπορούν να χρησιμοποιηθούν ως secure MACs",
-        "answers": ["True", "False"],   
-        "correctAnswer": "False",
-        "photoURL": "q5q9"
-    },
-    {
-        "question": "AES is pre-image resistant",
-        "answers": ["Ναι", "Όχι", "Ελπίζουμε","Τι είναι το AES? (δεν έχω ξεκινήσει την εργασία #2 ακόμα)"],   
-        "correctAnswer": "Ελπίζουμε",
-        "photoURL": "q5q10"
-    }
+  {
+    "question": "Secure communication is possible without integrity",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q5q1"
+  },
+  {
+    "question": "The identity function is collision resistant",
+    "answers": ["True", "False"],
+    "correctAnswer": "True",
+    "photoURL": "q5q2"
+  },
+  {
+    "question": "Collision resistance implies second pre-image resistance",
+    "answers": ["True", "False"],
+    "correctAnswer": "True",
+    "photoURL": "q5q3"
+  },
+  {
+    "question": "In CBC-MAC, padding the message with \"4\"s to meet the block length is secure",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q5q4"
+  },
+  {
+    "question": "In CBC-MAC, padding the message with \"1\" followed by \"3\"s until the block length is met is secure.",
+    "answers": ["True", "False"],
+    "correctAnswer": "True",
+    "photoURL": "q5q5"
+  },
+  {
+    "question": "In CBC-MAC, we always need to add a padding block at the end",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q5q6"
+  },
+  {
+    "question": "What does MAC stand for in the context of Cryptography?",
+    "answers": [
+      "Shorthand for McDonald's",
+      "Mandatory Access Control",
+      "Media Access Control",
+      "Message Authentication Code"
+    ],
+    "correctAnswer": "Message Authentication Code",
+    "photoURL": "q5q7"
+  },
+  {
+    "question": "To rawCBC είναι επαρκές για να φτιάξουμε secure MACs",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q5q8"
+  },
+  {
+    "question": "Τα hash functions μπορούν να χρησιμοποιηθούν ως secure MACs",
+    "answers": ["True", "False"],
+    "correctAnswer": "False",
+    "photoURL": "q5q9"
+  },
+  {
+    "question": "AES is pre-image resistant",
+    "answers": [
+      "Ναι",
+      "Όχι",
+      "Ελπίζουμε",
+      "Τι είναι το AES? (δεν έχω ξεκινήσει την εργασία #2 ακόμα)"
+    ],
+    "correctAnswer": "Ελπίζουμε",
+    "photoURL": "q5q10"
+  }
 ]
