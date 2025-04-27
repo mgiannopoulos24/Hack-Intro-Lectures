@@ -1,5 +1,3 @@
-import ΒackButton from '../BackToMain/BackButton';
-import QuizCard from '../Kahoot/QuizCard';
 import QuizDialog1 from '../../Quizzes/QuizDialog1';
 import QuizDialog2 from '../../Quizzes/QuizDialog2';
 import QuizDialog3 from '../../Quizzes/QuizDialog3';
@@ -8,6 +6,8 @@ import QuizDialog5 from '../../Quizzes/QuizDialog5';
 import QuizDialog6 from '../../Quizzes/QuizDialog6';
 import QuizDialog7 from '../../Quizzes/QuizDialog7';
 import QuizDialog8 from '../../Quizzes/QuizDialog8';
+import ΒackButton from '../BackToMain/BackButton';
+import QuizCard from '../Kahoot/QuizCard';
 import TiltCard from '../TiltCard/TiltCard';
 import otw_img from '../assets/cat2.png';
 import kahoot_img from '../assets/kahoot.png';

@@ -24,7 +24,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
       asChild
       className={`flex w-full items-center justify-center gap-2 bg-[#6876b6] font-mono normal-case text-white hover:bg-[#3a4286] ${className}`}
     >
-      <Link 
+      <Link
         to={href}
         target="_blank"
         rel="noopener noreferrer"

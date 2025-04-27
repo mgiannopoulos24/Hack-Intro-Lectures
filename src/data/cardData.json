@@ -21,8 +21,7 @@
   {
     "id": 3,
     "title": "Διάλεξη #2 x86 Basics and Buffer Overflows",
-    "paper": 
-    [
+    "paper": [
       "https://phrack.org/issues/49/14#article",
       "https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf"
     ],
@@ -63,9 +62,10 @@
   {
     "id": 7,
     "title": "Διάλεξη #6 Mitigations",
-    "paper": ["https://lettieri.iet.unipi.it/hacking/canaries.pdf",
-    "https://pax.grsecurity.net/docs/aslr.txt"
-  ],
+    "paper": [
+      "https://lettieri.iet.unipi.it/hacking/canaries.pdf",
+      "https://pax.grsecurity.net/docs/aslr.txt"
+    ],
     "slides": "https://hackintro.github.io/resources/07-mitigations.pdf",
     "part1": "",
     "part2": ""
