@@ -21,39 +21,51 @@
   {
     "id": 3,
     "title": "Διάλεξη #2 x86 Basics and Buffer Overflows",
-    "paper": "",
-    "slides": "",
+    "paper": 
+    [
+      "https://phrack.org/issues/49/14#article",
+      "https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/02-x86-buffer-overflows.pdf",
     "part1": "",
     "part2": ""
   },
   {
     "id": 4,
     "title": "Διάλεξη #3 Control Flow Hijack Attacks",
-    "paper": "",
-    "slides": "",
+    "paper": [
+      "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html",
+      "https://people.eecs.berkeley.edu/~dawnsong/papers/Oakland13-SoK-CR.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/04-control-flow-hijacks.pdf",
     "part1": "",
     "part2": ""
   },
   {
     "id": 5,
     "title": "Διάλεξη #4 Format String Attacks",
-    "paper": "",
-    "slides": "",
+    "paper": "https://cs155.stanford.edu/papers/formatstring-1.2.pdf",
+    "slides": "https://hackintro.github.io/resources/05-format-string-attacks.pdf",
     "part1": "",
     "part2": ""
   },
   {
     "id": 6,
     "title": "Διάλεξη #5 Application Security and Review",
-    "paper": "",
-    "slides": "",
+    "paper": [
+      "https://www.linuxfoundation.org/hubfs/LF%20Research/MaintainerSecurityBPs_011724.pdf?hsLang=en",
+      "https://github.com/LuckyDudeThakur/EBooks/blob/master/Accelerate%20-%20Building%20and%20Scaling%20High%20Performing%20Technology%20Organisations%20-%20Nicole%20Fergrson.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/06-appsec-and-review.pdf",
     "part1": "",
     "part2": ""
   },
   {
     "id": 7,
     "title": "Διάλεξη #6 Mitigations",
-    "paper": "https://lettieri.iet.unipi.it/hacking/canaries.pdf",
+    "paper": ["https://lettieri.iet.unipi.it/hacking/canaries.pdf",
+    "https://pax.grsecurity.net/docs/aslr.txt"
+  ],
     "slides": "https://hackintro.github.io/resources/07-mitigations.pdf",
     "part1": "",
     "part2": ""
@@ -61,32 +73,35 @@
   {
     "id": 8,
     "title": "Διάλεξη #7 Return-Oriented Programming",
-    "paper": "",
-    "slides": "",
+    "paper": "https://hovav.net/ucsd/dist/geometry.pdf",
+    "slides": "https://hackintro.github.io/resources/08-09-return-oriented-programming.pdf",
     "part1": "",
     "part2": ""
   },
   {
     "id": 9,
     "title": "Διάλεξη #8 Access Control",
-    "paper": "",
-    "slides": "",
+    "paper": [
+      "https://www.cl.cam.ac.uk/teaching/1011/R01/75-protection.pdf",
+      "https://people.eecs.berkeley.edu/~daw/papers/setuid-usenix02.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/10-access-control.pdf",
     "part1": "",
     "part2": ""
   },
   {
     "id": 10,
     "title": "Διάλεξη #9 Control-Flow Integrity",
-    "paper": "",
-    "slides": "",
+    "paper": "https://www.cs.columbia.edu/~suman/secure_sw_devel/p340-abadi.pdf",
+    "slides": "https://hackintro.github.io/resources/11-control-flow-integrity.pdf",
     "part1": "",
     "part2": ""
   },
   {
     "id": 11,
     "title": "Διάλεξη #10 Intro to Cryptography",
-    "paper": "",
-    "slides": "",
+    "paper": "https://cacr.uwaterloo.ca/hac/about/chap1.pdf",
+    "slides": "https://hackintro.github.io/resources/12-intro-to-cryptography.pdf",
     "part1": "",
     "part2": ""
   }

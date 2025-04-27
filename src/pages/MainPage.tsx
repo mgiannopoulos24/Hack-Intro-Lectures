@@ -1,6 +1,6 @@
 import CustomCard from '../components/common/CustomCard';
 import cardDataJson from '../data/cardData.json';
-import axios from 'axios';
+import quotesData from '../data/quotes.json';
 import { useEffect, useState } from 'react';
 
 interface CardData {
@@ -14,34 +14,18 @@ interface CardData {
 
 interface QuoteData {
   content: string;
-  author: string;
+  author?: string;
 }
 
 const cardData: CardData[] = cardDataJson;
+const quotes: QuoteData[] = quotesData;
 
 const MainPage: React.FC = () => {
   const [quote, setQuote] = useState<QuoteData | null>(null);
-  const [loadingQuote, setLoadingQuote] = useState<boolean>(true);
-  const [quoteError, setQuoteError] = useState<string | null>(null);
 
   useEffect(() => {
-    const fetchQuote = async () => {
-      setLoadingQuote(true);
-      setQuoteError(null);
-      try {
-        const response = await axios.get<QuoteData>(
-          'https://api.quotable.io/random?tags=future|technology|ethics'
-        );
-        setQuote(response.data);
-      } catch (error) {
-        console.error('Error fetching quote:', error);
-        setQuoteError('Could not fetch quote.');
-      } finally {
-        setLoadingQuote(false);
-      }
-    };
-
-    fetchQuote();
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    setQuote(quotes[randomIndex]);
   }, []);
 
   return (
@@ -53,10 +37,8 @@ const MainPage: React.FC = () => {
           <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
         </header>
 
-        <div className="quote-section my-2 px-4 text-center italic text-gray-400">
-          {loadingQuote && <p>Loading quote...</p>}
-          {quoteError && <p className="text-red-500">{quoteError}</p>}
-          {quote && !loadingQuote && !quoteError && (
+        <div className="quote-section my-4 px-4 text-center italic text-gray-400">
+          {quote && (
             <blockquote className="text-sm md:text-base">
               "{quote.content}"
               <footer className="mt-1 text-xs not-italic text-gray-500 md:text-sm">
