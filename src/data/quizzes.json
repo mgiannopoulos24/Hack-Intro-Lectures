@@ -1,0 +1,14 @@
+[
+  {
+    "id": 1,
+    "title": "Stack Basics",
+    "questions": [
+      {
+        "question": "What is a stack?",
+        "answers": ["A queue", "A LIFO structure", "A tree", "A graph"],
+        "correctAnswer": "A LIFO structure",
+        "photoURL": "test_img"
+      }
+    ]
+  }
+]

@@ -1,0 +1,86 @@
+[
+  {
+    "url": "https://overthewire.org/wargames/narnia/",
+    "image": "otw.png",
+    "title": "Narnia",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Easy", "color": "bg-lime-500" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/behemoth/",
+    "image": "otw.png",
+    "title": "Behemoth",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/maze/",
+    "image": "otw.png",
+    "title": "Maze",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Very Easy", "color": "bg-green-400" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/leviathan/",
+    "image": "otw.png",
+    "title": "Leviathan",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Easy", "color": "bg-lime-500" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/utumno/",
+    "image": "otw.png",
+    "title": "Otumno",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Hard", "color": "bg-red-500" }
+  },
+  {
+    "url": "https://www.smashthestack.org/blowfish.html",
+    "image": "sts.png",
+    "title": "Blowfish",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://play.picoctf.org/practice?category=1",
+    "image": "picoctf.png",
+    "title": "PicoCTF",
+    "description": "Web Exploitation",
+    "difficulty": { "value": "Easy", "color": "bg-lime-500" }
+  },
+  {
+    "url": "https://play.picoctf.org/practice?category=2",
+    "image": "picoctf.png",
+    "title": "PicoCTF",
+    "description": "Cryptography",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://play.picoctf.org/practice?category=3",
+    "image": "picoctf.png",
+    "title": "PicoCTF",
+    "description": "Reverse Engineering",
+    "difficulty": { "value": "Hard", "color": "bg-red-500" }
+  },
+  {
+    "url": "https://play.picoctf.org/practice?category=4",
+    "image": "picoctf.png",
+    "title": "PicoCTF",
+    "description": "Forensics",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://play.picoctf.org/practice?category=5",
+    "image": "picoctf.png",
+    "title": "PicoCTF",
+    "description": "General Skills",
+    "difficulty": { "value": "Very Easy", "color": "bg-green-400" }
+  },
+  {
+    "url": "https://play.picoctf.org/practice?category=6",
+    "image": "picoctf.png",
+    "title": "PicoCTF",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Easy", "color": "bg-lime-500" }
+  }
+]
