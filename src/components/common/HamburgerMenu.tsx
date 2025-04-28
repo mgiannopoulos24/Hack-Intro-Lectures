@@ -47,7 +47,7 @@ const HamburgerMenu: React.FC = () => {
           >
             Kahoot
           </Link>
-          {/* Are you a 1 or a 0? */}
+          <span className="sr-only">Are you a 1 or a 0?</span>
         </div>
       </SheetContent>
     </Sheet>
