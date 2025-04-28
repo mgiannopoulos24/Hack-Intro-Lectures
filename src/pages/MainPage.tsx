@@ -65,7 +65,7 @@ const MainPage: React.FC = () => {
             />
           ))}
         </div>
-        {/* Are you gonna act or not? */}
+        <span className="sr-only">Are you gonna act or not?</span>
       </div>
     </>
   );
