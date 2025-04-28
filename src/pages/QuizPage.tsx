@@ -63,7 +63,7 @@ const QuizPage: React.FC = () => {
           />
         )}
 
-        {/* A yes or a no? */}
+        <span className="sr-only">A yes or a no?</span>
       </div>
     </>
   );
