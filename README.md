@@ -9,17 +9,23 @@
 - **Διαφάνειες:** Σημαντικές παρουσιάσεις και σημειώσεις.
 - **Kahoot Quizzes:** Διαδραστικά κουίζ για επανάληψη.
 
-## Εργαλεία σχεδιασμού
+## Τεχνολογίες που χρησιμοποιήθηκαν
 
-1. React
-2. NodeJS
-3. Firebase (Firestore)
+1. React 18
+2. Vite
+3. React Router Dom
+4. Shadcn UI
+5. Lucide React (icons)
+6. Tailwind CSS
+7. React Tilt
+8. Vitest with React Testing Library
 
 ## Γλώσσες που χρησιμοποιήθηκαν
 
 1. HTML
-2. CSS 
-3. JavaScript
+2. CSS (με Tailwind)
+3. TypeScript
+4. JavaScript
 
 ## Έμπνευση
 
