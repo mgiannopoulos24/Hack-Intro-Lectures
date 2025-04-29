@@ -18,7 +18,7 @@ const HamburgerMenu: React.FC = () => {
         <Button
           variant="outline"
           size="icon"
-          className="border-gray-400 text-gray-400 hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-gray-500"
+          className="border-gray-600 bg-gray-500 text-white hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-gray-500"
         >
           <Menu className="h-6 w-6" />
           <span className="sr-only">Open menu</span>
@@ -26,7 +26,7 @@ const HamburgerMenu: React.FC = () => {
       </SheetTrigger>
       <SheetContent side="right" className="w-[300px] border-l border-gray-700 bg-black text-white">
         <SheetHeader>
-          <SheetTitle className="text-[#b5e853]">Menu</SheetTitle>
+          <SheetTitle className="text-white">Menu</SheetTitle>
         </SheetHeader>
         <div className="flex flex-col gap-2 py-4">
           <Link
