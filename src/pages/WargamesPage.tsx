@@ -1,7 +1,7 @@
-// Import images
 import otw_img from '@/assets/images/otw.png';
 import pico_img from '@/assets/images/picoctf.png';
 import sts_img from '@/assets/images/sts.png';
+import HamburgerMenu from '@/components/common/HamburgerMenu';
 import TiltCard from '@/components/common/TiltCard';
 import wargames from '@/data/wargames.json';
 
@@ -25,31 +25,37 @@ interface Wargame {
 }
 
 const WargamesPage: React.FC = () => (
-  <div className="main-content relative z-10">
-    <header className="flex flex-col items-center justify-center bg-transparent py-1 pt-8 font-mono text-[#ffffff]">
-      <h1 className="mb-0 block text-2xl md:text-4xl">Wargames</h1>
-      <h2 className="block py-1 text-lg md:text-xl">For fun and profit :)</h2>
-      <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
-    </header>
-    <div className="my-5 flex flex-wrap justify-center gap-2">
-      {(wargames as Wargame[]).map((wg) => (
-        <a
-          key={wg.url}
-          href={wg.url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="no-underline"
-        >
-          <TiltCard
-            image={imageMap[wg.image]}
-            title={wg.title}
-            description={wg.description}
-            difficulty={wg.difficulty}
-          />
-        </a>
-      ))}
+  <>
+    <div className="absolute right-4 top-4 z-20">
+      <HamburgerMenu />
     </div>
-  </div>
+
+    <div className="main-content relative z-10">
+      <header className="flex flex-col items-center justify-center bg-transparent py-1 pt-8 font-mono text-[#ffffff]">
+        <h1 className="mb-0 block text-2xl md:text-4xl">Wargames</h1>
+        <h2 className="block py-1 text-lg md:text-xl">For fun and profit :)</h2>
+        <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
+      </header>
+      <div className="my-5 flex flex-wrap justify-center gap-2">
+        {(wargames as Wargame[]).map((wg) => (
+          <a
+            key={wg.url}
+            href={wg.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="no-underline"
+          >
+            <TiltCard
+              image={imageMap[wg.image]}
+              title={wg.title}
+              description={wg.description}
+              difficulty={wg.difficulty}
+            />
+          </a>
+        ))}
+      </div>
+    </div>
+  </>
 );
 
 export default WargamesPage;
