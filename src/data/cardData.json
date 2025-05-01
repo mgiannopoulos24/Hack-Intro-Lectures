@@ -104,5 +104,13 @@
     "slides": "https://hackintro.github.io/resources/12-intro-to-cryptography.pdf",
     "part1": "",
     "part2": ""
+  },
+  {
+    "id": 12,
+    "title": "Διάλεξη #11 Randomness",
+    "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+    "slides": "https://hackintro.github.io/resources/13-randomness.pdf",
+    "part1": "",
+    "part2": ""
   }
 ]
