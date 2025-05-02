@@ -11,6 +11,7 @@ export default {
     'bg-orange-400',
     'bg-red-400',
     'bg-red-500',
+	'bg-red-600',
   ],
   theme: {
   	extend: {

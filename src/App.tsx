@@ -1,4 +1,3 @@
-import './App.css';
 import MainPage from './pages/MainPage';
 import QuizPage from './pages/QuizPage';
 import WargamesPage from './pages/WargamesPage';

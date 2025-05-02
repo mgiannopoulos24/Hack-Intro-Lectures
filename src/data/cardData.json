@@ -4,8 +4,8 @@
     "title": "Διάλεξη #0 Hello World!",
     "paper": "https://www.cs.cmu.edu/~rdriley/487/papers/Thompson_1984_ReflectionsonTrustingTrust.pdf",
     "slides": "https://hackintro.github.io/resources/00-introduction.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=13e714c6",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=3659a315"
   },
   {
     "id": 2,
@@ -15,8 +15,8 @@
       "https://beerkay.github.io/cs529/content/papers/saltzerschroeder.pdf"
     ],
     "slides": "https://hackintro.github.io/resources/01-security-fundamentals.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=6987fce5",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=14cb47ef"
   },
   {
     "id": 3,
@@ -26,8 +26,8 @@
       "https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf"
     ],
     "slides": "https://hackintro.github.io/resources/02-x86-buffer-overflows.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=59129a6b",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=5ddddcb3"
   },
   {
     "id": 4,
@@ -37,16 +37,16 @@
       "https://people.eecs.berkeley.edu/~dawnsong/papers/Oakland13-SoK-CR.pdf"
     ],
     "slides": "https://hackintro.github.io/resources/04-control-flow-hijacks.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=46f847a7",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=3cc57c8c"
   },
   {
     "id": 5,
     "title": "Διάλεξη #4 Format String Attacks",
     "paper": "https://cs155.stanford.edu/papers/formatstring-1.2.pdf",
     "slides": "https://hackintro.github.io/resources/05-format-string-attacks.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=dae8d504",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=58ac944"
   },
   {
     "id": 6,
@@ -56,8 +56,8 @@
       "https://github.com/LuckyDudeThakur/EBooks/blob/master/Accelerate%20-%20Building%20and%20Scaling%20High%20Performing%20Technology%20Organisations%20-%20Nicole%20Fergrson.pdf"
     ],
     "slides": "https://hackintro.github.io/resources/06-appsec-and-review.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=87cc8ea1",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=bcd85836"
   },
   {
     "id": 7,
@@ -67,16 +67,16 @@
       "https://pax.grsecurity.net/docs/aslr.txt"
     ],
     "slides": "https://hackintro.github.io/resources/07-mitigations.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=3db7e780",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=83aa4741"
   },
   {
     "id": 8,
     "title": "Διάλεξη #7 Return-Oriented Programming",
     "paper": "https://hovav.net/ucsd/dist/geometry.pdf",
     "slides": "https://hackintro.github.io/resources/08-09-return-oriented-programming.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=9563d204",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=32224957"
   },
   {
     "id": 9,
@@ -86,31 +86,39 @@
       "https://people.eecs.berkeley.edu/~daw/papers/setuid-usenix02.pdf"
     ],
     "slides": "https://hackintro.github.io/resources/10-access-control.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=78110cc3",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=b591cdda"
   },
   {
     "id": 10,
     "title": "Διάλεξη #9 Control-Flow Integrity",
     "paper": "https://www.cs.columbia.edu/~suman/secure_sw_devel/p340-abadi.pdf",
     "slides": "https://hackintro.github.io/resources/11-control-flow-integrity.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=fe5ca27e",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=1410f842"
   },
   {
     "id": 11,
     "title": "Διάλεξη #10 Intro to Cryptography",
     "paper": "https://cacr.uwaterloo.ca/hac/about/chap1.pdf",
     "slides": "https://hackintro.github.io/resources/12-intro-to-cryptography.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=19dbd8dc",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=23353c26"
   },
   {
     "id": 12,
     "title": "Διάλεξη #11 Randomness",
     "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
     "slides": "https://hackintro.github.io/resources/13-randomness.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=21544c3e",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=8be2abeb"
+  },
+  {
+    "id": 13,
+    "title": "Διάλεξη #12 Pseudorandom Functions",
+    "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+    "slides": "https://hackintro.github.io/resources/14-pseudorandom-functions.pdf",
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=2bebe1e9",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=9d12b217"
   }
 ]

@@ -1,5 +1,33 @@
 [
   {
+    "url": "https://overthewire.org/wargames/bandit/",
+    "image": "otw.png",
+    "title": "Bandit",
+    "description": "Linux Command Line",
+    "difficulty": { "value": "Very Easy", "color": "bg-green-400" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/natas/",
+    "image": "otw.png",
+    "title": "Natas",
+    "description": "Web Exploitation",
+    "difficulty": { "value": "Easy", "color": "bg-lime-500" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/leviathan/",
+    "image": "otw.png",
+    "title": "Leviathan",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Easy", "color": "bg-lime-500" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/krypton/",
+    "image": "otw.png",
+    "title": "Krypton",
+    "description": "Cryptography",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
     "url": "https://overthewire.org/wargames/narnia/",
     "image": "otw.png",
     "title": "Narnia",
@@ -14,6 +42,13 @@
     "difficulty": { "value": "Medium", "color": "bg-orange-400" }
   },
   {
+    "url": "https://overthewire.org/wargames/utumno/",
+    "image": "otw.png",
+    "title": "Otumno",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Hard", "color": "bg-red-500" }
+  },
+  {
     "url": "https://overthewire.org/wargames/maze/",
     "image": "otw.png",
     "title": "Maze",
@@ -21,17 +56,66 @@
     "difficulty": { "value": "Very Easy", "color": "bg-green-400" }
   },
   {
-    "url": "https://overthewire.org/wargames/leviathan/",
+    "url": "https://overthewire.org/wargames/vortex/",
     "image": "otw.png",
-    "title": "Leviathan",
+    "title": "Vortex",
     "description": "Binary Exploitation",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/manpage/",
+    "image": "otw.png",
+    "title": "Manpage",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/drifter/",
+    "image": "otw.png",
+    "title": "Drifter",
+    "description": "Binary Exploitation",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://overthewire.org/wargames/formulaone/",
+    "image": "otw.png",
+    "title": "Formula One",
+    "description": "Jeopardy",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  }, 
+  {
+    "url": "https://underthewire.tech/century/",
+    "image": "utw.png",
+    "title": "Century",
+    "description": "PowerShell",
+    "difficulty": { "value": "Very Easy", "color": "bg-green-400" }
+  },
+  {
+    "url": "https://underthewire.tech/cyborg/",
+    "image": "utw.png",
+    "title": "Cyborg",
+    "description": "PowerShell",
     "difficulty": { "value": "Easy", "color": "bg-lime-500" }
   },
   {
-    "url": "https://overthewire.org/wargames/utumno/",
-    "image": "otw.png",
-    "title": "Otumno",
-    "description": "Binary Exploitation",
+    "url": "https://underthewire.tech/groot/",
+    "image": "utw.png",
+    "title": "Groot",
+    "description": "PowerShell",
+    "difficulty": { "value": "Medium", "color": "bg-orange-400" }
+  },
+  {
+    "url": "https://underthewire.tech/oracle/",
+    "image": "utw.png",
+    "title": "Oracle",
+    "description": "PowerShell",
+    "difficulty": { "value": "Hard", "color": "bg-red-500" }
+  },
+  {
+    "url": "https://underthewire.tech/trebek/",
+    "image": "utw.png",
+    "title": "Trebek",
+    "description": "PowerShell",
     "difficulty": { "value": "Hard", "color": "bg-red-500" }
   },
   {
@@ -82,5 +166,12 @@
     "title": "PicoCTF",
     "description": "Binary Exploitation",
     "difficulty": { "value": "Easy", "color": "bg-lime-500" }
+  },
+  {
+    "url": "https://app.hackthebox.com/challenges",
+    "image": "htb.png",
+    "title": "Hack The Box",
+    "description": "Jeopardy",
+    "difficulty": { "value": "Insane", "color": "bg-red-600" }
   }
 ]
