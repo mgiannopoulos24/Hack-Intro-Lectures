@@ -1,6 +1,8 @@
 import otw_img from '@/assets/images/otw.png';
 import pico_img from '@/assets/images/picoctf.png';
 import sts_img from '@/assets/images/sts.png';
+import utw_img from '@/assets/images/utw.png';
+import htb_img from '@/assets/images/htb.png';
 import HamburgerMenu from '@/components/common/HamburgerMenu';
 import TiltCard from '@/components/common/TiltCard';
 import wargames from '@/data/wargames.json';
@@ -9,6 +11,8 @@ const imageMap: Record<string, string> = {
   'otw.png': otw_img,
   'sts.png': sts_img,
   'picoctf.png': pico_img,
+  'utw.png': utw_img,
+  'htb.png': htb_img,
 };
 
 interface Difficulty {
