@@ -120,5 +120,32 @@
     "slides": "https://hackintro.github.io/resources/14-pseudorandom-functions.pdf",
     "part1": "https://delos.uoa.gr/opendelos/player?rid=2bebe1e9",
     "part2": "https://delos.uoa.gr/opendelos/player?rid=9d12b217"
+  },
+  {
+    "id": 14,
+    "title": "Διάλεξη #13 Encryption Modes",
+    "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+    "slides": "https://hackintro.github.io/resources/15-encryption-modes.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 15,
+    "title": "Διάλεξη #14 Integrity",
+    "paper": [
+      "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+      "https://web.cs.ucdavis.edu/~rogaway/papers/relates.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/16-integrity.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 16,
+    "title": "Διάλεξη #15 Hash Functions",
+    "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+    "slides": "https://hackintro.github.io/resources/17-hash-functions.pdf",
+    "part1": "",
+    "part2": ""
   }
 ]
