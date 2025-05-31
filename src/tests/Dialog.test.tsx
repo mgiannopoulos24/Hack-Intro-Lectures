@@ -45,15 +45,31 @@ describe('QuizDialog', () => {
   });
 
   it('shows correct answer when an option is selected', () => {
-    render(<QuizDialog {...mockProps} />);
+    // Use multiple questions to test the Next button with chevron-right
+    const multipleQuestions = [
+      {
+        question: 'What is a stack?',
+        answers: ['A queue', 'A LIFO structure', 'A tree', 'A graph'],
+        correctAnswer: 'A LIFO structure',
+        photoURL: 'test_img',
+      },
+      {
+        question: 'What is a queue?',
+        answers: ['A stack', 'A FIFO structure', 'A tree', 'A graph'],
+        correctAnswer: 'A FIFO structure',
+        photoURL: 'test_img',
+      },
+    ];
+
+    render(<QuizDialog {...mockProps} questions={multipleQuestions} />);
 
     // Click on an answer
     const correctAnswer = screen.getByText('A LIFO structure');
     fireEvent.click(correctAnswer);
 
-    // The Next button should be enabled
-    // const nextButton = screen.getByRole('button', { name: /chevron-right/i });
-    // expect(nextButton).not.toBeDisabled();
+    // Now the Next button should be enabled and have the chevron-right icon
+    const nextButton = screen.getByRole('button', { name: /next/i });
+    expect(nextButton).not.toBeDisabled();
   });
 
   it('calls onClose when dialog is closed', () => {
