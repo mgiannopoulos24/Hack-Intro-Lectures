@@ -1,7 +1,9 @@
-import test_img from '@/assets/images/sts.png';
-
-const images: Record<string, string> = {
-  test_img,
+export const loadQuizImage = async (imageKey: string) => {
+  try {
+    const image = await import(`../assets/quiz-images/${imageKey}.png`);
+    return image.default;
+  } catch (error) {
+    console.error(`Quiz image not found: ${imageKey}`, error);
+    return null;
+  }
 };
-
-export default images;

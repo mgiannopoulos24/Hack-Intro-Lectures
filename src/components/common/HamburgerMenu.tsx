@@ -47,7 +47,9 @@ const HamburgerMenu: React.FC = () => {
           >
             Kahoot
           </Link>
-          <span className="sr-only">Are you a 1 or a 0?</span>
+          <span className="sr-only">
+            Unfortunately, no one can be told what the Matrix is. You have to see it for yourself.
+          </span>
         </div>
       </SheetContent>
     </Sheet>

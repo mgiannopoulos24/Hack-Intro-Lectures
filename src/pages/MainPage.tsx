@@ -45,7 +45,7 @@ const MainPage: React.FC = () => {
         <div className="quote-section my-4 px-4 text-center italic text-gray-400">
           {quote && (
             <blockquote className="text-sm md:text-base">
-              "{quote.content}"
+              {quote.content}
               <footer className="mt-1 text-xs not-italic text-gray-500 md:text-sm">
                 - {quote.author}
               </footer>
@@ -65,7 +65,11 @@ const MainPage: React.FC = () => {
             />
           ))}
         </div>
-        <span className="sr-only">Are you gonna act or not?</span>
+        <span className="sr-only">
+          You take the blue pill – the story ends, you wake up in your bed and believe whatever you
+          want to believe. You take the red pill – you stay in Wonderland and I show you how deep
+          the rabbit-hole goes.
+        </span>
       </div>
     </>
   );

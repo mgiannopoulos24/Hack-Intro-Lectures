@@ -147,5 +147,45 @@
     "slides": "https://hackintro.github.io/resources/17-hash-functions.pdf",
     "part1": "",
     "part2": ""
+  },
+  {
+    "id": 17,
+    "title": "Διάλεξη #16 Authenticated Encryption and Asymmetric Cryptography",
+    "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+    "slides": "https://hackintro.github.io/resources/17-authenc-and-asymmetric-crypto.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 18,
+    "title": "Διάλεξη #19 Web Security",
+    "paper": [
+      "https://pragmaticwebsecurity.com/files/cheatsheets/reactxss.pdf",
+      "https://picoctf.org/index.html#picogym"
+    ],
+    "slides": "https://hackintro.github.io/resources/19-20-web-security.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 19,
+    "title": "Διάλεξη #20 Web Security",
+    "paper": "",
+    "slides": "https://hackintro.github.io/resources/19-20-web-security.pdf",
+    "part1": "",
+    "part2": ""
+  },
+  {
+    "id": 20,
+    "title": "Διάλεξη #21 Network Security",
+    "paper": [
+      "https://www.cs.columbia.edu/~smb/papers/ipext.pdf",
+      "https://www.cs.columbia.edu/~smb/papers/acsac-ipext.pdf",
+      "https://www.princeton.edu/~rblee/ELE572Papers/Fall04Readings/DDoSmirkovic.pdf",
+      "https://www.cs.princeton.edu/courses/archive/fall06/cos561/papers/nordstrom04.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/21-network-security.pdf",
+    "part1": "",
+    "part2": ""
   }
 ]

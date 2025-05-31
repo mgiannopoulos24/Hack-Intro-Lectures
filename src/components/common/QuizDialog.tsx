@@ -7,7 +7,6 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Progress } from '@/components/ui/progress';
-import images from '@/utils/images';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 
@@ -15,7 +14,7 @@ interface Question {
   question: string;
   answers: string[];
   correctAnswer: string | string[];
-  photoURL?: string;
+  photo?: string;
 }
 
 interface QuizDialogProps {
@@ -103,26 +102,54 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
 
   const getMessage = () => {
     const total = questions.length;
-    const msg = `You scored ${correct} out of ${total}`;
-    if (correct <= 3)
+    const percentage = (correct / total) * 100;
+    const msg = `${correct}/${total}`;
+
+    if (percentage < 33)
       return (
-        <>
-          <p className="text-2xl font-bold">{msg}</p>
-          <p className="text-xl">Oh 🙁 Better luck next time</p>
-        </>
+        <div className="space-y-4 text-center">
+          <div className="text-6xl">😅</div>
+          <p className="text-3xl font-bold text-red-400">{msg}</p>
+          <p className="text-xl text-gray-700">Time to hit the books! 📚</p>
+          <div className="mx-auto h-2 w-32 rounded-full bg-red-200">
+            <div className="h-2 rounded-full bg-red-500" style={{ width: `${percentage}%` }}></div>
+          </div>
+        </div>
       );
-    if (correct <= 7)
+    if (percentage < 66)
       return (
-        <>
-          <p className="text-2xl font-bold">{msg}</p>
-          <p className="text-xl">A for effort! 🙂</p>
-        </>
+        <div className="space-y-4 text-center">
+          <div className="text-6xl">🎯</div>
+          <p className="text-3xl font-bold text-yellow-400">{msg}</p>
+          <p className="text-xl text-gray-700">Not bad! You're getting there! 🚀</p>
+          <div className="mx-auto h-2 w-32 rounded-full bg-yellow-200">
+            <div
+              className="h-2 rounded-full bg-yellow-500"
+              style={{ width: `${percentage}%` }}
+            ></div>
+          </div>
+        </div>
+      );
+    if (percentage < 90)
+      return (
+        <div className="space-y-4 text-center">
+          <div className="text-6xl">🌟</div>
+          <p className="text-3xl font-bold text-blue-400">{msg}</p>
+          <p className="text-xl text-gray-700">Great job! You really know your stuff! 💪</p>
+          <div className="mx-auto h-2 w-32 rounded-full bg-blue-200">
+            <div className="h-2 rounded-full bg-blue-500" style={{ width: `${percentage}%` }}></div>
+          </div>
+        </div>
       );
     return (
-      <>
-        <p className="text-2xl font-bold">{msg}</p>
-        <p className="text-xl">Congratulations!!🎉</p>
-      </>
+      <div className="space-y-4 text-center">
+        <div className="text-6xl">🏆</div>
+        <p className="text-3xl font-bold text-green-400">{msg}</p>
+        <p className="text-xl text-gray-700">Outstanding! Quiz master! 🎉✨</p>
+        <div className="mx-auto h-2 w-32 rounded-full bg-green-200">
+          <div className="h-2 rounded-full bg-green-500" style={{ width: `${percentage}%` }}></div>
+        </div>
+      </div>
     );
   };
 
@@ -130,61 +157,105 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
 
   return (
     <Dialog open={open} onOpenChange={handleDialogClose}>
-      <DialogContent className="flex h-[80vh] w-[90vw] max-w-2xl flex-col">
+      <DialogContent className="flex h-[85vh] w-[95vw] max-w-4xl flex-col p-6">
         <DialogHeader>
-          <DialogTitle className="text-xl font-bold">{title}</DialogTitle>
+          <DialogTitle className="text-2xl font-bold">{title}</DialogTitle>
         </DialogHeader>
         {showResult ? (
           <div className="flex flex-1 flex-col items-center justify-center text-center">
             {getMessage()}
-            <DialogFooter className="mt-6">
-              <Button onClick={handleDialogClose} className="font-bold">
-                Πίσω
+            <DialogFooter className="mt-8">
+              <Button onClick={handleDialogClose} className="px-8 py-2 text-lg font-bold">
+                Back
               </Button>
             </DialogFooter>
           </div>
         ) : (
           <>
-            <Progress value={((current + 1) / questions.length) * 100} className="mb-4" />
-            <div className="flex flex-1 flex-col items-center justify-center">
-              {q.photoURL && (
-                <img
-                  src={images[q.photoURL]}
-                  alt={`Question ${current + 1}`}
-                  className="max-h-48 max-w-full object-contain"
-                />
+            <Progress
+              value={((current + 1) / questions.length) * 100}
+              className="mb-6 h-3 bg-gray-200 dark:bg-gray-700 [&>div]:bg-blue-500 dark:[&>div]:bg-white"
+            />
+
+            {/* Question at the top */}
+            <div className="mb-6">
+              <p className="text-center text-xl font-semibold leading-relaxed">{q.question}</p>
+            </div>
+
+            <div className="flex min-h-0 flex-1 flex-col items-center justify-center">
+              {/* Image in the center */}
+              {q.photo && (
+                <div className="mb-6 flex flex-shrink-0 items-center justify-center">
+                  <img
+                    src={images[q.photo]}
+                    alt={`Question ${current + 1}`}
+                    className="max-h-[300px] max-w-full rounded-lg object-contain shadow-lg"
+                  />
+                </div>
               )}
-              <p className="mb-4 text-center text-lg font-semibold">{q.question}</p>
-              <div className="flex w-full flex-col items-center">
-                {q.answers.map((answer, idx) => (
-                  <Button
-                    key={idx}
-                    variant="secondary"
-                    onClick={() => handleAnswer(answer)}
-                    disabled={!!selected}
-                    className={`mb-2 w-[70%] max-w-xs text-base normal-case ${
-                      selected && selected === answer
-                        ? correctIndexes.includes(idx)
-                          ? 'bg-green-600 text-white'
-                          : 'bg-red-600 text-white'
-                        : correctIndexes.includes(idx)
-                          ? 'bg-green-600 text-white'
-                          : ''
-                    } ${selected ? 'opacity-100' : ''} `}
-                  >
-                    {answer}
-                  </Button>
-                ))}
+
+              {/* Scrollable answers container */}
+              <div className="flex w-full max-w-2xl flex-col overflow-hidden">
+                <div
+                  className={`flex flex-col gap-3 pt-4 ${
+                    q.answers.length > 3
+                      ? 'scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 dark:scrollbar-track-gray-800 dark:scrollbar-thumb-gray-600 max-h-[300px] overflow-y-auto pr-2'
+                      : ''
+                  }`}
+                >
+                  {q.answers.map((answer, idx) => (
+                    <Button
+                      key={idx}
+                      variant="secondary"
+                      onClick={() => handleAnswer(answer)}
+                      disabled={!!selected}
+                      className={`min-h-[60px] w-full flex-shrink-0 p-4 text-base normal-case transition-all duration-200 ${
+                        selected && selected === answer
+                          ? correctIndexes.includes(idx)
+                            ? 'bg-green-600 text-white hover:bg-green-700'
+                            : 'bg-red-600 text-white hover:bg-red-700'
+                          : correctIndexes.includes(idx) && selected
+                            ? 'bg-green-600 text-white hover:bg-green-700'
+                            : 'hover:bg-gray-200'
+                      }`}
+                    >
+                      <span className="text-wrap">{answer}</span>
+                    </Button>
+                  ))}
+                </div>
               </div>
             </div>
-            <DialogFooter className="mt-4 flex justify-center gap-2">
-              <Button onClick={handlePrev} disabled={current === 0} variant="outline" size="icon">
-                <ChevronLeft />
+
+            {/* Navigation buttons on the edges */}
+            <div className="mt-6 flex flex-shrink-0 items-center justify-between">
+              <Button
+                onClick={handlePrev}
+                disabled={current === 0}
+                variant="outline"
+                size="sm"
+                className="px-4"
+              >
+                <ChevronLeft className="mr-1 h-4 w-4" />
+                Prev
               </Button>
-              <Button onClick={handleNext} disabled={!selected} variant="outline" size="icon">
-                {current === questions.length - 1 ? 'Τέλος' : <ChevronRight />}
+              <div className="flex-1"></div>
+              <Button
+                onClick={handleNext}
+                disabled={!selected}
+                variant="outline"
+                size="sm"
+                className="px-4"
+              >
+                {current === questions.length - 1 ? (
+                  'Finish'
+                ) : (
+                  <>
+                    Next
+                    <ChevronRight className="ml-1 h-4 w-4" />
+                  </>
+                )}
               </Button>
-            </DialogFooter>
+            </div>
           </>
         )}
       </DialogContent>

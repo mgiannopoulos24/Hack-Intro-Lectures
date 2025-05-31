@@ -13,6 +13,12 @@ vi.mock('@/assets/images/picoctf.png', () => ({
 vi.mock('@/assets/images/sts.png', () => ({
   default: 'mocked-sts-image',
 }));
+vi.mock('@/assets/images/utw.png', () => ({
+  default: 'mocked-utw-image',
+}));
+vi.mock('@/assets/images/htb.png', () => ({
+  default: 'mocked-htb-image',
+}));
 
 // Mock the wargames data - add default export
 vi.mock('@/data/wargames.json', () => ({

@@ -82,7 +82,7 @@
     "title": "Formula One",
     "description": "Jeopardy",
     "difficulty": { "value": "Medium", "color": "bg-orange-400" }
-  }, 
+  },
   {
     "url": "https://underthewire.tech/century/",
     "image": "utw.png",

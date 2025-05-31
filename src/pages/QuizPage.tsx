@@ -3,14 +3,14 @@ import HamburgerMenu from '../components/common/HamburgerMenu';
 import QuizCard from '../components/common/QuizCard';
 import QuizDialog from '../components/common/QuizDialog';
 import quizzesData from '@/data/quizzes.json';
-import images from '@/utils/images';
-import React, { useState } from 'react';
+import { loadQuizImage } from '@/utils/images';
+import React, { useEffect, useState } from 'react';
 
 interface Question {
   question: string;
   answers: string[];
   correctAnswer: string | string[];
-  photoURL?: string;
+  photo?: string;
 }
 
 interface QuizData {
@@ -22,11 +22,47 @@ interface QuizData {
 
 const QuizPage: React.FC = () => {
   const [activeQuizId, setActiveQuizId] = useState<number | null>(null);
+  const [quizImages, setQuizImages] = useState<Record<string, string>>({});
 
   const handleOpenDialog = (id: number) => setActiveQuizId(id);
   const handleCloseDialog = () => setActiveQuizId(null);
 
   const activeQuiz = (quizzesData as QuizData[]).find((q) => q.id === activeQuizId);
+
+  // Load all quiz images when component mounts
+  useEffect(() => {
+    const loadImages = async () => {
+      const imagePromises: Record<string, Promise<string | null>> = {};
+
+      // Collect all unique image references from all quizzes
+      const allImageKeys = new Set<string>();
+      (quizzesData as QuizData[]).forEach((quiz) => {
+        quiz.questions.forEach((question) => {
+          if (question.photo) {
+            allImageKeys.add(question.photo);
+          }
+        });
+      });
+
+      // Load all images
+      for (const imageKey of Array.from(allImageKeys)) {
+        imagePromises[imageKey] = loadQuizImage(imageKey);
+      }
+
+      // Resolve all promises and filter out failed loads
+      const resolvedImages: Record<string, string> = {};
+      for (const [key, promise] of Object.entries(imagePromises)) {
+        const image = await promise;
+        if (image) {
+          resolvedImages[key] = image;
+        }
+      }
+
+      setQuizImages(resolvedImages);
+    };
+
+    loadImages();
+  }, []);
 
   return (
     <>
@@ -41,7 +77,7 @@ const QuizPage: React.FC = () => {
           <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
         </header>
 
-        <div className="m-5 flex flex-wrap justify-center gap-4 p-4">
+        <div className="m-5 flex flex-wrap justify-center gap-4 p-4 text-center">
           {(quizzesData as QuizData[]).map((quiz) => (
             <QuizCard
               key={quiz.id}
@@ -59,11 +95,11 @@ const QuizPage: React.FC = () => {
             onClose={handleCloseDialog}
             title={activeQuiz.title}
             questions={activeQuiz.questions}
-            images={images}
+            images={quizImages}
           />
         )}
 
-        <span className="sr-only">A yes or a no?</span>
+        <span className="sr-only">I have dreamed a dream, but now that dream is gone from me.</span>
       </div>
     </>
   );
