@@ -42,7 +42,7 @@ describe('MainPage', () => {
 
   it('renders a random quote', () => {
     renderWithRouter();
-    expect(screen.getByText('"Test quote content"')).toBeInTheDocument();
+    expect(screen.getByText('Test quote content')).toBeInTheDocument();
     expect(screen.getByText('- Test Author')).toBeInTheDocument();
   });
 
