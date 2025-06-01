@@ -7,6 +7,7 @@ import {
   DialogTitle,
 } from '@/components/ui/dialog';
 import { Progress } from '@/components/ui/progress';
+import { MathJax, MathJaxContext } from 'better-react-mathjax';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 import React, { useEffect, useState } from 'react';
 
@@ -179,7 +180,11 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
 
             {/* Question at the top */}
             <div className="mb-6">
-              <p className="text-center text-xl font-semibold leading-relaxed">{q.question}</p>
+              <MathJaxContext>
+                <p className="text-center text-xl font-semibold leading-relaxed">
+                  <MathJax>{q.question}</MathJax>
+                </p>
+              </MathJaxContext>
             </div>
 
             <div className="flex min-h-0 flex-1 flex-col items-center justify-center">
@@ -196,33 +201,37 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
 
               {/* Scrollable answers container */}
               <div className="flex w-full max-w-2xl flex-col overflow-hidden">
-                <div
-                  className={`flex flex-col gap-3 pt-4 ${
-                    q.answers.length > 3
-                      ? 'scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 dark:scrollbar-track-gray-800 dark:scrollbar-thumb-gray-600 max-h-[300px] overflow-y-auto pr-2'
-                      : ''
-                  }`}
-                >
-                  {q.answers.map((answer, idx) => (
-                    <Button
-                      key={idx}
-                      variant="secondary"
-                      onClick={() => handleAnswer(answer)}
-                      disabled={!!selected}
-                      className={`min-h-[60px] w-full flex-shrink-0 p-4 text-base normal-case transition-all duration-200 ${
-                        selected && selected === answer
-                          ? correctIndexes.includes(idx)
-                            ? 'bg-green-600 text-white hover:bg-green-700'
-                            : 'bg-red-600 text-white hover:bg-red-700'
-                          : correctIndexes.includes(idx) && selected
-                            ? 'bg-green-600 text-white hover:bg-green-700'
-                            : 'hover:bg-gray-200'
+                <MathJaxContext>
+                  <MathJax>
+                    <div
+                      className={`flex flex-col gap-3 pt-4 ${
+                        q.answers.length > 3
+                          ? 'scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 dark:scrollbar-track-gray-800 dark:scrollbar-thumb-gray-600 max-h-[300px] overflow-y-auto pr-2'
+                          : ''
                       }`}
                     >
-                      <span className="text-wrap">{answer}</span>
-                    </Button>
-                  ))}
-                </div>
+                      {q.answers.map((answer, idx) => (
+                        <Button
+                          key={idx}
+                          variant="secondary"
+                          onClick={() => handleAnswer(answer)}
+                          disabled={!!selected}
+                          className={`min-h-[60px] w-full flex-shrink-0 p-4 text-base normal-case transition-all duration-200 ${
+                            selected && selected === answer
+                              ? correctIndexes.includes(idx)
+                                ? 'bg-green-600 text-white hover:bg-green-700'
+                                : 'bg-red-600 text-white hover:bg-red-700'
+                              : correctIndexes.includes(idx) && selected
+                                ? 'bg-green-600 text-white hover:bg-green-700'
+                                : 'hover:bg-gray-200'
+                          }`}
+                        >
+                          <span className="text-wrap">{answer}</span>
+                        </Button>
+                      ))}
+                    </div>
+                  </MathJax>
+                </MathJaxContext>
               </div>
             </div>
 

