@@ -158,9 +158,9 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
 
   return (
     <Dialog open={open} onOpenChange={handleDialogClose}>
-      <DialogContent className="flex h-[85vh] w-[95vw] max-w-4xl flex-col p-6">
-        <DialogHeader>
-          <DialogTitle className="text-2xl font-bold">{title}</DialogTitle>
+      <DialogContent className="flex h-[80dvh] w-[90vw] max-w-none flex-col p-4 sm:h-[85vh] sm:w-[95vw] sm:max-w-4xl sm:p-6">
+        <DialogHeader className="flex-shrink-0">
+          <DialogTitle className="text-xl font-bold sm:text-2xl">{title}</DialogTitle>
         </DialogHeader>
         {showResult ? (
           <div className="flex flex-1 flex-col items-center justify-center text-center">
@@ -172,51 +172,46 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
             </DialogFooter>
           </div>
         ) : (
-          <>
+          <div className="flex min-h-0 flex-1 flex-col">
             <Progress
               value={((current + 1) / questions.length) * 100}
-              className="mb-6 h-3 bg-gray-200 dark:bg-gray-700 [&>div]:bg-blue-500 dark:[&>div]:bg-white"
+              className="mb-4 h-3 flex-shrink-0 bg-gray-200 dark:bg-gray-700 [&>div]:bg-blue-500 dark:[&>div]:bg-white sm:mb-6"
             />
 
             {/* Question at the top */}
-            <div className="mb-6">
+            <div className="mb-4 flex-shrink-0 sm:mb-6">
               <MathJaxContext>
-                <p className="text-center text-xl font-semibold leading-relaxed">
+                <p className="text-center text-lg font-semibold leading-relaxed sm:text-xl">
                   <MathJax>{q.question}</MathJax>
                 </p>
               </MathJaxContext>
             </div>
 
-            <div className="flex min-h-0 flex-1 flex-col items-center justify-center">
+            {/* Scrollable content area */}
+            <div className="scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 dark:scrollbar-track-gray-800 dark:scrollbar-thumb-gray-600 flex min-h-0 flex-1 flex-col overflow-y-auto">
               {/* Image in the center */}
               {q.photo && (
-                <div className="mb-6 flex flex-shrink-0 items-center justify-center">
+                <div className="mb-4 flex flex-shrink-0 items-center justify-center sm:mb-6">
                   <img
                     src={images[q.photo]}
                     alt={`Question ${current + 1}`}
-                    className="max-h-[300px] max-w-full rounded-lg object-contain shadow-lg"
+                    className="max-h-[200px] max-w-full rounded-lg object-contain shadow-lg sm:max-h-[300px]"
                   />
                 </div>
               )}
 
-              {/* Scrollable answers container */}
-              <div className="flex w-full max-w-2xl flex-col overflow-hidden">
+              {/* Answers container */}
+              <div className="flex w-full flex-col px-2">
                 <MathJaxContext>
                   <MathJax>
-                    <div
-                      className={`flex flex-col gap-3 pt-4 ${
-                        q.answers.length > 3
-                          ? 'scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 dark:scrollbar-track-gray-800 dark:scrollbar-thumb-gray-600 max-h-[300px] overflow-y-auto pr-2'
-                          : ''
-                      }`}
-                    >
+                    <div className="flex flex-col gap-3 pb-4">
                       {q.answers.map((answer, idx) => (
                         <Button
                           key={idx}
                           variant="secondary"
                           onClick={() => handleAnswer(answer)}
                           disabled={!!selected}
-                          className={`min-h-[60px] w-full flex-shrink-0 p-4 text-base normal-case transition-all duration-200 ${
+                          className={`min-h-[50px] w-full flex-shrink-0 p-3 text-sm normal-case transition-all duration-200 sm:min-h-[60px] sm:p-4 sm:text-base ${
                             selected && selected === answer
                               ? correctIndexes.includes(idx)
                                 ? 'bg-green-600 text-white hover:bg-green-700'
@@ -235,14 +230,14 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
               </div>
             </div>
 
-            {/* Navigation buttons on the edges */}
-            <div className="mt-6 flex flex-shrink-0 items-center justify-between">
+            {/* Navigation buttons */}
+            <div className="mt-4 flex flex-shrink-0 items-center justify-between sm:mt-6">
               <Button
                 onClick={handlePrev}
                 disabled={current === 0}
                 variant="outline"
                 size="sm"
-                className="px-4"
+                className="px-3 sm:px-4"
               >
                 <ChevronLeft className="mr-1 h-4 w-4" />
                 Prev
@@ -253,7 +248,7 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
                 disabled={!selected}
                 variant="outline"
                 size="sm"
-                className="px-4"
+                className="px-3 sm:px-4"
               >
                 {current === questions.length - 1 ? (
                   'Finish'
@@ -265,7 +260,7 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
                 )}
               </Button>
             </div>
-          </>
+          </div>
         )}
       </DialogContent>
     </Dialog>
