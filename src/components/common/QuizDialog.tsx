@@ -175,7 +175,7 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
           <div className="flex min-h-0 flex-1 flex-col">
             <Progress
               value={((current + 1) / questions.length) * 100}
-              className="mb-4 h-3 flex-shrink-0 bg-gray-200 dark:bg-gray-700 [&>div]:bg-blue-500 dark:[&>div]:bg-white sm:mb-6"
+              className="mb-4 h-3 flex-shrink-0 bg-gray-200 dark:bg-gray-700 sm:mb-6 [&>div]:bg-blue-500 dark:[&>div]:bg-white"
             />
 
             {/* Question at the top */}

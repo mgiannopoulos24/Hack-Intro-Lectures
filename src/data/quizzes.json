@@ -354,12 +354,7 @@
       },
       {
         "question": "Ρωτήσαμε τον Αυγερινό αν θα βγάλει άλλες εργασίες και η απάντηση ήταν \"XKLINAZ\" (substitution cipher). Η απάντηση είναι:",
-        "answers": [
-          "Μάλλον",
-          "Ίσως",
-          "Όχι",
-          "Σίγουρα"
-        ],
+        "answers": ["Μάλλον", "Ίσως", "Όχι", "Σίγουρα"],
         "correctAnswer": "Σίγουρα",
         "photo": "q1q3"
       },
@@ -371,12 +366,7 @@
       },
       {
         "question": "Χρησιμοποιώ one time pad και επιτρέπω το κλειδί \"0\" να επιλέγει τυχαία. Αυτό είναι :",
-        "answers": [
-          "Καλό",
-          "Κακό",
-          "Κάκιστο",
-          "Δεν έχει σημασία"
-        ],
+        "answers": ["Καλό", "Κακό", "Κάκιστο", "Δεν έχει σημασία"],
         "correctAnswer": "Καλό",
         "photo": "q5q4"
       },
@@ -388,12 +378,7 @@
       },
       {
         "question": "Τα capabilities στον πίνακα του Lampson αναπαρίστανται με",
-        "answers": [
-          "Γραμμές",
-          "Στήλες",
-          "Διαγωνίους",
-          "Οφιοειδείς γραμμές"
-        ],
+        "answers": ["Γραμμές", "Στήλες", "Διαγωνίους", "Οφιοειδείς γραμμές"],
         "correctAnswer": "Γραμμές",
         "photo": "q5q6"
       },
@@ -416,23 +401,13 @@
       },
       {
         "question": "Έχω ένα plaintext m και ένα ciphertext c και χρήση OTP. Τα κλειδιά έχουν 128 bits πόσα κλειδιά k κάνουν map το m στο c;",
-        "answers": [
-          "0",
-          "1",
-          "2",
-          "\\( 2^{128} \\)"
-        ],
+        "answers": ["0", "1", "2", "\\( 2^{128} \\)"],
         "correctAnswer": "1",
         "photo": "q5q9"
       },
       {
         "question": "Ο κανόνας που λέει ότι ο αλγόριθμος του κρυπτοσυστήματος πρέπει να είναι \"ανοιχτός\" αποδίδεται στον",
-        "answers":[
-          "Kirchhoff",
-          "Captain Kirk",
-          "Kerckhoffs",
-          "Gandalf"
-        ],
+        "answers": ["Kirchhoff", "Captain Kirk", "Kerckhoffs", "Gandalf"],
         "correctAnswer": "Kerckhoffs",
         "photo": "q5q10"
       }
@@ -484,21 +459,13 @@
       },
       {
         "question": "Αποφάσισα να βελτιώσω την ασφάλεια της εφαρμογής μου υλοποιώντας το δικό μου block cipher. Καλή ιδέα;",
-        "answers": [
-          "True",
-          "False"
-        ],
+        "answers": ["True", "False"],
         "correctAnswer": "False",
         "photo": "q6q6"
       },
       {
         "question": "Θέλω να χρησιμοποιήσω ένα block cipher για το σύστημά μου, προτείνω:",
-        "answers": [
-          "DES",
-          "2DES",
-          "3DES",
-          "AES"
-        ],
+        "answers": ["DES", "2DES", "3DES", "AES"],
         "correctAnswer": "AES",
         "photo": "q6q7"
       },
@@ -522,30 +489,19 @@
     "questions": [
       {
         "question": "Τσέκαρες τα email σου στο τοπικό beach cafe. Ευτυχώς πριν φύγεις έκανες logout. Τα δεδομένα σου είναι ασφαλή;",
-        "answers": [
-          "Σίγουρα",
-          "Σίγουρα όχι",
-          "Εξαρτάται",
-          "Δεν πάω παραλία"
-        ],
+        "answers": ["Σίγουρα", "Σίγουρα όχι", "Εξαρτάται", "Δεν πάω παραλία"],
         "correctAnswer": "Εξαρτάται",
         "photo": "q7q1"
       },
       {
         "question": "I need to see query output to figure out the contents of a DB",
-        "answers": [
-          "True",
-          "False"
-        ],
+        "answers": ["True", "False"],
         "correctAnswer": "False",
         "photo": "q7q2"
       },
       {
         "question": "Cookie content can always be trusted by the server",
-        "answers": [
-          "True",
-          "False"
-        ],
+        "answers": ["True", "False"],
         "correctAnswer": "False",
         "photo": "q7q3"
       },
@@ -584,10 +540,7 @@
       },
       {
         "question": "Using a modern and mature JS framework like React ensures XSS vulnerabilities are eliminated",
-        "answers": [
-          "True",
-          "False"
-        ],
+        "answers": ["True", "False"],
         "correctAnswer": "False",
         "photo": "q7q7"
       },
