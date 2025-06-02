@@ -361,7 +361,7 @@
           "Σίγουρα"
         ],
         "correctAnswer": "Σίγουρα",
-        "photo": "q5q2"
+        "photo": "q1q3"
       },
       {
         "question": "The One Time Pad offers perfect secrecy",
@@ -446,7 +446,7 @@
         "question": "Randomness and Pseudorandomness are different terms for the exact same concept",
         "answers": ["True", "False"],
         "correctAnswer": "False",
-        "photo": "q6q1"
+        "photo": "q1q3"
       },
       {
         "question": "Κατά τον Αυγερινό η μέθοδος του ανεμιστήρα κατά την βαθμολόγηση γραπτών είναι",
@@ -462,12 +462,12 @@
       {
         "question": "Πόσες αντιμεταθέσεις (permutations) της μορφής \\( F: X \\rightarrow X \\) υπάρχουν;",
         "answers": [
-          "\\( \\midX\\mid! \\)",
-          "\\( 2 \\times \\midX\\mid \\)",
-          "\\( \\midX\\mid^2 \\)",
-          "\\( \\midX\\mid^{\\midX\\mid} \\)"
+          "\\( \\mid X\\mid! \\)",
+          "\\( 2  \\times \\mid X\\mid \\)",
+          "\\( \\mid X\\mid^2 \\)",
+          "\\( \\mid X\\mid^{\\mid X\\mid} \\)"
         ],
-        "correctAnswer": "\\( \\midX\\mid! \\)",
+        "correctAnswer": "\\( \\abs{X}! \\)",
         "photo": "q6q3"
       },
       {

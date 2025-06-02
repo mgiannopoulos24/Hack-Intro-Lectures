@@ -126,8 +126,8 @@
     "title": "Διάλεξη #13 Encryption Modes",
     "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
     "slides": "https://hackintro.github.io/resources/15-encryption-modes.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=88bd9f30",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=c1463f5b"
   },
   {
     "id": 15,
@@ -137,24 +137,24 @@
       "https://web.cs.ucdavis.edu/~rogaway/papers/relates.pdf"
     ],
     "slides": "https://hackintro.github.io/resources/16-integrity.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=f3e1e938",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=7c08bc19"
   },
   {
     "id": 16,
     "title": "Διάλεξη #15 Hash Functions",
     "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
     "slides": "https://hackintro.github.io/resources/17-hash-functions.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=3c762c53",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=edc73603"
   },
   {
     "id": 17,
     "title": "Διάλεξη #16 Authenticated Encryption and Asymmetric Cryptography",
     "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
     "slides": "https://hackintro.github.io/resources/17-authenc-and-asymmetric-crypto.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=2659f412",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=d8a08916"
   },
   {
     "id": 18,
@@ -164,28 +164,29 @@
       "https://picoctf.org/index.html#picogym"
     ],
     "slides": "https://hackintro.github.io/resources/19-20-web-security.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=8991b49c",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=208b4b1e"
   },
   {
     "id": 19,
     "title": "Διάλεξη #20 Web Security",
-    "paper": "",
+    "paper": [
+      "https://pragmaticwebsecurity.com/files/cheatsheets/reactxss.pdf",
+      "https://picoctf.org/index.html#picogym"
+    ],
     "slides": "https://hackintro.github.io/resources/19-20-web-security.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=cfa3f40f",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=63f719d"
   },
   {
     "id": 20,
     "title": "Διάλεξη #21 Network Security",
     "paper": [
       "https://www.cs.columbia.edu/~smb/papers/ipext.pdf",
-      "https://www.cs.columbia.edu/~smb/papers/acsac-ipext.pdf",
-      "https://www.princeton.edu/~rblee/ELE572Papers/Fall04Readings/DDoSmirkovic.pdf",
-      "https://www.cs.princeton.edu/courses/archive/fall06/cos561/papers/nordstrom04.pdf"
+      "https://www.cs.columbia.edu/~smb/papers/acsac-ipext.pdf"
     ],
     "slides": "https://hackintro.github.io/resources/21-network-security.pdf",
-    "part1": "",
-    "part2": ""
+    "part1": "https://delos.uoa.gr/opendelos/player?rid=5d4f6cc8",
+    "part2": "https://delos.uoa.gr/opendelos/player?rid=c52e21e0"
   }
 ]
