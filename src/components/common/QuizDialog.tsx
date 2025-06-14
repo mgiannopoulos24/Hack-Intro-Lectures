@@ -212,13 +212,11 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
                           onClick={() => handleAnswer(answer)}
                           disabled={!!selected}
                           className={`min-h-[50px] w-full flex-shrink-0 p-3 text-sm normal-case transition-all duration-200 sm:min-h-[60px] sm:p-4 sm:text-base ${
-                            selected && selected === answer
-                              ? correctIndexes.includes(idx)
-                                ? 'bg-green-600 text-white hover:bg-green-700'
-                                : 'bg-red-600 text-white hover:bg-red-700'
-                              : correctIndexes.includes(idx) && selected
-                                ? 'bg-green-600 text-white hover:bg-green-700'
-                                : 'hover:bg-gray-200'
+                            selected !== null // An answer has been picked for this question
+                              ? correctIndexes.includes(idx) // Is the current button's answer correct?
+                                ? 'bg-green-600 text-white hover:bg-green-700' // Yes, it's correct
+                                : 'bg-red-600 text-white hover:bg-red-700' // No, it's incorrect
+                              : 'hover:bg-gray-200' // No answer picked yet, default hover
                           }`}
                         >
                           <span className="text-wrap">{answer}</span>
