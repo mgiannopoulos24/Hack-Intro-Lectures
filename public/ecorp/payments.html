@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>E Corp Financial Services - Internal Portal</title>
+  <style>
+    body {
+      font-family: monospace;
+      margin: 20px;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 30px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+    .status {
+      font-size: 12px;
+      color: red;
+      animation: blink 1.5s infinite;
+    }
+    @keyframes blink {
+      0% { opacity: 1; }
+      50% { opacity: 0.5; }
+      100% { opacity: 1; }
+    }
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    .table-container {
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    table {
+      border-collapse: collapse;
+      width: 100%;
+    }
+    th, td {
+      text-align: left;
+      padding: 5px;
+      border-bottom: 1px solid #ddd;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    a {
+      text-decoration: none;
+      color: blue;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    .footer {
+      margin-top: 40px;
+      text-align: center;
+      font-size: 12px;
+    }
+    hr {
+      margin: 20px 0;
+      border: none;
+      border-top: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">E Corp Financial Services</div>
+      <div class="status">SYSTEM ACCESS LEVEL: RESTRICTED</div>
+    </div>
+    
+    <div class="table-container">
+      <h2>Corporate Accounts</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Account ID</th>
+            <th>Account Holder</th>
+            <th>Position</th>
+            <th>Balance ($)</th>
+            <th>Last Updated</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>AC-78491253</td>
+            <td>Phillip Price</td>
+            <td>CEO (1995 - 2015)</td>
+            <td>142,738,961.27</td>
+            <td>2024-05-12 14:23:11</td>
+          </tr>
+          <tr>
+            <td>AC-98172634</td>
+            <td>Lester Moore</td>
+            <td>CEO (1986 - 1995)</td>
+            <td>87,291,453.88</td>
+            <td>2024-05-12 09:45:32</td>
+          </tr>
+          <tr>
+            <td>AC-56438901</td>
+            <td>Terry Colby</td>
+            <td>CTO (to Feb. 2015)</td>
+            <td>23,415,782.91</td>
+            <td>2024-05-11 16:38:27</td>
+          </tr>
+          <tr>
+            <td>AC-32189067</td>
+            <td>Tyrell Wellick</td>
+            <td>SVP of Technology / Interim CTO</td>
+            <td>51,893,427.45</td>
+            <td>2024-05-10 11:27:08</td>
+          </tr>
+          <tr>
+            <td>AC-45682193</td>
+            <td>Scott Knowles</td>
+            <td>CTO (May 2015 - Aug 2015)</td>
+            <td>18,743,905.67</td>
+            <td>2024-05-12 08:15:43</td>
+          </tr>
+          <tr>
+            <td>AC-67329184</td>
+            <td>James Plofe</td>
+            <td>EVP of Technology (to May 2015)</td>
+            <td>1,268,392.16</td>
+            <td>2024-05-11 15:22:59</td>
+          </tr>
+          <tr>
+            <td>AC-89123476</td>
+            <td>Jim Chutney</td>
+            <td>SVP of B.A. (to June 2015)</td>
+            <td>75,341,982.33</td>
+            <td>2024-05-09 12:11:07</td>
+          </tr>
+          <tr>
+            <td>AC-21673849</td>
+            <td>Saul Weinsberg</td>
+            <td>Managing Director of Operations</td>
+            <td>14,782,931.92</td>
+            <td>2024-05-12 17:34:21</td>
+          </tr>
+          <tr>
+            <td>AC-43765821</td>
+            <td>Susan Jacobs</td>
+            <td>General Counsel</td>
+            <td>5,217,843.27</td>
+            <td>2024-05-11 13:27:19</td>
+          </tr>
+          <tr>
+            <td>AC-52938761</td>
+            <td>Linda Spencer</td>
+            <td>Chief Human Resources Officer</td>
+            <td>3,894,561.78</td>
+            <td>2024-05-10 09:18:45</td>
+          </tr>
+          <tr>
+            <td>AC-76591432</td>
+            <td>Michael Ralbern</td>
+            <td>VP of Technology</td>
+            <td>2,765,912.46</td>
+            <td>2024-05-09 14:52:37</td>
+          </tr>
+          <tr>
+            <td>AC-14739285</td>
+            <td>Janet Robinson</td>
+            <td>Corporate Manager, Technology</td>
+            <td>1,432,876.59</td>
+            <td>2024-05-11 10:24:18</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="table-container">
+      <h2>Recent Payments</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Transaction ID</th>
+            <th>Date</th>
+            <th>Source</th>
+            <th>Destination</th>
+            <th>Amount ($)</th>
+            <th>Status</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TX-98734125</td>
+            <td>2024-05-12 16:14:27</td>
+            <td>Peter McCleery</td>
+            <td>Steel Mountain Security</td>
+            <td>1,452,387.00</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-12453789</td>
+            <td>2024-05-12 14:35:11</td>
+            <td>William Braddock</td>
+            <td>Allsafe Cybersecurity</td>
+            <td>578,921.45</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-45781236</td>
+            <td>2024-05-11 17:22:09</td>
+            <td>Samar Swailem</td>
+            <td>Blank's Disk Recovery</td>
+            <td>213,476.92</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-78956412</td>
+            <td>2024-05-11 12:43:56</td>
+            <td>Gracie Sheldern</td>
+            <td>Dark Army Consulting</td>
+            <td>4,500,000.00</td>
+            <td>Pending Approval</td>
+          </tr>
+          <tr>
+            <td>TX-32147896</td>
+            <td>2024-05-10 15:37:21</td>
+            <td>Charlie O'Shearn</td>
+            <td>FS Society Data</td>
+            <td>251,478.33</td>
+            <td>Failed</td>
+          </tr>
+          <tr>
+            <td>TX-65432178</td>
+            <td>2024-05-10 14:12:45</td>
+            <td>John Laslen</td>
+            <td>Federal Reserve Bank</td>
+            <td>12,750,000.00</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-90876543</td>
+            <td>2024-05-10 11:54:32</td>
+            <td>Kevin Shelvern</td>
+            <td>Gideon Goddard Estate</td>
+            <td>157,830.25</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-23498761</td>
+            <td>2024-05-09 16:28:17</td>
+            <td>Alivia Murabahti</td>
+            <td>Colby Foundation</td>
+            <td>782,431.76</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-87412365</td>
+            <td>2024-05-09 09:47:03</td>
+            <td>Kara Mulrigan</td>
+            <td>Washington Township Project</td>
+            <td>8,741,205.89</td>
+            <td>Classified</td>
+          </tr>
+          <tr>
+            <td>TX-36925814</td>
+            <td>2024-05-08 13:21:44</td>
+            <td>Eric Nessberg</td>
+            <td>Whiterose Investments</td>
+            <td>3,214,567.90</td>
+            <td>Flagged</td>
+          </tr>
+          <tr>
+            <td>TX-78342159</td>
+            <td>2024-05-08 10:15:32</td>
+            <td>Karen Ivanthal</td>
+            <td>Steel Mountain Upkeep</td>
+            <td>987,652.43</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-21456387</td>
+            <td>2024-05-07 16:43:21</td>
+            <td>John Tholdon</td>
+            <td>Server Maintenance</td>
+            <td>543,218.76</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-54367128</td>
+            <td>2024-05-07 14:26:09</td>
+            <td>Mike Lowdell</td>
+            <td>Cyber Security Initiative</td>
+            <td>1,275,493.62</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>TX-98712435</td>
+            <td>2024-05-06 11:54:37</td>
+            <td>Myhoa Kulaimo</td>
+            <td>Data Recovery Systems</td>
+            <td>876,543.21</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-34128756</td>
+            <td>2024-05-06 09:32:18</td>
+            <td>Carrie Henbar</td>
+            <td>Emergency Response Team</td>
+            <td>432,187.65</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-67892134</td>
+            <td>2024-05-05 17:21:45</td>
+            <td>Belle Kiriyuchi</td>
+            <td>Regulatory Compliance</td>
+            <td>987,321.54</td>
+            <td>Pending</td>
+          </tr>
+          <tr>
+            <td>TX-41237865</td>
+            <td>2024-05-05 15:09:27</td>
+            <td>Bryan Gilamito</td>
+            <td>Network Infrastructure</td>
+            <td>2,154,378.92</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-89345621</td>
+            <td>2024-05-04 13:47:36</td>
+            <td>Brian Elkarn</td>
+            <td>Disaster Recovery Planning</td>
+            <td>1,654,321.87</td>
+            <td>Completed</td>
+          </tr>
+          <tr>
+            <td>TX-12765843</td>
+            <td>2024-05-04 10:36:29</td>
+            <td>Michael Astdorn</td>
+            <td>Beijing Expansion Project</td>
+            <td>5,432,198.76</td>
+            <td>Flagged</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="footer">
+      &copy; 2024 E Corp Financial Services | RESTRICTED ACCESS | UNAUTHORIZED ACCESS WILL BE PROSECUTED
+    </div>
+  </div>
+</body>
+</html>

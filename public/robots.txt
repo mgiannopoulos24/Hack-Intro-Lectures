@@ -1,3 +1,9 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /fsociety
+Disallow: /ecorp
+Disallow: /darkArmy
+
+# RXZlcnl0aGluZyB3ZSBkbyBpcyBhIGNob2ljZS4=
+# elliot:hacker
+# 56.228.2.1
