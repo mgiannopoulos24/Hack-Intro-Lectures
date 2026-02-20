@@ -19,6 +19,12 @@ footer a{
   text-decoration: none;
 }
 
+
+mjx-container[jax="CHTML"][display="true"] {
+  margin: 0 !important;
+  margin-top: 20px !important;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

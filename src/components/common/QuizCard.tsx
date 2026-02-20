@@ -14,30 +14,36 @@ const sanitize = (str?: string) => (str ?? '').replace(/[^a-zA-Z0-9 \-_.]/g, '')
 
 const QuizCard: React.FC<QuizCardProps> = ({ image, title, description, onClick }) => {
   return (
-    <Card className="w-80 overflow-hidden border border-gray-700 bg-[#4a690f] shadow-sm transition-shadow duration-200 hover:shadow-md">
-      {/* Image Section */}
-      <div className="h-48 overflow-hidden px-4 pt-4">
+    <Card className="group w-80 overflow-hidden border border-gray-800 bg-gray-900/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-green-500/20">
+      <div className="relative h-48 overflow-hidden">
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         <img
           src={typeof image === 'string' ? image : ''}
           alt={sanitize(title)}
-          className="h-full w-full bg-transparent object-contain"
+          className="h-full w-full bg-transparent object-cover transition-transform duration-300 group-hover:scale-105"
           loading="lazy"
           decoding="async"
         />
+        <div className="absolute bottom-3 left-3 rounded-full bg-green-500/20 px-3 py-1 text-xs font-medium text-green-400 backdrop-blur-sm">
+          Quiz
+        </div>
       </div>
 
-      {/* Content Section */}
-      <CardContent className="p-4">
-        <CardTitle className="mb-2 line-clamp-2 text-lg font-medium">{sanitize(title)}</CardTitle>
-        <CardDescription className="line-clamp-2 text-sm text-gray-600">
+      <CardContent className="p-5">
+        <CardTitle className="mb-2 text-xl font-semibold text-white transition-colors duration-200 group-hover:text-green-400">
+          {sanitize(title)}
+        </CardTitle>
+        <CardDescription className="line-clamp-2 text-sm text-gray-400">
           {sanitize(description)}
         </CardDescription>
       </CardContent>
 
-      {/* Footer with Button */}
-      <CardFooter className="p-4 pt-0">
-        <Button onClick={onClick} className="w-full" variant="default">
-          <Play className="mr-2 h-4 w-4" />
+      <CardFooter className="p-5 pt-0">
+        <Button
+          onClick={onClick}
+          className="w-full gap-2 bg-green-600 text-white transition-all duration-200 hover:bg-green-500 hover:shadow-lg hover:shadow-green-500/25"
+        >
+          <Play className="h-4 w-4" />
           Start Quiz
         </Button>
       </CardFooter>

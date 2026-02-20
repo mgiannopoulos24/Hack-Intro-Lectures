@@ -21,7 +21,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
   ) => (
     <Button
       asChild
-      className={`flex w-full items-center justify-center gap-2 bg-[#6876b6] normal-case text-white hover:bg-[#3a4286] ${className}`}
+      className={`flex w-full items-center justify-center gap-2 bg-[#6876b6] normal-case text-white transition-all duration-200 hover:bg-[#4a5596] hover:shadow-lg hover:shadow-purple-500/20 ${className}`}
     >
       <Link
         to={href}
@@ -58,14 +58,15 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
   };
 
   return (
-    <Card className="m-[0.5%] flex w-[100%] max-w-xs flex-col overflow-hidden rounded-lg transition duration-300 max-[425px]:w-[calc(100%-10px)] max-[425px]:max-w-none">
-      <CardHeader className="flex min-h-[7.5rem] items-center justify-center bg-[#6876b6] p-4 text-white">
-        <CardTitle className="line-clamp-3 text-center text-lg sm:text-xl">
+    <Card className="group m-[0.5%] flex w-[100%] max-w-xs flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/20 max-[425px]:w-[calc(100%-10px)] max-[425px]:max-w-none">
+      <CardHeader className="relative flex min-h-[7.5rem] items-center justify-center bg-gradient-to-br from-[#6876b6] to-[#4a5596] p-6 text-white">
+        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+        <CardTitle className="relative line-clamp-3 text-center text-lg font-semibold sm:text-xl">
           {title}
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex flex-grow flex-col gap-2 bg-gray-900 p-4">
+      <CardContent className="flex flex-grow flex-col gap-3 bg-gray-900/50 p-5">
         {paper &&
           (typeof paper === 'string' ? (
             renderLinkButton(paper, 'Προτεινόμενο Paper', '', <BookOpenText className="h-4 w-4" />)
