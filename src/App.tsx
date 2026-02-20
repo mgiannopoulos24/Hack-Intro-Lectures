@@ -16,6 +16,9 @@ const App: React.FC = () => {
           <Route path="/matrix" element={<MatrixEffect overlayImage={morpheus} />} />
         </Routes>
       </BrowserRouter>
+      <footer className="bottom-0 left-0 right-0 py-2 text-center text-xs text-gray-500">
+        Made by <a href="https://github.com/mgiannopoulos24" target="_blank">mgiannopoulos24</a>
+      </footer>
     </>
   );
 };

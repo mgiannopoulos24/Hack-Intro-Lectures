@@ -1,7 +1,7 @@
-import CustomCard from '../components/common/CustomCard';
-import HamburgerMenu from '../components/common/HamburgerMenu';
-import cardDataJson from '../data/cardData.json';
-import quotesData from '../data/quotes.json';
+import CustomCard from '@/components/common/CustomCard';
+import HamburgerMenu from '@/components/common/HamburgerMenu';
+import cardDataJson from '@/data/cardData.json';
+import quotesData from '@/data/quotes.json';
 import { useEffect, useState } from 'react';
 
 interface CardData {
@@ -36,13 +36,13 @@ const MainPage: React.FC = () => {
       </div>
 
       <div className="main-content relative z-10">
-        <header className="titles flex flex-col items-center justify-center bg-transparent py-1 pt-8 font-mono text-[#ffffff]">
+        <header className="titles flex flex-col items-center justify-center bg-transparent py-1 pt-8 text-[#ffffff]">
           <h1 className="mb-0 block text-2xl md:text-4xl">Hack Intro Lectures</h1>
-          <h2 className="block py-1 text-lg md:text-xl">Εαρινό Εξάμηνο 2025</h2>
+          <h2 className="block py-4 text-lg md:text-xl">Spring Semester 2026</h2>
           <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
         </header>
 
-        <div className="quote-section my-4 px-4 text-center italic text-gray-400">
+        <div className="quote-section my-4 px-4 text-center italic text-gray-400 max-w-2xl mx-auto">
           {quote && (
             <blockquote className="text-sm md:text-base">
               {quote.content}

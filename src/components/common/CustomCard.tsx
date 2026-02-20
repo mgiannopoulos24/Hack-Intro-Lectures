@@ -21,7 +21,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
   ) => (
     <Button
       asChild
-      className={`flex w-full items-center justify-center gap-2 bg-[#6876b6] font-mono normal-case text-white hover:bg-[#3a4286] ${className}`}
+      className={`flex w-full items-center justify-center gap-2 bg-[#6876b6] normal-case text-white hover:bg-[#3a4286] ${className}`}
     >
       <Link
         to={href}
@@ -60,7 +60,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
   return (
     <Card className="m-[0.5%] flex w-[100%] max-w-xs flex-col overflow-hidden rounded-lg transition duration-300 max-[425px]:w-[calc(100%-10px)] max-[425px]:max-w-none">
       <CardHeader className="flex min-h-[7.5rem] items-center justify-center bg-[#6876b6] p-4 text-white">
-        <CardTitle className="line-clamp-3 text-center font-mono text-lg sm:text-xl">
+        <CardTitle className="line-clamp-3 text-center text-lg sm:text-xl">
           {title}
         </CardTitle>
       </CardHeader>

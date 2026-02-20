@@ -35,12 +35,12 @@ const WargamesPage: React.FC = () => (
     </div>
 
     <div className="main-content relative z-10">
-      <header className="flex flex-col items-center justify-center bg-transparent py-1 pt-8 font-mono text-[#ffffff]">
+      <header className="flex flex-col items-center justify-center bg-transparent py-1 pt-8 text-[#ffffff]">
         <h1 className="mb-0 block text-2xl md:text-4xl">Wargames</h1>
-        <h2 className="block py-1 text-lg md:text-xl">For fun and profit :)</h2>
+        <h2 className="block py-4 text-lg md:text-xl">For fun and profit :)</h2>
         <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
       </header>
-      <div className="my-5 flex flex-wrap justify-center gap-2">
+      <div className="my-5 flex flex-wrap justify-center gap-2 pb-8">
         {(wargames as Wargame[]).map((wg) => (
           <a
             key={wg.url}
