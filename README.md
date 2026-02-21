@@ -18,7 +18,31 @@
 5. Lucide React (icons)
 6. Tailwind CSS
 7. React Tilt
-8. Vitest with React Testing Library
+8. react-code-blocks (inline & code block syntax highlighting)
+9. Vitest with React Testing Library
+
+## Code blocks (inline & block)
+
+Η εφαρμογή υποστηρίζει εμφάνιση κώδικα με syntax highlighting μέσω [react-code-blocks](https://github.com/rajinwonderland/react-code-blocks):
+
+- **Inline:** `InlineCode` για σύντομα snippets μέσα σε κείμενο (π.χ. `scanf("%s", buffer)`).
+- **Block:** `CodeBlockDisplay` για πολυγραμμικό κώδικα χωρίς κουμπί copy.
+- **Block με copy:** `CopyableCodeBlock` για πολυγραμμικό κώδικα με κουμπί αντιγραφής.
+
+Όλα τα components βρίσκονται στο `src/components/common/CodeDisplay.tsx`. Χρήση:
+
+```tsx
+import { InlineCode, CodeBlockDisplay, CopyableCodeBlock } from '@/components/common/CodeDisplay';
+
+// Inline
+<InlineCode text="printf(\"hello\");" language="c" />
+
+// Block (no copy button)
+<CodeBlockDisplay text={codeString} language="javascript" />
+
+// Block with copy button
+<CopyableCodeBlock text={codeString} language="python" showLineNumbers wrapLines />
+```
 
 ## Γλώσσες που χρησιμοποιήθηκαν
 
@@ -27,12 +51,27 @@
 3. TypeScript
 4. JavaScript
 
+## Εισαγωγή κουίζ από Excel
+
+Τα κουίζ μπορούν να εισάγονται από αρχεία Excel (π.χ. εξαγωγή Kahoot) μέσω του script `scripts/parse-quizzes-xlsx.js`. Κάθε ερώτηση αντιστοιχεί σε ξεχωριστό sheet με ονόματα τύπου «1 True or False», «2 Quiz», «11 Multiple select Quiz» κ.λπ.
+
+**Χρήση:**
+
+```console
+npm run parse-quizzes
+```
+
+ή με συγκεκριμένο αρχείο:
+
+```console
+node scripts/parse-quizzes-xlsx.js "xlsx/Security Fundamentals.xlsx"
+```
+
+Το script ενημερώνει το `src/data/quizzes.json`: αν υπάρχει ήδη κουίζ με τον ίδιο τίτλο (από κελί A1), αντικαθίστανται οι ερωτήσεις του· διαφορετικά προστίθεται νέο κουίζ. Τα πεδία `photo` (εικόνες ανά ερώτηση) διατηρούνται κατά ευρετήριο όταν ενημερώνεται υπάρχον κουίζ.
+
 ## Έμπνευση
 
 Έμπνευση ήταν η σελίδα [Quiz App](https://starlit-daffodil-2e4733.netlify.app/). Credits στην [original creator](https://github.com/matinanadali).
-
-## To-Do list
-1. TBA
 
 ## Εγκατάσταση 
 Για να εγκαταστήσετε και να τρέξετε την εφαρμογή τοπικά, ακολουθήστε τα παρακάτω βήματα:

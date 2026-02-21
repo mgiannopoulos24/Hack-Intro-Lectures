@@ -17,7 +17,19 @@ const App: React.FC = () => {
         </Routes>
       </BrowserRouter>
       <footer className="bottom-0 left-0 right-0 py-2 text-center text-xs text-gray-500">
-        Made by <a href="https://github.com/mgiannopoulos24" target="_blank">mgiannopoulos24</a>
+        Made by{' '}
+        <a href="https://github.com/mgiannopoulos24" target="_blank" rel="noopener noreferrer">
+          mgiannopoulos24
+        </a>
+        <br />
+        For any suggestions, please{' '}
+        <a
+          href="https://github.com/mgiannopoulos24/Hack-Intro-Lectures/issues"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          open an issue or PR.
+        </a>
       </footer>
     </>
   );

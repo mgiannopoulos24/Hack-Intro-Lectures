@@ -1,9 +1,16 @@
+const quizImageModules = import.meta.glob<string>('../assets/quiz-images/*.{png,jpg}', {
+  query: '?url',
+  import: 'default',
+});
+
 export const loadQuizImage = async (imageKey: string) => {
-  try {
-    const image = await import(`../assets/quiz-images/${imageKey}.png`);
-    return image.default;
-  } catch (error) {
-    console.error(`Quiz image not found: ${imageKey}`, error);
-    return null;
+  for (const ext of ['.png', '.jpg']) {
+    const path = `../assets/quiz-images/${imageKey}${ext}`;
+    const loader = quizImageModules[path];
+    if (loader) {
+      return await loader();
+    }
   }
+  console.error(`Quiz image not found: ${imageKey} (tried .png and .jpg)`);
+  return null;
 };

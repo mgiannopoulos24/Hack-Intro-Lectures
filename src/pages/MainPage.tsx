@@ -42,7 +42,7 @@ const MainPage: React.FC = () => {
           <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
         </header>
 
-        <div className="quote-section my-4 px-4 text-center italic text-gray-400 max-w-2xl mx-auto">
+        <div className="quote-section mx-auto my-4 max-w-2xl px-4 text-center italic text-gray-400">
           {quote && (
             <blockquote className="text-sm md:text-base">
               {quote.content}

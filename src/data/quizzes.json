@@ -4,21 +4,21 @@
     "title": "Security Fundamentals",
     "questions": [
       {
-        "question": "Είναι καλή ιδέα να χρησιμοποιώ scanf(\"%s\", buffer) στον κώδικά μου;",
+        "question": "Είναι καλή ιδέα να χρησιμοποιώ `scanf(\"%s\", buffer)` στον κώδικά μου;",
         "answers": ["True", "False"],
         "correctAnswer": "False",
         "photo": "q1q1"
       },
       {
-        "question": "Λόγω ενός πρόσφατου data-breach όλοι οι αριθμοί κοινωνικής ασφάλισης των χρηστών μας έγιναν leak. Αυτό είναι πρόβλημα:",
-        "answers": ["Confidentiality", "Integrity", "Availability", "Authenticity"],
-        "correctAnswer": "Confidentiality",
+        "question": "We always include the adversary's strategy in our adversary definition",
+        "answers": ["True", "False"],
+        "correctAnswer": "False",
         "photo": "q1q2"
       },
       {
-        "question": "We always include the adversary's strategy in our adversary definition.",
-        "answers": ["True", "False"],
-        "correctAnswer": "False",
+        "question": "Τα αρχεία του Epstein βγήκαν στην επιφάνεια πρόσφατα αλλά μέρος τους ήταν καλυμμένο (redacted). Αυτό είναι πρόβλημα:",
+        "answers": ["Confidentiality", "Integrity", "Availability", "Authenticity"],
+        "correctAnswer": "Confidentiality",
         "photo": "q1q3"
       },
       {
@@ -33,7 +33,7 @@
         "photo": "q1q4"
       },
       {
-        "question": "Στους μεγάλους οργανισμούς η πλειοψηφία των χρηστών δεν έχουν root access στον υπολογιστή τους. Αυτό είναι παράδειγμα:",
+        "question": "Κατέβασα το openclaw (ΑΙ βοηθό) και για να λύσει όλα τα προβλήματα μου του έδωσα admin access. Είναι αντιπαράδειγμα:",
         "answers": [
           "Authenticity",
           "Economy of Mechanism (KISS)",
@@ -66,27 +66,10 @@
         "photo": "q1q7"
       },
       {
-        "question": "Οι IT προμήθειες ενός οργανισμού σχεδιάζονται και εγκρίνονται αποκλειστικά από τον VP of IT. Αυτό είναι:",
-        "answers": [
-          "Καλό γιατί έχει Complete Mediation για το τι αγοράζεται",
-          "Κακό γιατί δεν υπάρχει Separation of Duty",
-          "Καλό γιατί αυτό είναι ένα Fail-safe Default",
-          "Κακό γιατί δεν ακολουθεί το Least Privilege"
-        ],
-        "correctAnswer": "Κακό γιατί δεν υπάρχει Separation of Duty",
-        "photo": "q1q8"
-      },
-      {
         "question": "Ένα σύστημα βιομετρικής αναγνώρισης προσώπου πρέπει να λύνει το πρόβλημα του",
         "answers": ["Confidentiality", "Authenticity", "Integrity", "Availability"],
         "correctAnswer": "Authenticity",
-        "photo": "q1q9"
-      },
-      {
-        "question": "Ένας γραφολόγος ελέγχει την υπογραφή μας σε ένα συμβόλαιο για να εγγυηθεί το",
-        "answers": ["Confidentiality", "Integrity", "Authenticity", "Availability"],
-        "correctAnswer": ["Integrity", "Authenticity"],
-        "photo": "q1q10"
+        "photo": "q1q8"
       },
       {
         "question": "Στο αεροδρόμιο ελέγχουν τα εισιτήρια/διαβατήριο μας σε πολλαπλά, συνεχόμενα checkpoints. Αυτό είναι παράδειγμα:",
@@ -97,6 +80,23 @@
           "Separation of Duty"
         ],
         "correctAnswer": "Defense in depth",
+        "photo": "q1q9"
+      },
+      {
+        "question": "Οι IT προμήθειες ενός οργανισμού σχεδιάζονται και εγκρίνονται αποκλειστικά από τον VP of IT. Αυτό είναι:",
+        "answers": [
+          "Καλό γιατί έχει Complete Mediation για το τι αγοράζεται",
+          "Κακό γιατί δεν υπάρχει Separation of Duty",
+          "Καλό γιατί αυτό είναι ένα Fail-safe Default",
+          "Κακό γιατί δεν ακολουθεί το Least Privilege"
+        ],
+        "correctAnswer": "Κακό γιατί δεν υπάρχει Separation of Duty",
+        "photo": "q1q10"
+      },
+      {
+        "question": "Ένας γραφολόγος ελέγχει την υπογραφή μας σε ένα συμβόλαιο για να εγγυηθεί το",
+        "answers": ["Confidentiality", "Integrity", "Authenticity", "Availability"],
+        "correctAnswer": ["Integrity", "Authenticity"],
         "photo": "q1q11"
       }
     ]

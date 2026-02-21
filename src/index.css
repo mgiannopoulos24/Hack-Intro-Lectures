@@ -14,13 +14,12 @@ body {
   font-family: 'Ubuntu', sans-serif;
 }
 
-footer a{
+footer a {
   color: rgba(156, 163, 175);
   text-decoration: none;
 }
 
-
-mjx-container[jax="CHTML"][display="true"] {
+mjx-container[jax='CHTML'][display='true'] {
   margin: 0 !important;
   margin-top: 20px !important;
 }

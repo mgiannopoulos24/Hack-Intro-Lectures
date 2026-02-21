@@ -1,3 +1,4 @@
+import { parseBackticks } from '@/components/common/CodeDisplay';
 import { Button } from '@/components/ui/button';
 import {
   Dialog,
@@ -154,15 +155,6 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
     );
   };
 
-  const renderWithNewlines = (text: string) => {
-    return text.split('\n').map((line, index) => (
-      <span key={index}>
-        {line}
-        <br />
-      </span>
-    ));
-  };
-
   const q = questions[current];
 
   return (
@@ -190,7 +182,7 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
 
               <div className="mb-4 flex-shrink-0 sm:mb-6">
                 <p className="text-center text-lg font-semibold leading-relaxed sm:text-xl">
-                  <MathJax>{renderWithNewlines(q.question)}</MathJax>
+                  <MathJax>{parseBackticks(q.question)}</MathJax>
                 </p>
               </div>
 
@@ -221,8 +213,8 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
                             : 'hover:bg-gray-200'
                         }`}
                       >
-                        <span className="flex items-bottom justify-center">
-                          <MathJax>{renderWithNewlines(answer)}</MathJax>
+                        <span className="items-bottom flex justify-center">
+                          <MathJax>{parseBackticks(answer)}</MathJax>
                         </span>
                       </Button>
                     ))}
