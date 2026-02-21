@@ -1,4 +1,4 @@
-# [Hack-Intro-Lectures](https://dazzling-rabanadas-a55211.netlify.app/)
+# [Hack-Intro-Lectures](https://hackintro-lectures.netlify.app/)
 
 ## Περιγραφή 
 
@@ -69,10 +69,6 @@ node scripts/parse-quizzes-xlsx.js "xlsx/Security Fundamentals.xlsx"
 
 Το script ενημερώνει το `src/data/quizzes.json`: αν υπάρχει ήδη κουίζ με τον ίδιο τίτλο (από κελί A1), αντικαθίστανται οι ερωτήσεις του· διαφορετικά προστίθεται νέο κουίζ. Τα πεδία `photo` (εικόνες ανά ερώτηση) διατηρούνται κατά ευρετήριο όταν ενημερώνεται υπάρχον κουίζ.
 
-## Έμπνευση
-
-Έμπνευση ήταν η σελίδα [Quiz App](https://starlit-daffodil-2e4733.netlify.app/). Credits στην [original creator](https://github.com/matinanadali).
-
 ## Εγκατάσταση 
 Για να εγκαταστήσετε και να τρέξετε την εφαρμογή τοπικά, ακολουθήστε τα παρακάτω βήματα:
 1. Κλωνοποιήστε το αποθετήριο:
@@ -94,3 +90,10 @@ npm start
 
 Βεβαιωθείτε ότι έχετε εγκαταστήσει το [NodeJS](https://nodejs.org/en) στον υπολογιστή σας.
 
+## Έμπνευση
+
+Έμπνευση ήταν η σελίδα [Quiz App](https://starlit-daffodil-2e4733.netlify.app/). Credits στην [original creator](https://github.com/matinanadali).
+
+## Ευχαριστίες 
+
+Θερμές ευχαριστίες αποδίδονται στον κύριο [Θανάση Αυγερινό](https://github.com/ethan42), ο οποίος παρείχε τα Kahoot Quiz.
