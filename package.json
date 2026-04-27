@@ -7,9 +7,9 @@
     "@radix-ui/react-progress": "^1.1.8",
     "@radix-ui/react-slot": "^1.2.4",
     "@trivago/prettier-plugin-sort-imports": "^5.2.2",
-    "baseline-browser-mapping": "^2.10.0",
-    "better-react-mathjax": "^3.0.0",
-    "caniuse-lite": "^1.0.30001770",
+    "baseline-browser-mapping": "^2.10.23",
+    "better-react-mathjax": "^3.0.1",
+    "caniuse-lite": "^1.0.30001791",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "lucide-react": "^0.503.0",
@@ -38,29 +38,17 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "devDependencies": {
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.2",
-    "@types/node": "^22.19.11",
+    "@types/node": "^22.19.17",
     "@vitejs/plugin-react": "^4.7.0",
-    "autoprefixer": "^10.4.24",
+    "autoprefixer": "^10.5.0",
     "jsdom": "^26.1.0",
-    "postcss": "^8.5.6",
-    "prettier": "^3.8.1",
+    "postcss": "^8.5.12",
+    "prettier": "^3.8.3",
     "tailwindcss": "^3.4.19",
-    "vite": "^6.4.1",
+    "vite": "^6.4.2",
     "vitest": "^3.2.4",
     "xlsx": "^0.18.5"
   }
