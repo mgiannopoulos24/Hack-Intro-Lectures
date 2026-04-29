@@ -31,7 +31,7 @@ const MainPage: React.FC = () => {
 
   return (
     <>
-      <div className="absolute right-4 top-4 z-20">
+      <div className="absolute top-4 right-4 z-20">
         <HamburgerMenu />
       </div>
 
@@ -42,11 +42,11 @@ const MainPage: React.FC = () => {
           <hr className="mb-[1%] w-[80%] border-2 border-dashed border-[#ffffff]" />
         </header>
 
-        <div className="quote-section mx-auto my-4 max-w-2xl px-4 text-center italic text-gray-400">
+        <div className="quote-section mx-auto my-4 max-w-2xl px-4 text-center text-gray-400 italic">
           {quote && (
             <blockquote className="text-sm md:text-base">
               {quote.content}
-              <footer className="mt-1 text-xs not-italic text-gray-500 md:text-sm">
+              <footer className="mt-1 text-xs text-gray-500 not-italic md:text-sm">
                 - {quote.author}
               </footer>
             </blockquote>

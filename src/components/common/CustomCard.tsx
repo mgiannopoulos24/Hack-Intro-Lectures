@@ -21,7 +21,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
   ) => (
     <Button
       asChild
-      className={`flex w-full items-center justify-center gap-2 bg-[#6876b6] normal-case text-white transition-all duration-200 hover:bg-[#4a5596] hover:shadow-lg hover:shadow-purple-500/20 ${className}`}
+      className={`flex w-full items-center justify-center gap-2 bg-[#6876b6] text-white normal-case transition-all duration-200 hover:bg-[#4a5596] hover:shadow-lg hover:shadow-purple-500/20 ${className}`}
     >
       <Link
         to={href}
@@ -29,7 +29,7 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
         rel="noopener noreferrer"
         className="flex w-full items-center justify-center gap-2"
       >
-        {icon && <span className="flex-shrink-0">{icon}</span>}
+        {icon && <span className="shrink-0">{icon}</span>}
         <span className="truncate">{text}</span>
       </Link>
     </Button>
@@ -58,15 +58,15 @@ const CustomCard: React.FC<CustomCardProps> = ({ title, paper, slides, part1, pa
   };
 
   return (
-    <Card className="group m-[0.5%] flex w-[100%] max-w-xs flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/20 max-[425px]:w-[calc(100%-10px)] max-[425px]:max-w-none">
-      <CardHeader className="relative flex min-h-[7.5rem] items-center justify-center bg-gradient-to-br from-[#6876b6] to-[#4a5596] p-6 text-white">
-        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+    <Card className="group m-[0.5%] flex w-full max-w-xs flex-col overflow-hidden rounded-xl border border-gray-800 bg-gray-900/80 shadow-lg backdrop-blur-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-purple-500/20 max-[425px]:w-[calc(100%-10px)] max-[425px]:max-w-none">
+      <CardHeader className="relative flex min-h-30 items-center justify-center bg-linear-to-br from-[#6876b6] to-[#4a5596] p-6 text-white">
+        <div className="absolute inset-0 bg-linear-to-t from-black/20 to-transparent" />
         <CardTitle className="relative line-clamp-3 text-center text-lg font-semibold sm:text-xl">
           {title}
         </CardTitle>
       </CardHeader>
 
-      <CardContent className="flex flex-grow flex-col gap-3 bg-gray-900/50 p-5">
+      <CardContent className="flex grow flex-col gap-3 bg-gray-900/50 p-5">
         {paper &&
           (typeof paper === 'string' ? (
             renderLinkButton(paper, 'Προτεινόμενο Paper', '', <BookOpenText className="h-4 w-4" />)

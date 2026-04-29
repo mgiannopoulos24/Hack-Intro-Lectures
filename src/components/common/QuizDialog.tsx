@@ -161,7 +161,7 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
     <Dialog open={open} onOpenChange={handleDialogClose}>
       <DialogContent className="flex h-[80dvh] w-[90vw] max-w-none flex-col p-4 sm:h-[85vh] sm:w-[95vw] sm:max-w-4xl sm:p-6">
         <MathJaxContext key={current}>
-          <DialogHeader className="flex-shrink-0">
+          <DialogHeader className="shrink-0">
             <DialogTitle className="text-xl font-bold sm:text-2xl">{title}</DialogTitle>
           </DialogHeader>
           {showResult ? (
@@ -177,18 +177,18 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
             <div className="flex min-h-0 flex-1 flex-col">
               <Progress
                 value={((current + 1) / questions.length) * 100}
-                className="mb-4 h-3 flex-shrink-0 bg-gray-200 dark:bg-gray-700 sm:mb-6 [&>div]:bg-blue-500 dark:[&>div]:bg-white"
+                className="mb-4 h-3 shrink-0 bg-gray-200 sm:mb-6 dark:bg-gray-700 [&>div]:bg-blue-500 dark:[&>div]:bg-white"
               />
 
-              <div className="mb-4 flex-shrink-0 sm:mb-6">
-                <p className="text-center text-lg font-semibold leading-relaxed sm:text-xl">
+              <div className="mb-4 shrink-0 sm:mb-6">
+                <p className="text-center text-lg leading-relaxed font-semibold sm:text-xl">
                   <MathJax>{parseBackticks(q.question)}</MathJax>
                 </p>
               </div>
 
               <div className="scrollbar-thin scrollbar-track-gray-100 scrollbar-thumb-gray-300 dark:scrollbar-track-gray-800 dark:scrollbar-thumb-gray-600 flex min-h-0 flex-1 flex-col overflow-y-auto">
                 {q.photo && (
-                  <div className="mb-4 flex flex-shrink-0 items-center justify-center sm:mb-6">
+                  <div className="mb-4 flex shrink-0 items-center justify-center sm:mb-6">
                     <img
                       src={images[q.photo]}
                       alt={`Question ${current + 1}`}
@@ -205,7 +205,7 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
                         variant="secondary"
                         onClick={() => handleAnswer(answer)}
                         disabled={!!selected}
-                        className={`flex min-h-[50px] w-full flex-shrink-0 items-center justify-center p-3 text-sm normal-case transition-all duration-200 sm:min-h-[60px] sm:p-4 sm:text-base ${
+                        className={`flex min-h-[50px] w-full shrink-0 cursor-pointer items-center justify-center p-3 text-sm normal-case transition-all duration-200 sm:min-h-[60px] sm:p-4 sm:text-base ${
                           selected !== null
                             ? correctIndexes.includes(idx)
                               ? 'bg-green-600 text-white hover:bg-green-700'
@@ -222,13 +222,13 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
                 </div>
               </div>
 
-              <div className="mt-4 flex flex-shrink-0 items-center justify-between sm:mt-6">
+              <div className="mt-4 flex shrink-0 items-center justify-between sm:mt-6">
                 <Button
                   onClick={handlePrev}
                   disabled={current === 0}
                   variant="outline"
                   size="sm"
-                  className="px-3 sm:px-4"
+                  className="cursor-pointer px-3 sm:px-4"
                 >
                   <ChevronLeft className="mr-1 h-4 w-4" />
                   Prev
@@ -239,7 +239,7 @@ const QuizDialog: React.FC<QuizDialogProps> = ({
                   disabled={!selected}
                   variant="outline"
                   size="sm"
-                  className="px-3 sm:px-4"
+                  className="cursor-pointer px-3 sm:px-4"
                 >
                   {current === questions.length - 1 ? (
                     'Finish'

@@ -18,7 +18,7 @@ const HamburgerMenu: React.FC = () => {
         <Button
           variant="outline"
           size="icon"
-          className="border-gray-600 bg-gray-500 text-white hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-gray-500"
+          className="cursor-pointer border-gray-600 bg-gray-500 text-white hover:bg-gray-700 hover:text-white focus:ring-2 focus:ring-gray-500"
         >
           <Menu className="h-6 w-6" />
           <span className="sr-only">Open menu</span>

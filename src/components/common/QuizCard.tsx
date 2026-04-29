@@ -14,9 +14,9 @@ const sanitize = (str?: string) => (str ?? '').replace(/[^a-zA-Z0-9 \-_.]/g, '')
 
 const QuizCard: React.FC<QuizCardProps> = ({ image, title, description, onClick }) => {
   return (
-    <Card className="group w-80 overflow-hidden border border-gray-800 bg-gray-900/80 shadow-lg backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-green-500/20">
+    <Card className="group w-80 overflow-hidden border border-gray-800 bg-gray-900/80 shadow-lg backdrop-blur-xs transition-all duration-300 hover:-translate-y-1 hover:shadow-2xl hover:shadow-green-500/20">
       <div className="relative h-48 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+        <div className="absolute inset-0 bg-linear-to-t from-gray-900/60 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
         <img
           src={typeof image === 'string' ? image : ''}
           alt={sanitize(title)}
@@ -24,7 +24,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ image, title, description, onClick 
           loading="lazy"
           decoding="async"
         />
-        <div className="absolute bottom-3 left-3 rounded-full bg-green-500/20 px-3 py-1 text-xs font-medium text-green-400 backdrop-blur-sm">
+        <div className="absolute bottom-3 left-3 rounded-full bg-green-500/20 px-3 py-1 text-xs font-medium text-green-400 backdrop-blur-xs">
           Quiz
         </div>
       </div>
@@ -41,7 +41,7 @@ const QuizCard: React.FC<QuizCardProps> = ({ image, title, description, onClick 
       <CardFooter className="p-5 pt-0">
         <Button
           onClick={onClick}
-          className="w-full gap-2 bg-green-600 text-white transition-all duration-200 hover:bg-green-500 hover:shadow-lg hover:shadow-green-500/25"
+          className="w-full cursor-pointer gap-2 bg-green-600 text-white transition-all duration-200 hover:bg-green-500 hover:shadow-lg hover:shadow-green-500/25"
         >
           <Play className="h-4 w-4" />
           Start Quiz

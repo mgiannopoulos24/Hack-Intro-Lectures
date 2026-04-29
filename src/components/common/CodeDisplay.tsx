@@ -150,7 +150,7 @@ export const CopyableCodeBlock: React.FC<CopyableCodeBlockProps> = ({
       <button
         type="button"
         onClick={handleCopy}
-        className="absolute right-2 top-2 z-10 rounded bg-gray-700 px-2 py-1 text-xs text-gray-300 hover:bg-gray-600"
+        className="absolute top-2 right-2 z-10 rounded bg-gray-700 px-2 py-1 text-xs text-gray-300 hover:bg-gray-600"
         aria-label="Copy code"
       >
         Copy

@@ -30,7 +30,7 @@ interface Wargame {
 
 const WargamesPage: React.FC = () => (
   <>
-    <div className="absolute right-4 top-4 z-20">
+    <div className="absolute top-4 right-4 z-20">
       <HamburgerMenu />
     </div>
 

@@ -1,27 +1,21 @@
-name: Build
+name: Format check
 
 on:
-  # push:
-  #   branches: [ main ]
   pull_request:
-    branches: [ main ]
+      branches: [ main ]
   workflow_dispatch:
 
 jobs:
-  build:
+  format-check:
     runs-on: ubuntu-latest
-
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
-
-    - name: Set up Bun
+    - name: Setup bun
       uses: oven-sh/setup-bun@v2
       with:
         bun-version: latest
-
     - name: Install dependencies
-      run: bun install --frozen-lockfile
-
-    - name: Build project
-      run: bun run build
+      run: bun install
+    - name: Check formatting
+      run: bun run format:check

@@ -17,5 +17,111 @@
     "slides": "https://hackintro.github.io/resources/01-security-fundamentals.pdf",
     "part1": "https://uniflix.uoa.gr/vod/player?id=69970bd5f4c6faa933a124b4",
     "part2": "https://uniflix.uoa.gr/vod/player?id=69970bcff4c6faa933a124b3"
+  },
+  {
+    "id": 3,
+    "title": "Διάλεξη #2 x86 Basics and Buffer Overflows",
+    "paper": [
+      "https://inst.eecs.berkeley.edu/~cs161/archive/fa08/papers/stack_smashing.pdf",
+      "https://refspecs.linuxbase.org/elf/x86_64-abi-0.99.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/02-x86-buffer-overflows.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=699ed8b4d06830c41618ec9f",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=699ed8bbd06830c41618eca0"
+  },
+  {
+    "id": 4,
+    "title": "Διαλέξεις #3 & #4 Control Flow Hijack Attacks",
+    "paper": [
+      "https://www.intel.com/content/www/us/en/developer/articles/technical/intel-sdm.html",
+      "https://people.eecs.berkeley.edu/~dawnsong/papers/Oakland13-SoK-CR.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/03-control-flow-hijacks.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69a8132ad109609e12466cbb",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69a81330d109609e12466cbc"
+  },
+  {
+    "id": 5,
+    "title": "Διάλεξη #5 Format String Attacks",
+    "paper": "https://cs155.stanford.edu/papers/formatstring-1.2.pdf",
+    "slides": "https://hackintro.github.io/resources/05-format-string-attacks.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69b14dae26320e6f05db065b",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69b14db626320e6f05db065c"
+  },
+  {
+    "id": 6,
+    "title": "Διάλεξη #6 Application Security and Review",
+    "paper": [
+      "https://www.linuxfoundation.org/hubfs/LF%20Research/MaintainerSecurityBPs_011724.pdf?hsLang=en",
+      "https://github.com/LuckyDudeThakur/EBooks/blob/master/Accelerate%20-%20Building%20and%20Scaling%20High%20Performing%20Technology%20Organisations%20-%20Nicole%20Fergrson.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/06-appsec-and-review.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69b2bb4f26320e6f05db06a1",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69b2bb5626320e6f05db06a2"
+  },
+  {
+    "id": 7,
+    "title": "Διάλεξη #7 Mitigations",
+    "paper": [
+      "https://lettieri.iet.unipi.it/hacking/canaries.pdf",
+      "https://pax.grsecurity.net/docs/aslr.txt"
+    ],
+    "slides": "https://hackintro.github.io/resources/07-mitigations.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69ba882d26320e6f05db074c",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69ba883526320e6f05db074d"
+  },
+  {
+    "id": 8,
+    "title": "Guest Lectures on Program Analysis",
+    "paper": [
+      "https://pergamos.lib.uoa.gr/item/uoadl:5298963",
+      "https://pergamos.lib.uoa.gr/item/uoadl:5298750"
+    ],
+    "slides": "https://hackintro.github.io/resources/RePort.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69bbf5c426320e6f05db078b",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69bbf5cb26320e6f05db078c"
+  },
+  {
+    "id": 9,
+    "title": "Διαλέξεις #8 & #9 Return-Oriented Programming",
+    "paper": "https://hovav.net/ucsd/dist/geometry.pdf",
+    "slides": "https://hackintro.github.io/resources/08-return-oriented-programming.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69c5304d9d476c334ced2db7",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69c530549d476c334ced2db8"
+  },
+  {
+    "id": 10,
+    "title": "Διάλεξη #10 Control-Flow Integrity",
+    "paper": "https://www.cs.columbia.edu/~suman/secure_sw_devel/p340-abadi.pdf",
+    "slides": "https://hackintro.github.io/resources/10-control-flow-integrity.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69ccef1e1db7a1b196b2e471",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69ccef261db7a1b196b2e472"
+  },
+  {
+    "id": 11,
+    "title": "Διάλεξη #11 Access Control",
+    "paper": [
+      "https://www.cl.cam.ac.uk/teaching/1011/R01/75-protection.pdf",
+      "https://people.eecs.berkeley.edu/~daw/papers/setuid-usenix02.pdf"
+    ],
+    "slides": "https://hackintro.github.io/resources/11-access-control.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69ce5cb41db7a1b196b2e4c7",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69ce5cbb1db7a1b196b2e4c8"
+  },
+  {
+    "id": 12,
+    "title": "Διάλεξη #12 Intro to Cryptography",
+    "paper": "https://cacr.uwaterloo.ca/hac/about/chap1.pdf",
+    "slides": "https://hackintro.github.io/resources/12-intro-to-cryptography.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69e89e9e4e018644cc8e4c7f",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69e89ea54e018644cc8e4c80"
+  },
+  {
+    "id": 13,
+    "title": "Διάλεξη #13 Randomness",
+    "paper": "https://crypto.stanford.edu/~dabo/cryptobook/BonehShoup_0_6.pdf",
+    "slides": "https://hackintro.github.io/resources/13-randomness.pdf",
+    "part1": "https://uniflix.uoa.gr/vod/player?id=69ea0c36696ef3fbf13130c9",
+    "part2": "https://uniflix.uoa.gr/vod/player?id=69ea0c3c696ef3fbf13130ca"
   }
 ]
